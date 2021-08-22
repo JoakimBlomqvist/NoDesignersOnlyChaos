@@ -12,11 +12,21 @@ public class UtilsClass : MonoBehaviour
     }
     
     
-    public static Vector3 GetMouseWorldPos()
+    public static Vector2 GetMouseWorldPos()
     {
         Camera camera = Camera.main;
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = camera.nearClipPlane;
+        //mousePos.z = camera.nearClipPlane;
+        mousePos.z = 0;
+        Vector3 worldPos = camera.ScreenToWorldPoint(mousePos);
+        return worldPos;
+    }
+    public static Vector3 GetMouseWorldPosV3()
+    {
+        Camera camera = Camera.main;
+        Vector3 mousePos = Input.mousePosition;
+        //mousePos.z = camera.nearClipPlane;
+        mousePos.z = 0;
         Vector3 worldPos = camera.ScreenToWorldPoint(mousePos);
         return worldPos;
     }
