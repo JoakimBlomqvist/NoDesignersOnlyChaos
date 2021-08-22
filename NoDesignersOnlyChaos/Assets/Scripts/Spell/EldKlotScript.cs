@@ -13,8 +13,6 @@ public class EldKlotScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Vector2 dir = (UtilsClass.GetMouseWorldPos() - new Vector2(transform.position.x, transform.position.y)).normalized;
         rb.AddForce(dir * force);
-        
-        Debug.Log(dir);
         Destroy(gameObject, 10f);
     }
 
@@ -22,4 +20,5 @@ public class EldKlotScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }

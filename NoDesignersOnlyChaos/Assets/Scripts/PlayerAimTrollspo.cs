@@ -10,19 +10,40 @@ public class PlayerAimTrollspo : MonoBehaviour
     private Vector3 worldPosition;
     [SerializeField] private Transform TrollSpoT;
     private SpriteRenderer _spriteRenderer;
-
+    public SpellType spellType;
     [SerializeField]private GameObject projectilePrefab;
-    
+
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        spellType.projectilePrefab = projectilePrefab;
+        spellType.TrollSpoT = TrollSpoT;
+        spellType.playerCollider = GetComponent<Collider2D>();
+    }
+    /*
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Respawn"))
+        {
+            spellType = other.gameObject.GetComponent<SpellType>();
+            PickUp();
+            Destroy(other.gameObject);
+        }
+    }
+    */
+    [ContextMenu("Pick up")]
+    public void PickUp()
+    {
+        spellType.projectilePrefab = projectilePrefab;
+        spellType.TrollSpoT = TrollSpoT;
+        spellType.playerCollider = GetComponent<Collider2D>();
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Shoot();
+            spellType.Shoot();
         }
         Vector3 aimDir = (UtilsClass.GetMouseWorldPosV3() - transform.position).normalized;
         TrollSpoT.position = transform.position + aimDir;
@@ -42,7 +63,7 @@ public class PlayerAimTrollspo : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    public void Shoot()
     {
         var projectile = Instantiate(projectilePrefab, new Vector3(TrollSpoT.position.x, TrollSpoT.position.y,0), quaternion.identity);
         Physics2D.IgnoreCollision(projectile.GetComponent<Collider2D>(), GetComponent<Collider2D>());
