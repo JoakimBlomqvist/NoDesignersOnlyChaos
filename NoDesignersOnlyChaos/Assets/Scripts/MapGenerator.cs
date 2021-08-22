@@ -74,7 +74,7 @@ public class MapGenerator : MonoBehaviour
 
             //Spawns a default tile in the row
             GameObject tile = Instantiate(tileType[Random.Range(0, tileType.Length)], _postionOfTransform, Quaternion.identity, parent);
-            //tile.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);
+            tile.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);
         }
     }
 }
