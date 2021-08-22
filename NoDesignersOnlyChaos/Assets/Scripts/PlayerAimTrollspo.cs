@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 
 public class PlayerAimTrollspo : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class PlayerAimTrollspo : MonoBehaviour
     [SerializeField] private Transform TrollSpoT;
     private SpriteRenderer _spriteRenderer;
 
+    [SerializeField]private GameObject projectilePrefab;
+    
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -16,18 +20,14 @@ public class PlayerAimTrollspo : MonoBehaviour
 
     void Update()
     {
-        Vector3 mousePos = GetMouseWorldPos();
-        Vector3 aimDir = (mousePos - transform.position).normalized;
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
+        Vector3 aimDir = (UtilsClass.GetMouseWorldPos() - transform.position).normalized;
         TrollSpoT.position = transform.position + aimDir;
+        TrollSpoT.LookAt(UtilsClass.GetMouseWorldPos());
         FlipCharacterSprite();
-    }
-
-    private Vector3 GetMouseWorldPos()
-    {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane;
-        worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
-        return worldPosition;
     }
 
     private void FlipCharacterSprite()
@@ -40,5 +40,10 @@ public class PlayerAimTrollspo : MonoBehaviour
         {
             _spriteRenderer.flipX = true;
         }
+    }
+
+    private void Shoot()
+    {
+        Instantiate(projectilePrefab, TrollSpoT.position, quaternion.identity);
     }
 }
