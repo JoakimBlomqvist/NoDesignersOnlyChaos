@@ -50,9 +50,9 @@ public class ObjectPool : MonoBehaviour
                 objectPool.Enqueue(obj);
             }
 
-            count++;
             pool.number = count;
-            
+            count++;
+
             poolDictionary.Add(pool.number, objectPool);
         }
     }

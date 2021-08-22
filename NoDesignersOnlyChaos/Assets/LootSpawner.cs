@@ -8,7 +8,7 @@ public class LootSpawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> spawnPoints;
 
-    private void Start()
+    private void OnEnable()
     {
         SpawnLoot();
     }

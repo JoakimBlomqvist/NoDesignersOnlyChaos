@@ -281,13 +281,10 @@ MonoBehaviour:
   pools:
   - number: 0
     prefab: {fileID: 3642679825193524009, guid: 274f429c159f0fd4886140ec6d50e062, type: 3}
-    size: 10
-  - number: 1
-    prefab: {fileID: 2551026423848294147, guid: c8f33da4b5901894eac4fb6167425972, type: 3}
-    size: 10
+    size: 400
   - number: 2
     prefab: {fileID: 3484527830808777218, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
-    size: 10
+    size: 400
 --- !u!4 &1070637794
 Transform:
   m_ObjectHideFlags: 0
@@ -495,6 +492,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: gridY
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: tileType.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: tileType.Array.data[1]
+      value: 
+      objectReference: {fileID: 5789819259458789572, guid: aac8bf41543c6a649aadb67d1fe7600e, type: 3}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: tileType.Array.data[2]
+      value: 
+      objectReference: {fileID: 6878440215484762922, guid: 2cc9b2d066a9fdd40a41d626670f8624, type: 3}
     - target: {fileID: 6829880683277221851, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: m_Name
       value: MapGeneration
