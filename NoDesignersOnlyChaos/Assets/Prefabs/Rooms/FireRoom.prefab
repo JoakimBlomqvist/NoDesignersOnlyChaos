@@ -40271,6 +40271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6049193297508961060}
     m_Modifications:
+    - target: {fileID: 3484527830555173597, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -40331,6 +40335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3484527831224823357, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &7181142268865666862 stripped
@@ -40345,6 +40353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6049193297508961060}
     m_Modifications:
+    - target: {fileID: 3484527830555173597, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -40405,6 +40417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3484527831224823357, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &7181142268901566382 stripped
@@ -40419,6 +40435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6049193297508961060}
     m_Modifications:
+    - target: {fileID: 3484527830555173597, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -40479,6 +40499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3484527831224823357, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &7181142268881296828 stripped
@@ -40493,6 +40517,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6049193297508961060}
     m_Modifications:
+    - target: {fileID: 3484527830555173597, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -40552,6 +40580,10 @@ PrefabInstance:
     - target: {fileID: 3484527830808777218, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
       propertyPath: m_Name
       value: LanternAnimation (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484527831224823357, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_SortingOrder
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
