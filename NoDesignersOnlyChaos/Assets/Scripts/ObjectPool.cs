@@ -45,7 +45,7 @@ public class ObjectPool : MonoBehaviour
 
             for (var i = 0; i < pool.size; i++)
             {
-                GameObject obj = Instantiate(pool.prefab);
+                GameObject obj = Instantiate(pool.prefab, gameObject.transform);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }
@@ -75,6 +75,28 @@ public class ObjectPool : MonoBehaviour
         objectToSpawn.transform.rotation = rotation;
         
         poolDictionary[number].Enqueue(objectToSpawn);
+
+        return objectToSpawn;
+    }
+    
+    public GameObject SpawnRandomFromPool(Vector3 position, Quaternion rotation)
+    {
+        int rand = Random.Range(0, pools.Count + 1);
+        
+        if (!poolDictionary.ContainsKey(rand))
+        {
+            Debug.LogWarning("Pool with number " + rand + " doesn't exist");
+            return null;
+        }
+        
+        
+        GameObject objectToSpawn = poolDictionary[rand].Dequeue();
+        
+        objectToSpawn.SetActive(true);
+        objectToSpawn.transform.position = position;
+        objectToSpawn.transform.rotation = rotation;
+
+        poolDictionary[rand].Enqueue(objectToSpawn);
 
         return objectToSpawn;
     }
