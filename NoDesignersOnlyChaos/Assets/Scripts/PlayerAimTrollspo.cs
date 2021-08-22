@@ -24,9 +24,9 @@ public class PlayerAimTrollspo : MonoBehaviour
         {
             Shoot();
         }
-        Vector3 aimDir = (UtilsClass.GetMouseWorldPos() - transform.position).normalized;
+        Vector3 aimDir = (UtilsClass.GetMouseWorldPosV3() - transform.position).normalized;
         TrollSpoT.position = transform.position + aimDir;
-        TrollSpoT.LookAt(UtilsClass.GetMouseWorldPos());
+        TrollSpoT.LookAt(UtilsClass.GetMouseWorldPosV3());
         FlipCharacterSprite();
     }
 
@@ -44,6 +44,7 @@ public class PlayerAimTrollspo : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(projectilePrefab, TrollSpoT.position, quaternion.identity);
+        var projectile = Instantiate(projectilePrefab, new Vector3(TrollSpoT.position.x, TrollSpoT.position.y,0), quaternion.identity);
+        Physics2D.IgnoreCollision(projectile.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 }
