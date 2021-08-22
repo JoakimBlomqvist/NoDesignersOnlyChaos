@@ -9,8 +9,8 @@ public class MapGenerator : MonoBehaviour
 {
     #region Variables
     
-    [SerializeField]private int gridX = 10;
-    [SerializeField]private int gridY = 10;
+    public int gridX = 10;
+    public int gridY = 10;
     public float gapBetweenTilesY = 1.2f;
     public float gapBetweenTilesX = 1.2f;
     public GameObject defaultTile;
