@@ -135,6 +135,10 @@ PrefabInstance:
       value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: spellType
+      value: 
+      objectReference: {fileID: 2141209688}
+    - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 3606977081922651789, guid: dacfb97a2b2c8c441ab27d0cd7509a4b, type: 3}
@@ -285,6 +289,9 @@ MonoBehaviour:
   - number: 1
     prefab: {fileID: 3484527830808777218, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
     size: 400
+  - number: 1
+    prefab: {fileID: 4636576590567210384, guid: ddf477a9fe0fe4849a58315c78d3ae81, type: 3}
+    size: 400
 --- !u!4 &1070637794
 Transform:
   m_ObjectHideFlags: 0
@@ -402,6 +409,52 @@ MonoBehaviour:
   scrollSpeed: 1
   minZoom: 3
   maxZoom: 8
+--- !u!1 &2141209687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141209689}
+  - component: {fileID: 2141209688}
+  m_Layer: 0
+  m_Name: SingleCastTome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2141209688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141209687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37b647b2ed30f34aa9c31efe9b4252e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
+  TrollSpoT: {fileID: 0}
+  playerCollider: {fileID: 0}
+--- !u!4 &2141209689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141209687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.517948, y: 19.295265, z: -163.65054}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6829880683877450429
 PrefabInstance:
   m_ObjectHideFlags: 0
