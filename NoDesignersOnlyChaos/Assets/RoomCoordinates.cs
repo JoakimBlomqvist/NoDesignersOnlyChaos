@@ -13,54 +13,54 @@ public class RoomCoordinates : MonoBehaviour
 
         if (x == 0 && y == 0)
         {
-            _wallOrDoors[0].ActivatePath();
-            _wallOrDoors[2].ActivatePath();
+            _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[2].BlockPath(false);
         }
         else if(x == 0 && y == MapGenerator.Instance.gridY - 1)
         {
-            _wallOrDoors[1].ActivatePath();
-            _wallOrDoors[2].ActivatePath();
+            _wallOrDoors[1].BlockPath(false);
+            _wallOrDoors[2].BlockPath(false);
         }
         else if (x == 0 && y < MapGenerator.Instance.gridY - 1)
         {
-            _wallOrDoors[0].ActivatePath();
-            _wallOrDoors[1].ActivatePath();
-            _wallOrDoors[2].ActivatePath();
+            _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[1].BlockPath(false);
+            _wallOrDoors[2].BlockPath(false);
         }
         else if(x < MapGenerator.Instance.gridX - 1 && x > 0 && y < MapGenerator.Instance.gridY - 1 && y > 0)
         {
-            _wallOrDoors[0].ActivatePath();
-            _wallOrDoors[1].ActivatePath();
-            _wallOrDoors[2].ActivatePath();
-            _wallOrDoors[3].ActivatePath();
+            _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[1].BlockPath(false);
+            _wallOrDoors[2].BlockPath(false);
+            _wallOrDoors[3].BlockPath(false);
         }
         else if(y == 0 && x < MapGenerator.Instance.gridX - 1)
         {
-            _wallOrDoors[0].ActivatePath();
-            _wallOrDoors[2].ActivatePath();
-            _wallOrDoors[3].ActivatePath();
+            _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[2].BlockPath(false);
+            _wallOrDoors[3].BlockPath(false);
         }
         else if (x == MapGenerator.Instance.gridX - 1 && y == 0)
         {
-            _wallOrDoors[0].ActivatePath();
-            _wallOrDoors[3].ActivatePath();
+            _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[3].BlockPath(false);
         }
         else if (x == MapGenerator.Instance.gridX - 1 && y == MapGenerator.Instance.gridY - 1)
         {
-            _wallOrDoors[1].ActivatePath();
-            _wallOrDoors[3].ActivatePath();
+            _wallOrDoors[1].BlockPath(false);
+            _wallOrDoors[3].BlockPath(false);
         }
         else if (x == MapGenerator.Instance.gridX - 1 && y > 0)
         {
-            _wallOrDoors[0].ActivatePath();
-            _wallOrDoors[1].ActivatePath();
-            _wallOrDoors[3].ActivatePath();
+            _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[1].BlockPath(false);
+            _wallOrDoors[3].BlockPath(false);
         }
         else if (x > 0 && y == MapGenerator.Instance.gridY - 1)
         {
-            _wallOrDoors[2].ActivatePath();
-            _wallOrDoors[1].ActivatePath();
-            _wallOrDoors[3].ActivatePath();
+            _wallOrDoors[2].BlockPath(false);
+            _wallOrDoors[1].BlockPath(false);
+            _wallOrDoors[3].BlockPath(false);
         }
     }
 }

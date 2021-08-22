@@ -8,11 +8,6 @@ public class LootSpawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> spawnPoints;
 
-    private void OnEnable()
-    {
-        SpawnLoot();
-    }
-
     public void SpawnLoot()
     {
         foreach (var spawn in spawnPoints)
