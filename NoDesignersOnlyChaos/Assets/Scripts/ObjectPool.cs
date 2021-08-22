@@ -81,7 +81,7 @@ public class ObjectPool : MonoBehaviour
     
     public GameObject SpawnRandomFromPool(Vector3 position, Quaternion rotation)
     {
-        int rand = Random.Range(0, pools.Count + 1);
+        int rand = Random.Range(0, pools.Count);
         
         if (!poolDictionary.ContainsKey(rand))
         {
