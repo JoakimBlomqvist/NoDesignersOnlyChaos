@@ -28,8 +28,11 @@ public class CameraController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var cameraPosition = Vector2.Lerp(transform.position, player.position, Time.deltaTime * cameraSpeed);
-        transform.position = new Vector3(cameraPosition.x, cameraPosition.y, -10);
+        if (player != null)
+        {
+            var cameraPosition = Vector2.Lerp(transform.position, player.position, Time.deltaTime * cameraSpeed);
+            transform.position = new Vector3(cameraPosition.x, cameraPosition.y, -10);
+        }
     } //updates the position with a Lerp function to smoothen the camera movement between its current position and _newPos
     
     //Zooms in or out within a range. 

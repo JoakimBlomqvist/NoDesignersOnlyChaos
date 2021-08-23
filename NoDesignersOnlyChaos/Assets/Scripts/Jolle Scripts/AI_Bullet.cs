@@ -18,9 +18,12 @@ public class AI_Bullet : MonoBehaviour
         
         characterMovement = GameObject.FindObjectOfType<CharacterMovement>();
         rb = GetComponent<Rigidbody2D>();
+        if (characterMovement != null)
+        {
+            moveDir = (characterMovement.transform.position - transform.position).normalized * speed_bullet;
+            rb.AddForce(moveDir * speed_bullet);
+        }
         
-        moveDir = (characterMovement.transform.position - transform.position).normalized * speed_bullet;
-        rb.AddForce(moveDir * speed_bullet);
 
         Destroy(gameObject, 5f);
         
@@ -38,14 +41,12 @@ public class AI_Bullet : MonoBehaviour
         
         rb.velocity = direction * Mathf.Max(speed, 0f);
         characterMovement = collider.collider.GetComponent<CharacterMovement>();
-        if (characterMovement != null)
+        if (collider.gameObject.CompareTag("Player"))
         {
-
-            DestroyPlayer();
-
-
+            collider.gameObject.GetComponent<IDamageable>().TakeDamage(5);
+            Destroy(gameObject);
         }
-        
+
     }
 
     private void DestroyPlayer()
