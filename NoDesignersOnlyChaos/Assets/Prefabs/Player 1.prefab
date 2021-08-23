@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 984193289997853662}
   - component: {fileID: 984193289997853658}
   - component: {fileID: 984193289997853659}
+  - component: {fileID: 914799005}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -245,4 +246,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrollSpoT: {fileID: 480538262}
   spellType: {fileID: 0}
-  projectilePrefab: {fileID: 3606977081922651789, guid: dacfb97a2b2c8c441ab27d0cd7509a4b, type: 3}
+  projectilePrefab: {fileID: 704016374945971546, guid: 8eba216c1eaae4747be4f7b3d7f1688e, type: 3}
+  rapidFire: 1
+--- !u!114 &914799005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193289997853649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100

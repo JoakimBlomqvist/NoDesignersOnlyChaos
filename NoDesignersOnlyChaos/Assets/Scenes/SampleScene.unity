@@ -2718,17 +2718,9 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
-      propertyPath: rapidFire
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: spellType
       value: 
       objectReference: {fileID: 1974525485}
-    - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 704016374945971546, guid: 8eba216c1eaae4747be4f7b3d7f1688e, type: 3}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_RootOrder
       value: 2
