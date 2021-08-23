@@ -11,7 +11,7 @@ public class PlayerAimTrollspo : MonoBehaviour
     [SerializeField] private Transform TrollSpoT;
     private SpriteRenderer _spriteRenderer;
     public SpellType spellType;
-    [SerializeField]private GameObject projectilePrefab;
+    public GameObject projectilePrefab;
     public bool rapidFire = false;
 
     private void Start()

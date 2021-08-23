@@ -44,10 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridX: 5
-  gridY: 15
+  gridY: 5
   gapBetweenTilesY: 15.5
   gapBetweenTilesX: 25.5
   defaultTile: {fileID: 2205978180188477387, guid: 3064af4323ff1bc4dbaf49b661bd22ac, type: 3}
   tileType:
   - {fileID: 264195815678699229, guid: ded1805c816a53c4b90f4b2df8bc8d0f, type: 3}
+  - {fileID: 5789819259458789572, guid: aac8bf41543c6a649aadb67d1fe7600e, type: 3}
+  - {fileID: 6878440215484762922, guid: 2cc9b2d066a9fdd40a41d626670f8624, type: 3}
   parent: {fileID: 6829880683277221845}
