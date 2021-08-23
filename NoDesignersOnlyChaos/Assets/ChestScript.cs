@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class ChestScript : MonoBehaviour
@@ -11,7 +12,7 @@ public class ChestScript : MonoBehaviour
     [SerializeField] private GameObject[] chestLoot;
     Health healthScript;
     public bool EldklotContact = false;
-    
+
     private void Start()
     {
         Chest = GetComponent<Transform>();

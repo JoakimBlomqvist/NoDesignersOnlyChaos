@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CameraController : MonoBehaviour
 {
@@ -43,5 +44,31 @@ public class CameraController : MonoBehaviour
         _newZoom = Mathf.Clamp(_newZoom, minZoom, maxZoom);
         _camera.orthographicSize = _newZoom;
     }
-    
+
+    public void ShakeCamera()
+    {
+        if (isShaking == false)
+        {
+            StartCoroutine(Shake());
+        }
+        
+    }
+
+    private bool isShaking;
+    IEnumerator Shake()
+    {
+        isShaking = true;
+        int counter = 10;
+        while (counter > 0)
+        {
+            _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-4, 4)));
+            _camera.orthographicSize += Random.Range(-0f, 0.1f);
+            counter--;
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        _camera.orthographicSize = _newZoom;
+        _camera.transform.rotation = Quaternion.Euler(Vector3.zero);
+        isShaking = false;
+    }
 }
