@@ -5,9 +5,9 @@ using UnityEngine;
 public class AIShooting : MonoBehaviour
 {
     [SerializeField] private GameObject AI_bullet;
-    [SerializeField]private float fireRate;
-    [SerializeField]float nextFire;
-    [SerializeField] private Transform Shootingpoint;
+    [SerializeField] private float fireRate;
+    [SerializeField] float nextFire;
+    
     
     // Start is called before the first frame update
     void Awake()
