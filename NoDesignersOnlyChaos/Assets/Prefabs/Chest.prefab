@@ -106,7 +106,6 @@ MonoBehaviour:
   - {fileID: 4703713402834934646, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
   - {fileID: 174208596171952200, guid: 17e85af874f5c0a4fb5a43f9e3179ad8, type: 3}
   - {fileID: 8932788159836591616, guid: 08272a1a2dcee034ab6aede4b9e9ebb0, type: 3}
-  EldklotContact: 0
 --- !u!61 &6164983396144032586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +146,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
+  OnDamageTaken:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6164983396144032587}
+        m_TargetAssemblyTypeName: ChestScript, Assembly-CSharp
+        m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -195,6 +195,14 @@ PrefabInstance:
       propertyPath: health
       value: 10000000
       objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1362042307}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShakeCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 984193289997853649, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -210,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: spellType
       value: 
-      objectReference: {fileID: 2141209688}
+      objectReference: {fileID: 1416078791}
     - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: projectilePrefab
       value: 
@@ -221,7 +229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.97
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -503,7 +511,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1416078790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92dffbf22ed33094e8f6220108c7ba10, type: 3}
+  m_Script: {fileID: 11500000, guid: e37b647b2ed30f34aa9c31efe9b4252e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 0}
@@ -533,8 +541,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1450377693}
-  - component: {fileID: 1450377692}
   - component: {fileID: 1450377694}
+  - component: {fileID: 1450377692}
   m_Layer: 0
   m_Name: RapidFire
   m_TagString: Untagged
@@ -551,7 +559,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450377691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e657770fda914b94f930ca0ef6b19b03, type: 3}
+  m_Script: {fileID: 11500000, guid: 92dffbf22ed33094e8f6220108c7ba10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 0}
@@ -725,7 +733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5351600261366223858, guid: 08272a1a2dcee034ab6aede4b9e9ebb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4937925
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5351600261366223858, guid: 08272a1a2dcee034ab6aede4b9e9ebb0, type: 3}
       propertyPath: m_LocalPosition.y
