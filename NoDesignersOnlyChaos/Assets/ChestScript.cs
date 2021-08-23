@@ -11,14 +11,13 @@ public class ChestScript : MonoBehaviour
     [SerializeField] private Transform Chest;
     [SerializeField] private GameObject[] chestLoot;
     Health healthScript;
-    public bool EldklotContact = false;
 
     private void Start()
     {
         Chest = GetComponent<Transform>();
     }
 
-    private void OnDeath()
+    public void OnDeath()
     {
         DropItem();
     }

@@ -1,11 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.VirtualTexturing;
 
-public class MagicHoming : MonoBehaviour
+public class VoidBall : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed = 5f;
@@ -14,12 +12,16 @@ public class MagicHoming : MonoBehaviour
     [SerializeField]private int force;
     [SerializeField] private Collider2D target;
     public LayerMask layer = 6;
+    
+    [Header("Damage On Contact")]
+    [SerializeField] private string tagToDamage;
+    [SerializeField] private int damage;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Vector2 dir = (UtilsClass.GetMouseWorldPos() - new Vector2(transform.position.x, transform.position.y)).normalized;
         rb.AddForce(dir * force);
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 5f);
     }
 
     private void FixedUpdate()
@@ -40,12 +42,16 @@ public class MagicHoming : MonoBehaviour
 
             rb.angularVelocity = -rotateAmount * rotateSpeed;
 
-            rb.velocity = direction * speed; 
+            rb.velocity = transform.up * speed; 
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        if (other.gameObject.CompareTag(tagToDamage))
+        {
+            other.gameObject.GetComponent<IDamageable>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
