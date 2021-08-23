@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3606977081922651790}
   - component: {fileID: 7116794584908621008}
   - component: {fileID: 8616641346931853698}
+  - component: {fileID: -8961102771951235235}
   m_Layer: 0
   m_Name: MagicSnipe
   m_TagString: Untagged
@@ -4877,6 +4878,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.18
+--- !u!114 &-8961102771951235235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3606977081922651789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c84c07c74e3699408828253ed169fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToDamage: Enemy
+  damage: 1
 --- !u!1 &3606977082932188220
 GameObject:
   m_ObjectHideFlags: 0

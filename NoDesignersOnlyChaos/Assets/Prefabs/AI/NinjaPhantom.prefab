@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 4617687098787843524}
   - component: {fileID: -1693025116192708675}
   - component: {fileID: 4650672170357205948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NinjaPhantom
   m_TagString: Enemy
   m_Icon: {fileID: 0}
