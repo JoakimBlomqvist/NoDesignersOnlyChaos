@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.22
+      value: 6.14
       objectReference: {fileID: 0}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -916,6 +916,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectPool
       objectReference: {fileID: 0}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 6164983396144032585, guid: 760cbd112b25455409f78f20e9a58be4, type: 3}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: 4617687098787843576, guid: 6a0104efe88ec7a41820f604cf4e6f9f, type: 3}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 6917264477666692168, guid: b862188741accaa4aa0ef192d5ef3992, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
 --- !u!1001 &6829880683877450429
@@ -969,6 +985,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: tileType.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: tileType.Array.data[3]
+      value: 
+      objectReference: {fileID: 9039480631287792377, guid: 62d6d5389b2f5f5479cdef8435a5be50, type: 3}
     - target: {fileID: 6829880683277221851, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: m_Name
       value: MapGeneration

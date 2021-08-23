@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6164983396144032580}
   - component: {fileID: 6164983396144032587}
   - component: {fileID: 6164983396144032586}
-  m_Layer: 0
+  - component: {fileID: -2272392292574629253}
+  m_Layer: 6
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,10 +101,11 @@ MonoBehaviour:
   chest: {fileID: 6164983396144032585}
   Chest: {fileID: 6164983396144032581}
   chestLoot:
-  - {fileID: 3642679825193524009, guid: 274f429c159f0fd4886140ec6d50e062, type: 3}
-  - {fileID: 3642679825193524009, guid: 274f429c159f0fd4886140ec6d50e062, type: 3}
-  - {fileID: 2551026423848294147, guid: c8f33da4b5901894eac4fb6167425972, type: 3}
-  - {fileID: 3606977081922651789, guid: dacfb97a2b2c8c441ab27d0cd7509a4b, type: 3}
+  - {fileID: 2403046210403386398, guid: 024a7e0b4fead8f4697dfacfa64ca890, type: 3}
+  - {fileID: 4514802372288159123, guid: c9e58f99e8c30334fbe02b709a22ca84, type: 3}
+  - {fileID: 4703713402834934646, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
+  - {fileID: 174208596171952200, guid: 17e85af874f5c0a4fb5a43f9e3179ad8, type: 3}
+  - {fileID: 8932788159836591616, guid: 08272a1a2dcee034ab6aede4b9e9ebb0, type: 3}
   EldklotContact: 0
 --- !u!61 &6164983396144032586
 BoxCollider2D:
@@ -131,3 +133,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-2272392292574629253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164983396144032585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
