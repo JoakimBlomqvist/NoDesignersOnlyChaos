@@ -6,7 +6,7 @@ public class AI_Bullet : MonoBehaviour
 {
     [SerializeField] private float speed_bullet = 15;
     private Rigidbody2D rb;
-
+    
     public static bool player_Alive = false;
     CharacterMovement characterMovement;
     Vector2 moveDir;
@@ -29,17 +29,29 @@ public class AI_Bullet : MonoBehaviour
     private void Update()
     {
         lastVelocity = rb.velocity;
+
     }
     private void OnCollisionEnter2D(Collision2D collider)
     {
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collider.contacts[0].normal);
+        
         rb.velocity = direction * Mathf.Max(speed, 0f);
         characterMovement = collider.collider.GetComponent<CharacterMovement>();
-        if (collider != null)
+        if (characterMovement != null)
         {
-            Destroy(characterMovement);
-            player_Alive = true;
+
+            DestroyPlayer();
+
+
         }
+        
+    }
+
+    private void DestroyPlayer()
+    {
+        player_Alive = true;
+        characterMovement.gameObject.SetActive(false);
+        
     }
 }
