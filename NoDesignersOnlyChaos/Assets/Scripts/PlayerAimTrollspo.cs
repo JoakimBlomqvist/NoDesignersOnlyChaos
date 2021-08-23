@@ -12,6 +12,7 @@ public class PlayerAimTrollspo : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     public SpellType spellType;
     [SerializeField]private GameObject projectilePrefab;
+    public bool rapidFire = false;
 
     private void Start()
     {
@@ -37,14 +38,28 @@ public class PlayerAimTrollspo : MonoBehaviour
         spellType.projectilePrefab = projectilePrefab;
         spellType.TrollSpoT = TrollSpoT;
         spellType.playerCollider = GetComponent<Collider2D>();
+        rapidFire = spellType.rapidFire;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        switch (rapidFire)
         {
-            spellType.Shoot();
+            case false:
+                if (Input.GetMouseButtonDown(0))
+                {
+                    spellType.Shoot();
+                }
+                break;
+            
+            case true:
+                if (Input.GetMouseButton(0))
+                {
+                    spellType.Shoot();
+                }
+                break;
         }
+
         Vector3 aimDir = (UtilsClass.GetMouseWorldPosV3() - transform.position).normalized;
         TrollSpoT.position = transform.position + aimDir;
         TrollSpoT.LookAt(UtilsClass.GetMouseWorldPosV3());
