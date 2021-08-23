@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpermCharacter : MonoBehaviour
+public class BatEnemy : MonoBehaviour
 {
     public LayerMask targetLayer;
     public float moveSpeed = 2f;    
@@ -29,14 +28,7 @@ public class SpermCharacter : MonoBehaviour
             var direction = Vector2.zero;
 
             direction = Lockedtarget.transform.position - transform.position;
-            if (Vector2.Distance(transform.position, Lockedtarget.transform.position) < 5f)
-            {
-                rb.AddRelativeForce(direction.normalized * moveSpeed, ForceMode2D.Force);
-            }
-            else
-            {
-                rb.velocity = direction * moveSpeed;
-            }
+            rb.AddRelativeForce(direction.normalized * moveSpeed, ForceMode2D.Force);
         }
     }
     

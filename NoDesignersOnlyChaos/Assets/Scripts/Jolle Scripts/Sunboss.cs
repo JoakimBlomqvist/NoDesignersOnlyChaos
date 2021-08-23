@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sunboss : MonoBehaviour
 {
-    [SerializeField] private TrailRenderer SunBlast;
+    [SerializeField] private GameObject SunBlast;
     [SerializeField] private float fireRate;
     [SerializeField] float nextFire;
     
