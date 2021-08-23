@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private int health;
     [SerializeField] private ParticleSystem blood;
     public UnityEvent OnDamageTaken;
+    public Action OnDeath;
     public void TakeDamage(int damage)
     {
         if (OnDamageTaken != null)
@@ -24,8 +26,8 @@ public class Health : MonoBehaviour, IDamageable
 
     public void Die()
     {
+        EventManager.instance.Die();
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
-        
         gameObject.SetActive(false);
         
         

@@ -51,7 +51,6 @@ public class CameraController : MonoBehaviour
         {
             StartCoroutine(Shake());
         }
-        
     }
 
     private bool isShaking;
@@ -66,7 +65,6 @@ public class CameraController : MonoBehaviour
             counter--;
             yield return new WaitForSeconds(0.01f);
         }
-
         _camera.orthographicSize = _newZoom;
         _camera.transform.rotation = Quaternion.Euler(Vector3.zero);
         isShaking = false;
