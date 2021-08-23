@@ -24,11 +24,15 @@ public class AIShooting : MonoBehaviour
 
     void FireRate()
     {
-        if(Time.time > nextFire )//&& AI_Bullet.player_Alive == false)
-        {
-            Instantiate(AI_bullet, transform.position, Quaternion.identity);
-            //Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-            nextFire = Time.time + fireRate;
-        }
+        //if( AI_Bullet.player_Alive == false)
+        //{
+            if (Time.time > nextFire)
+            {
+                Instantiate(AI_bullet, transform.position, Quaternion.identity);
+                //Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+                nextFire = Time.time + fireRate;
+            }
+        //}
+        
     }
 }
