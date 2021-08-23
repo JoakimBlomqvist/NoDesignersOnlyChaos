@@ -18,7 +18,7 @@ public class Health : MonoBehaviour, IDamageable
     private void Die()
     {
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
-
+        
         gameObject.SetActive(false);
         
         

@@ -9,15 +9,15 @@ public class ChestScript : MonoBehaviour
     [SerializeField]private GameObject chest;
     [SerializeField] private Transform Chest;
     [SerializeField] private GameObject[] chestLoot;
-    EldKlotScript eldKlotScript;
+    Health healthScript;
     public bool EldklotContact = false;
-
+    
     private void Start()
     {
         Chest = GetComponent<Transform>();
     }
 
-    private void OnDisable()
+    private void OnDeath()
     {
         DropItem();
     }
