@@ -103,7 +103,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
-  moveSpeed: 2
+  moveSpeed: 4
   tagToDamage: Player
   damage: 5
 --- !u!50 &7349207950029314905
