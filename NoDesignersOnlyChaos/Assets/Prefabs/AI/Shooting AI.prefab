@@ -42,9 +42,10 @@ GameObject:
   - component: {fileID: 6890598371340908293}
   - component: {fileID: 4058238872876902194}
   - component: {fileID: 868707883}
+  - component: {fileID: -2158348843855588978}
   m_Layer: 0
   m_Name: Shooting AI
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,3 +159,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.177165, y: 1.6771656}
   m_EdgeRadius: 0
+--- !u!114 &-2158348843855588978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917264477666692168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour, IDamageable
 {
-    [SerializeField]private int health;
+    [SerializeField] private int health;
+    [SerializeField] private ParticleSystem blood;
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -16,6 +17,11 @@ public class Health : MonoBehaviour, IDamageable
 
     private void Die()
     {
+        Instantiate(blood, gameObject.transform.position, Quaternion.identity);
+
+        Destroy(gameObject);
+        
+        
         Debug.Log("ded");
     }
 }
