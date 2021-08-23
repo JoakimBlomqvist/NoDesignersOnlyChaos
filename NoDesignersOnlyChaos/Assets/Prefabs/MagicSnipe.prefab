@@ -4769,21 +4769,10 @@ MonoBehaviour:
   rotateSpeed: 200
   homingRadius: 5
   force: 600
-  targets: []
+  target: {fileID: 0}
   layer:
-    useTriggers: 0
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 64
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!199 &3606977081922651790
 ParticleSystemRenderer:
   serializedVersion: 6

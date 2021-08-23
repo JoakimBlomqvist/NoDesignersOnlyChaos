@@ -15,16 +15,20 @@ public class RapidFireCannon : SpellType
     {
         if (allowFire)
         {
-            StartCoroutine(FireRate());
+            FireRate();
+            Invoke(nameof(AllowFire), 0.08f);
         }
     }
 
-    private IEnumerator FireRate()
+    private void FireRate()
     {
         allowFire = false;
         var projectile = Instantiate(projectilePrefab, new Vector3(TrollSpoT.position.x, TrollSpoT.position.y,0), Quaternion.identity);
         Physics2D.IgnoreCollision(projectile.GetComponent<Collider2D>(), playerCollider);
-        yield return new WaitForSeconds(0.08f);
+    }
+
+    private void AllowFire()
+    {
         allowFire = true;
     }
 }

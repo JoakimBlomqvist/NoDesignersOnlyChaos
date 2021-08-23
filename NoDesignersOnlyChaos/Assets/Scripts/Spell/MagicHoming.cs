@@ -12,9 +12,8 @@ public class MagicHoming : MonoBehaviour
     public float rotateSpeed = 200f;
     [SerializeField] private float homingRadius = 3f;
     [SerializeField]private int force;
-    [SerializeField] private List<Collider2D> targets;
     [SerializeField] private Collider2D target;
-    public ContactFilter2D layer;
+    public LayerMask layer = 6;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,17 +26,12 @@ public class MagicHoming : MonoBehaviour
     {
         if (target == null)
         {
-            Physics2D.OverlapCircle(transform.position, homingRadius, layer, targets);
+            target = Physics2D.OverlapCircle(transform.position, homingRadius, layer);
         }
-        
-        if (targets != null && targets.Count != 0)
+
+        if (target != null) 
         {
-            target = targets[0];
-        }
         
-        if (target != null)
-        {
-            
             Vector2 direction = (Vector2) target.transform.position - rb.position;
             
             direction.Normalize();
@@ -46,7 +40,7 @@ public class MagicHoming : MonoBehaviour
 
             rb.angularVelocity = -rotateAmount * rotateSpeed;
 
-            rb.velocity = transform.up * speed;
+            rb.velocity = transform.up * speed; 
         }
     }
 

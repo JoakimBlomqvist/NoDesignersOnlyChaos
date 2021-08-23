@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class MeteorScript : SpellType
+public class MeteorScript : MonoBehaviour
 {
     private Vector2 impactPoint;
     private Vector2 newDir;
