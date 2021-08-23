@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
 
     private void Awake()
     {
-        _camera = Camera.main;
+        _camera = GetComponent<Camera>();
         _newZoom = _camera.orthographicSize;
     }
 

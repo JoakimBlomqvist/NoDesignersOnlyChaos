@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class AI_Bullet : MonoBehaviour
 {
-    [SerializeField] private float speed_bullet = 700f;
+    [SerializeField] private float speed_bullet = 15;
     private Rigidbody2D rb;
-
+    
     public static bool player_Alive = false;
     CharacterMovement characterMovement;
     Vector2 moveDir;
+    Vector3 lastVelocity;
     // Start is called before the first frame update
     [SerializeField]
     private void Awake()
@@ -21,16 +22,36 @@ public class AI_Bullet : MonoBehaviour
         moveDir = (characterMovement.transform.position - transform.position).normalized * speed_bullet;
         rb.AddForce(moveDir * speed_bullet);
 
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 5f);
+        
     }
 
+    private void Update()
+    {
+        lastVelocity = rb.velocity;
+
+    }
     private void OnCollisionEnter2D(Collision2D collider)
     {
+        var speed = lastVelocity.magnitude;
+        var direction = Vector3.Reflect(lastVelocity.normalized, collider.contacts[0].normal);
+        
+        rb.velocity = direction * Mathf.Max(speed, 0f);
         characterMovement = collider.collider.GetComponent<CharacterMovement>();
-        if (collider != null)
+        if (characterMovement != null)
         {
-            Destroy(characterMovement);
-            player_Alive = true;
+
+            DestroyPlayer();
+
+
         }
+        
+    }
+
+    private void DestroyPlayer()
+    {
+        player_Alive = true;
+        characterMovement.gameObject.SetActive(false);
+        
     }
 }
