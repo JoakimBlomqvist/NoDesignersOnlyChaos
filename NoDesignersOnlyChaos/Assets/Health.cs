@@ -19,7 +19,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
         
         
         Debug.Log("ded");

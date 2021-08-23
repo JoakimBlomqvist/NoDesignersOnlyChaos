@@ -16,7 +16,10 @@ public class TriggerRoomEnter : MonoBehaviour
             lootSpawner.SpawnLoot();
             foreach (var wall in wallOrDoors)
             {
-                wall.PlayerEnterRoom();
+                if (wall.isClosed)
+                {
+                    wall.PlayerEnterRoom();
+                }
             }
             gameObject.SetActive(false);
         }

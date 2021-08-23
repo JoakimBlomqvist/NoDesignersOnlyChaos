@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ChestScript : MonoBehaviour
 {
@@ -14,29 +16,16 @@ public class ChestScript : MonoBehaviour
     {
         Chest = GetComponent<Transform>();
     }
-    private void OnCollisionEnter2D(Collision2D collider)
+
+    private void OnDisable()
     {
-        eldKlotScript = collider.collider.GetComponent<EldKlotScript>();
-        if(collider != null)
-        {
-            EldklotContact = true;
-        }
-    }
-    private void Update()
-    {
-        if(EldklotContact == true)
-        {
-            StartCoroutine(DropItem());
-            
-        }
+        DropItem();
     }
 
-    IEnumerator DropItem()
+    private void DropItem()
     {
-        Destroy(chest);
-        Instantiate(chestLoot[Random.Range(0, 10)], gameObject.transform.position, Quaternion.identity);
-
-        yield break;
+        gameObject.SetActive(false);
+        Instantiate(chestLoot[Random.Range(0, chestLoot.Length)], gameObject.transform.position, Quaternion.identity);
     }
 
 }
