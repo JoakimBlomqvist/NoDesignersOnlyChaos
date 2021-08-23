@@ -740,7 +740,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3606977081922651784, guid: f6afc82503701004a8ed69ad4b80b06d, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3606977081922651784, guid: f6afc82503701004a8ed69ad4b80b06d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1046,8 +1046,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 900027721}
-  - component: {fileID: 900027720}
   - component: {fileID: 900027719}
+  - component: {fileID: 900027720}
   m_Layer: 0
   m_Name: GameObject (2)
   m_TagString: Respawn
@@ -1064,12 +1064,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 900027718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92dffbf22ed33094e8f6220108c7ba10, type: 3}
+  m_Script: {fileID: 11500000, guid: e657770fda914b94f930ca0ef6b19b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 0}
   TrollSpoT: {fileID: 0}
   playerCollider: {fileID: 0}
+  rapidFire: 1
 --- !u!61 &900027720
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1108,13 +1109,60 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &914799010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
   m_PrefabInstance: {fileID: 984193289928433510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1021643363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021643365}
+  - component: {fileID: 1021643364}
+  m_Layer: 0
+  m_Name: RapidFire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1021643364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021643363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e657770fda914b94f930ca0ef6b19b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
+  TrollSpoT: {fileID: 0}
+  playerCollider: {fileID: 0}
+  rapidFire: 0
+--- !u!4 &1021643365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021643363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1500108, y: 3.056884, z: -6.0917025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1180527941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,7 +1714,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1331878495
 MonoBehaviour:
@@ -2252,81 +2300,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1697971023
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1697971025}
-  - component: {fileID: 1697971024}
-  - component: {fileID: 1697971026}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Respawn
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1697971024
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697971023}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &1697971025
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697971023}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8999994, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1697971026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697971023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6cc7af6ced89cc4cb0d98b3e92fc1d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
-  TrollSpoT: {fileID: 0}
-  playerCollider: {fileID: 0}
-  meteorSpeed: 0
-  explosionPrefab: {fileID: 0}
 --- !u!1 &1724034364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,6 +2608,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   TrollSpoT: {fileID: 0}
   playerCollider: {fileID: 0}
+  rapidFire: 0
 --- !u!4 &1974525486
 Transform:
   m_ObjectHideFlags: 0
@@ -2747,10 +2721,6 @@ PrefabInstance:
       propertyPath: spellType
       value: 
       objectReference: {fileID: 1974525485}
-    - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 704016374945971546, guid: 8eba216c1eaae4747be4f7b3d7f1688e, type: 3}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_RootOrder
       value: 2
