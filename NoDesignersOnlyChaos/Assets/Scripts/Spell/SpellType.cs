@@ -10,6 +10,8 @@ public class SpellType : MonoBehaviour
     public Transform TrollSpoT;
     [HideInInspector]
     public Collider2D playerCollider;
+
+    public bool rapidFire = false;
     
     public virtual void Shoot()
     {
