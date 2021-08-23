@@ -275,12 +275,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 641222254944286645, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 641222254944286645, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 641222254944286645, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.7664976
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 641222254944286645, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.52497387
+      value: -2.27
       objectReference: {fileID: 0}
     - target: {fileID: 641222254944286645, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
       propertyPath: m_LocalPosition.z
@@ -313,6 +321,10 @@ PrefabInstance:
     - target: {fileID: 641222254944286645, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324786222884199981, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4703713402834934646, guid: eea99dea0070b6640b1d99271563cf38, type: 3}
       propertyPath: m_Name
@@ -3113,6 +3125,46 @@ PrefabInstance:
       propertyPath: blood
       value: 
       objectReference: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: ettevent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: ettevent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: ettevent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1331878495}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShakeCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CameraController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 914799005, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+      propertyPath: OnDamageTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 984193289997853649, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3124,7 +3176,7 @@ PrefabInstance:
     - target: {fileID: 984193289997853659, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: spellType
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1021643364}
     - target: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
       propertyPath: m_RootOrder
       value: 10
