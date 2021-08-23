@@ -328,6 +328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4297744591768173842, guid: 62d6d5389b2f5f5479cdef8435a5be50, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7031747988447250810, guid: 85155e4a965d4f24facfbc9eb60f3792, type: 3}
     - target: {fileID: 9039480631287792377, guid: 62d6d5389b2f5f5479cdef8435a5be50, type: 3}
       propertyPath: m_Name
       value: MapJollePotRoom
