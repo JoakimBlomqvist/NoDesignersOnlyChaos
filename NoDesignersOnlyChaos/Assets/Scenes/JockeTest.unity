@@ -999,7 +999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
       propertyPath: pools.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
       propertyPath: pools.Array.data[0].size
@@ -1019,6 +1019,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
       propertyPath: pools.Array.data[4].size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.data[5].size
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
@@ -1045,6 +1049,14 @@ PrefabInstance:
       propertyPath: pools.Array.data[4].prefab
       value: 
       objectReference: {fileID: 2357030193796567286, guid: 8e13f4cbf9ffd8b4d9458855192cbfd7, type: 3}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.data[5].number
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
+      propertyPath: pools.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 7349207950029314907, guid: 1f171e74bd77d9d48be38de9b5d72954, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
 --- !u!1001 &5660152008134019970
@@ -1159,6 +1171,10 @@ PrefabInstance:
       propertyPath: tileType.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: tileType.Array.data[0]
+      value: 
+      objectReference: {fileID: 264195815678699229, guid: 9f331a6da75445d47ac1c3de420b4466, type: 3}
     - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: tileType.Array.data[3]
       value: 
