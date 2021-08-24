@@ -18,9 +18,5 @@ public class KillCount : MonoBehaviour
     private void AddKills()
     {
         Kills++;
-        if (Kills == 5)
-        {
-            killAnim.Play("New Animation", 0, 1);
-        }
     }
 }

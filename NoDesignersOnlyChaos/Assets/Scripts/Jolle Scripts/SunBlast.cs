@@ -41,8 +41,8 @@ public class SunBlast : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             collider.gameObject.GetComponent<IDamageable>().TakeDamage(20);
-            Destroy(gameObject);
+            
         }
-
+        Destroy(gameObject);
     }
 }
