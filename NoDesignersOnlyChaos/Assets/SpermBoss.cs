@@ -19,7 +19,7 @@ public class SpermBoss : MonoBehaviour
     private IEnumerator SpawnSperm()
     {
         coolDown = true;
-        Instantiate(spermPrefab, transform.position, quaternion.identity);
+        Instantiate(spermPrefab, transform.position - new Vector3(0f, 3f, 0f), quaternion.identity);
         yield return new WaitForSeconds(secondsBetweenSpawn);
         coolDown = false;
     }

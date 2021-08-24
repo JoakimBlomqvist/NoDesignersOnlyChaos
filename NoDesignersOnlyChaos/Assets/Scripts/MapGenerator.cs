@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
@@ -17,8 +18,13 @@ public class MapGenerator : MonoBehaviour
     public GameObject[] tileType;
     private Vector3 _postionOfTransform;
     private int _count = 0;
-
     [SerializeField] private Transform parent;
+    [Header("BossRooms")]
+    public GameObject[] bossRooms;
+
+    [SerializeField] private int startBossSpawnAt = 2;
+    [SerializeField] private int chanceOfBossRoom = 4;
+    private int bossCount = 0;
 
     #endregion
 
@@ -72,9 +78,20 @@ public class MapGenerator : MonoBehaviour
         {
             _postionOfTransform.y += gapBetweenTilesY;
 
-            //Spawns a default tile in the row
-            GameObject tile = Instantiate(tileType[Random.Range(0, tileType.Length)], _postionOfTransform, Quaternion.identity, parent);
-            tile.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);
+            int rand = Random.Range(0, chanceOfBossRoom);
+            if (bossRooms.Length > bossCount && _count + i > startBossSpawnAt && rand == 0)
+            {
+                GameObject bossRoom = Instantiate(bossRooms[bossCount], _postionOfTransform, Quaternion.identity, parent);
+                bossRoom.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);
+
+                bossCount++;
+            }
+            else
+            {
+                //Spawns a default tile in the row
+                GameObject tile = Instantiate(tileType[Random.Range(0, tileType.Length)], _postionOfTransform, Quaternion.identity, parent);
+                tile.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);
+            }
         }
     }
 }
