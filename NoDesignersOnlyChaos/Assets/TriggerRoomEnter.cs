@@ -13,6 +13,7 @@ public class TriggerRoomEnter : MonoBehaviour
         Debug.Log("SPAWNING");
         if (other.CompareTag("Player"))
         {
+            RoomCurrency.Instance.ResetCurrency();
             lootSpawner.SpawnLoot();
             foreach (var wall in wallOrDoors)
             {

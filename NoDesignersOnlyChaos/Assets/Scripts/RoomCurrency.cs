@@ -6,14 +6,8 @@ using UnityEngine;
 public class RoomCurrency : MonoBehaviour
 {
     public static RoomCurrency Instance;
-    private int currency;
     private int maxCurrency;
-    public int Currency
-    {
-        get => currency;
-        set => currency = value;
-    }
-
+    [SerializeField]public int Currency = 10;
     private void Awake()
     {
         if (Instance == null)
@@ -26,14 +20,13 @@ public class RoomCurrency : MonoBehaviour
         }
     }
 
-    public void AddCurrency()
+    private void Start()
     {
-        Currency++;
-        maxCurrency = maxCurrency + Currency;
+        maxCurrency = Currency;
     }
-
     public void ResetCurrency()
     {
+        maxCurrency = maxCurrency + 1;
         Currency = maxCurrency;
     }
     

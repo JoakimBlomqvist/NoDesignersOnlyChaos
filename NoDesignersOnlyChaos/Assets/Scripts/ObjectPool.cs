@@ -9,7 +9,7 @@ public class ObjectPool : MonoBehaviour
         public int number;
         public GameObject prefab;
         public int size;
-        public float prize;
+        public int prize;
     }
 
     #region Singleton
@@ -79,7 +79,7 @@ public class ObjectPool : MonoBehaviour
         return objectToSpawn;
     }
     
-    public (GameObject, float) SpawnRandomFromPool(Vector3 position, Quaternion rotation)
+    public (GameObject, int) SpawnRandomFromPool(Vector3 position, Quaternion rotation)
     {
         int rand = Random.Range(0, pools.Count);
         
