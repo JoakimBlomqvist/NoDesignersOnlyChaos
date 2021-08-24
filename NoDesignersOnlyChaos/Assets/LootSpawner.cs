@@ -20,7 +20,16 @@ public class LootSpawner : MonoBehaviour
         foreach (var spawn in spawnPoints)
         {
             Debug.Log("Spawned");
-            var pool = ObjectPool.Instance.SpawnRandomFromPool(spawn.transform.position, Quaternion.identity);
+            var pool = ObjectPool.Instance.SpawnRandomFromPool(spawn.transform.position, quaternion.identity);
+            if (RoomCurrency.Instance.Currency >= pool.Item2)
+            {
+                RoomCurrency.Instance.Currency -= pool.Item2;    
+            }
+            else
+            {
+                pool.Item1.SetActive(false);
+            }
+            
         }
     }
 }
