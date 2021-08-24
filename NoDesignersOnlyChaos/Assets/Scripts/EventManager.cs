@@ -20,10 +20,16 @@ public class EventManager : MonoBehaviour
     }
 
     public event Action OnDie;
+    public event Action OnChangeRoom;
 
     public void Die()
     {
         OnDie?.Invoke();
+    }
+
+    public void ChangeRoom()
+    {
+        OnChangeRoom?.Invoke();
     }
 
 

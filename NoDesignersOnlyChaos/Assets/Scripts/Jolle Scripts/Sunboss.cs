@@ -28,6 +28,7 @@ public class Sunboss : MonoBehaviour
 
         if (Time.time > nextFire)
         {
+            
             var sublast = Instantiate(SunBlast, transform.position, Quaternion.identity);
             Physics2D.IgnoreCollision(sublast.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             nextFire = Time.time + fireRate;
