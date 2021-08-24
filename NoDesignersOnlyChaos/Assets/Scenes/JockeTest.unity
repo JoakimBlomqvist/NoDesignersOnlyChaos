@@ -1593,6 +1593,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: bossRooms.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: tileType.Array.data[0]
       value: 
       objectReference: {fileID: 264195815678699229, guid: 9f331a6da75445d47ac1c3de420b4466, type: 3}
@@ -1600,6 +1604,18 @@ PrefabInstance:
       propertyPath: tileType.Array.data[3]
       value: 
       objectReference: {fileID: 9039480631287792377, guid: 62d6d5389b2f5f5479cdef8435a5be50, type: 3}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: bossRooms.Array.data[0]
+      value: 
+      objectReference: {fileID: 264195815678699229, guid: 2724f93406b770041b83763912181902, type: 3}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: bossRooms.Array.data[1]
+      value: 
+      objectReference: {fileID: 264195815678699229, guid: 2724f93406b770041b83763912181902, type: 3}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: bossRooms.Array.data[2]
+      value: 
+      objectReference: {fileID: 264195815678699229, guid: 2724f93406b770041b83763912181902, type: 3}
     - target: {fileID: 6829880683277221851, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: m_Name
       value: MapGeneration
