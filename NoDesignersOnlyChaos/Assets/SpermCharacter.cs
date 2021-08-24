@@ -9,12 +9,12 @@ public class SpermCharacter : MonoBehaviour
     public float moveSpeed = 2f;    
     private Collider2D Lockedtarget;
     private Rigidbody2D rb;
-    [SerializeField] private string tagToDamage;
-    [SerializeField] private int damage;
+    private bool once = false;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+       
     }
 
     private void Update()
@@ -26,6 +26,12 @@ public class SpermCharacter : MonoBehaviour
 
         if (Lockedtarget != null)
         {
+            if (!once)
+            {
+                Physics2D.IgnoreCollision(Lockedtarget, gameObject.GetComponent<Collider2D>());
+                once = true;
+            }
+            
             var direction = Vector2.zero;
 
             direction = Lockedtarget.transform.position - transform.position;
@@ -37,14 +43,6 @@ public class SpermCharacter : MonoBehaviour
             {
                 rb.velocity = direction * moveSpeed;
             }
-        }
-    }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag(tagToDamage))
-        {
-            other.gameObject.GetComponent<IDamageable>().TakeDamage(damage);
         }
     }
 }

@@ -13,7 +13,7 @@ public class LootSpawner : MonoBehaviour
         foreach (var spawn in spawnPoints)
         {
             Debug.Log("Spawned");
-            ObjectPool.Instance.SpawnRandomFromPool(spawn.transform.position, quaternion.identity);
+            var pool = ObjectPool.Instance.SpawnRandomFromPool(spawn.transform.position, quaternion.identity);
         }
     }
 }

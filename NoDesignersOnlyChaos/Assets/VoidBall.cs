@@ -12,6 +12,7 @@ public class VoidBall : MonoBehaviour
     [SerializeField]private int force;
     [SerializeField] private Collider2D target;
     public LayerMask layer = 6;
+    private bool ok = false;
     
     [Header("Damage On Contact")]
     [SerializeField] private string tagToDamage;

@@ -9,6 +9,7 @@ public class ObjectPool : MonoBehaviour
         public int number;
         public GameObject prefab;
         public int size;
+        public float prize;
     }
 
     #region Singleton
@@ -67,7 +68,6 @@ public class ObjectPool : MonoBehaviour
             return null;
         }
         
-        
         GameObject objectToSpawn = poolDictionary[number].Dequeue();
         
         objectToSpawn.SetActive(true);
@@ -79,25 +79,25 @@ public class ObjectPool : MonoBehaviour
         return objectToSpawn;
     }
     
-    public GameObject SpawnRandomFromPool(Vector3 position, Quaternion rotation)
+    public (GameObject, float) SpawnRandomFromPool(Vector3 position, Quaternion rotation)
     {
         int rand = Random.Range(0, pools.Count);
         
         if (!poolDictionary.ContainsKey(rand))
         {
             Debug.LogWarning("Pool with number " + rand + " doesn't exist");
-            return null;
+            return (null, 0);
         }
-        
+        Debug.Log(pools[rand].prize);
         
         GameObject objectToSpawn = poolDictionary[rand].Dequeue();
-        
+
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;
         objectToSpawn.transform.rotation = rotation;
 
         poolDictionary[rand].Enqueue(objectToSpawn);
 
-        return objectToSpawn;
+        return (objectToSpawn, pools[rand].prize);
     }
 }
