@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3784137154512785448}
   - component: {fileID: 8972771879531579173}
   m_Layer: 7
-  m_Name: SunBlast
+  m_Name: SunBossBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed_Sunblast: 50
-  Damage: 5
+  Damage: 20
 --- !u!50 &3784137154512785448
 Rigidbody2D:
   serializedVersion: 4
