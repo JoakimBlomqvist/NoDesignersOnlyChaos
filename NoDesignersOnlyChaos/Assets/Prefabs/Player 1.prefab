@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a230a24fb69635445896c42b9b8cc6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathScreen: {fileID: 0}
   moveSpeed: 5
 --- !u!61 &984193289997853658
 BoxCollider2D:
@@ -265,6 +266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stavSprite: {fileID: 480538261}
+  staffAnimator: {fileID: 2730455440888225766}
+  TrollSpoT: {fileID: 480538262}
   spellType: {fileID: 0}
   projectilePrefab: {fileID: 3606977081922651789, guid: dacfb97a2b2c8c441ab27d0cd7509a4b, type: 3}
   rapidFire: 0
