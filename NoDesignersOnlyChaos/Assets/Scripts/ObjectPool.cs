@@ -88,7 +88,7 @@ public class ObjectPool : MonoBehaviour
             Debug.LogWarning("Pool with number " + rand + " doesn't exist");
             return (null, 0);
         }
-        Debug.Log(pools[rand].prize);
+        //Debug.Log(pools[rand].prize);
         
         GameObject objectToSpawn = poolDictionary[rand].Dequeue();
 
