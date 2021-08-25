@@ -366,34 +366,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1796075083}
-    - target: {fileID: 6910315879840359831, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ControlsOnClick
-      objectReference: {fileID: 0}
     - target: {fileID: 6910315880039782672, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1796075083}
-    - target: {fileID: 6910315880039782672, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeOnClick
-      objectReference: {fileID: 0}
     - target: {fileID: 6910315880656424253, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1796075083}
-    - target: {fileID: 6910315880656424253, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SettingsOnClick
-      objectReference: {fileID: 0}
     - target: {fileID: 6910315881134297527, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1796075083}
-    - target: {fileID: 6910315881134297527, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenuOnClick
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
 --- !u!1001 &249868298
@@ -1752,7 +1736,7 @@ PrefabInstance:
     - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
       propertyPath: pools.Array.data[3].prefab
       value: 
-      objectReference: {fileID: 1696570416784371757, guid: 7a3c55beabeefe443be0288425d81518, type: 3}
+      objectReference: {fileID: 6305220917596223275, guid: 620bca372a25cfc45a42eccef888cb77, type: 3}
     - target: {fileID: 3680158834898661127, guid: 95c3979bba291a747808d55d4b27a0c7, type: 3}
       propertyPath: pools.Array.data[4].number
       value: 1
@@ -1984,7 +1968,7 @@ PrefabInstance:
     - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: bossRooms.Array.data[1]
       value: 
-      objectReference: {fileID: 264195815678699229, guid: 2724f93406b770041b83763912181902, type: 3}
+      objectReference: {fileID: 9221491484960286458, guid: 1b526dc873092fa45a26375308a30ed6, type: 3}
     - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: bossRooms.Array.data[2]
       value: 
