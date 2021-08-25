@@ -29,8 +29,5 @@ public class Health : MonoBehaviour, IDamageable
         EventManager.instance.Die();
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
         gameObject.SetActive(false);
-        
-        
-        Debug.Log("ded");
     }
 }
