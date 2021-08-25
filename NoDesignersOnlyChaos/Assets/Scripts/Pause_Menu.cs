@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Pause_Menu : MonoBehaviour
 {
+    [SerializeField] private GameObject DeathScreen;
     [SerializeField] private GameObject pause_Menu;
     // Start is called before the first frame update
     void Update()
@@ -34,6 +35,8 @@ public class Pause_Menu : MonoBehaviour
     public void MainMenuOnClick()
     {
         Time.timeScale = 1f;
+        pause_Menu.SetActive(false);
+        DeathScreen.SetActive(false);
         SceneManager.LoadScene("Scene_MainMenu");
     }
 }
