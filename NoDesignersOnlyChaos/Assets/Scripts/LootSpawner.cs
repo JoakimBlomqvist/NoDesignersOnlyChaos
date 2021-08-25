@@ -23,7 +23,7 @@ public class LootSpawner : MonoBehaviour
             if (RoomCurrency.Instance.Currency >= pool.Item2)
             {
                 RoomCurrency.Instance.Currency -= pool.Item2;
-                Debug.Log("Spawned: " + pool.Item2);
+                Debug.Log("Spawned: " + pool.Item1.name + " With a cost of " + pool.Item2);
             }
             else
             {

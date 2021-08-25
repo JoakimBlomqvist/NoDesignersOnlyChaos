@@ -6498,6 +6498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 1642944837548610659}
+  isClosed: 0
 --- !u!1 &1469539489543611284
 GameObject:
   m_ObjectHideFlags: 0
@@ -9010,6 +9011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 4644233640361301456}
+  isClosed: 0
 --- !u!1 &1856791040278404268
 GameObject:
   m_ObjectHideFlags: 0
@@ -14293,7 +14295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7416508060455187587
 Transform:
   m_ObjectHideFlags: 0
@@ -14315,7 +14317,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3200810987245807224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -14341,7 +14343,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3200810987245807224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 377067e79865d094b81614bd52a0802b, type: 3}
   m_Name: 
@@ -18581,6 +18583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 2482036921070544534}
+  isClosed: 0
 --- !u!1 &4155134999621492523
 GameObject:
   m_ObjectHideFlags: 0
@@ -22538,6 +22541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 3556632700893024493}
+  isClosed: 0
 --- !u!1 &5096441483811281389
 GameObject:
   m_ObjectHideFlags: 0
@@ -25318,6 +25322,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1056170014002448771}
   - component: {fileID: 2097674903838727442}
+  - component: {fileID: 5909303792217446548}
+  - component: {fileID: 7871766128646665844}
   m_Layer: 0
   m_Name: FireRoom
   m_TagString: Untagged
@@ -25364,6 +25370,50 @@ MonoBehaviour:
   - {fileID: 632736581888962701}
   - {fileID: 7392487734227833717}
   - {fileID: 7175865925566009299}
+--- !u!114 &5909303792217446548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789819259458789572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377067e79865d094b81614bd52a0802b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootSpawner: {fileID: 6049193298624707911}
+  wallOrDoors:
+  - {fileID: 2054400237731354567}
+  - {fileID: 632736581888962701}
+  - {fileID: 7392487734227833717}
+  - {fileID: 7175865925566009299}
+--- !u!61 &7871766128646665844
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789819259458789572}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 15.382915, y: -1.0741675}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 24.00403, y: 13.693111}
+  m_EdgeRadius: 0
 --- !u!1 &5796922601548804525
 GameObject:
   m_ObjectHideFlags: 0
@@ -27110,6 +27160,8 @@ MonoBehaviour:
   - {fileID: 6049193297790952296}
   - {fileID: 6049193298048653937}
   - {fileID: 6049193298667818060}
+  bossRoom: 0
+  bossToSpawn: {fileID: 0}
 --- !u!1 &6049193298667818060
 GameObject:
   m_ObjectHideFlags: 0

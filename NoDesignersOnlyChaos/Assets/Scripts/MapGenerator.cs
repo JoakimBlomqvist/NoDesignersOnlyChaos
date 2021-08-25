@@ -48,6 +48,7 @@ public class MapGenerator : MonoBehaviour
     private void Start()
     {
         GenerateMap();
+        GetComponent<MiniMapGenerator>().Init(this);
     }
 
     //Generates the map. 
@@ -91,6 +92,7 @@ public class MapGenerator : MonoBehaviour
                 //Spawns a default tile in the row
                 GameObject tile = Instantiate(tileType[Random.Range(0, tileType.Length)], _postionOfTransform, Quaternion.identity, parent);
                 tile.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);
+                
             }
         }
     }
