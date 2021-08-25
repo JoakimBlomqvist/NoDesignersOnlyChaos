@@ -12,6 +12,7 @@ public class LootSpawner : MonoBehaviour
 
     public void SpawnLoot()
     {
+        StartCoroutine(AudioManager.Instance.InreasePitch());
         if (bossRoom)
         {
             Instantiate(bossToSpawn, spawnPoints[0].transform.position, Quaternion.identity);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4233728776620015946}
   - component: {fileID: 4233728776620015947}
   - component: {fileID: 4858440141575166185}
+  - component: {fileID: -8705211037777302437}
   m_Layer: 0
   m_Name: RapidFire
   m_TagString: Untagged
@@ -122,3 +123,29 @@ MonoBehaviour:
   TrollSpoT: {fileID: 4233728776620015945}
   playerCollider: {fileID: 0}
   rapidFire: 1
+--- !u!61 &-8705211037777302437
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4233728776620015948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
