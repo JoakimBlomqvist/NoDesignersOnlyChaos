@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ac5fc040c36a94faae44b68ce18c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathScreen: {fileID: 0}
-  pause_Menu: {fileID: 0}
+  DeathScreen: {fileID: 3500654954865329279, guid: 1cd7319b472a79249a6e7f729e6bf7da, type: 3}
+  pause_Menu: {fileID: 6910315879820148309, guid: 60e2b386994b43247922a3b94272e3d1, type: 3}
