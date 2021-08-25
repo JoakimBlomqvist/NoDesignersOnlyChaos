@@ -10,7 +10,6 @@ public class TriggerRoomEnter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("SPAWNING");
         if (other.CompareTag("Player"))
         {
             RoomCurrency.Instance.ResetCurrency();
