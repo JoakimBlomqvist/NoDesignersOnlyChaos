@@ -11,6 +11,7 @@ public class TriggerRoomEnter : MonoBehaviour
     private MiniMapGenerator _miniMapGenerator;
     private RoomCoordinates _coordinates;
     private int x, y;
+    private bool enemiesSpawned;
     private void Start()
     {
         
@@ -19,14 +20,19 @@ public class TriggerRoomEnter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            RoomCurrency.Instance.ResetCurrency();
-            lootSpawner.SpawnLoot();
-            foreach (var wall in wallOrDoors)
+            if (!enemiesSpawned)
             {
-                if (wall.isClosed)
+                RoomCurrency.Instance.ResetCurrency();
+                lootSpawner.SpawnLoot();
+                foreach (var wall in wallOrDoors)
                 {
-                    wall.PlayerEnterRoom();
+                    if (wall.isClosed)
+                    {
+                        wall.PlayerEnterRoom();
+                    }
                 }
+
+                enemiesSpawned = true;
             }
             _miniMapGenerator = GetComponentInParent<MiniMapGenerator>();
             _coordinates = GetComponent<RoomCoordinates>();
