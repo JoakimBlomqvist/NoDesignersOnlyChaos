@@ -6,7 +6,7 @@ public class SunBlast : MonoBehaviour
 {
     [SerializeField] private float speed_Sunblast = 150;
     private Rigidbody2D rb;
-
+    [SerializeField] private int Damage;
     
     CharacterMovement characterMovement;
     Vector2 moveDir;
@@ -40,7 +40,7 @@ public class SunBlast : MonoBehaviour
         characterMovement = collider.collider.GetComponent<CharacterMovement>();
         if (collider.gameObject.CompareTag("Player"))
         {
-            collider.gameObject.GetComponent<IDamageable>().TakeDamage(20);
+            collider.gameObject.GetComponent<IDamageable>().TakeDamage(Damage);
             
         }
         Destroy(gameObject);

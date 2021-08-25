@@ -7,14 +7,28 @@ public class Sunboss : MonoBehaviour
     [SerializeField] private GameObject SunBlast;
     [SerializeField] private float fireRate;
     [SerializeField] float nextFire;
-    
+    [SerializeField] private GameObject MiniSunboss;
 
     void Awake()
     {
         
         nextFire = Time.time;
     }
-
+    private void OnDisable()
+    {
+        if(MiniSunboss != null)
+        {
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 4f, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x + 4f, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x - 4f, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 4f, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x + 2f, gameObject.transform.position.y - 6f, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x + 6f, gameObject.transform.position.y + 4f, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(MiniSunboss, new Vector3(gameObject.transform.position.x + 6f, gameObject.transform.position.y + 6f, gameObject.transform.position.z), Quaternion.identity);
+        }
+        //Instantiate(MiniSunboss,new Vector3 (gameObject.transform.position.x, gameObject.transform.position.y ,gameObject.transform.position.z), Quaternion.identity);
+    }
 
     void Update()
     {
