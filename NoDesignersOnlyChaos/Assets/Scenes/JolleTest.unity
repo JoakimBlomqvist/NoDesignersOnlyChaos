@@ -577,10 +577,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OnDeathUi
       objectReference: {fileID: 0}
-    - target: {fileID: 3500654954865329279, guid: 1cd7319b472a79249a6e7f729e6bf7da, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd7319b472a79249a6e7f729e6bf7da, type: 3}
 --- !u!1001 &5880500758724409970

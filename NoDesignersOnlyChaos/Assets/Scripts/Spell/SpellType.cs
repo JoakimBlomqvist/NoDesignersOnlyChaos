@@ -6,7 +6,8 @@ using UnityEngine;
 public class SpellType : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    [HideInInspector]
+    public Sprite staffSprite;
+    public RuntimeAnimatorController anim;
     public Transform TrollSpoT;
     [HideInInspector]
     public Collider2D playerCollider;

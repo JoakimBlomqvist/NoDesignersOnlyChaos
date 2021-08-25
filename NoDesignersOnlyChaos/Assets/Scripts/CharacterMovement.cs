@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    [SerializeField] private GameObject DeathScreen;
     [SerializeField] private float moveSpeed;
     private Rigidbody2D rb;
 
@@ -15,7 +16,10 @@ public class CharacterMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
+    private void OnDisable()
+    {
+        DeathScreen.SetActive(true);
+    }
     private void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
