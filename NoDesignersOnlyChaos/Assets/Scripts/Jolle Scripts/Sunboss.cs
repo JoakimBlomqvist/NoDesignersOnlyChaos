@@ -14,7 +14,7 @@ public class Sunboss : MonoBehaviour
         
         nextFire = Time.time;
     }
-    private void OnDisable()
+    public void OnDeath()
     {
         if(MiniSunboss != null)
         {

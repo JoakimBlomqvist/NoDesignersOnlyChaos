@@ -7,8 +7,10 @@ using UnityEngine.Diagnostics;
 
 public class PlayerAimTrollspo : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer stavSprite;
+    [SerializeField] private Animator staffAnimator;
     private Vector3 worldPosition;
-    [SerializeField] private Transform TrollSpoT;
+    [SerializeField]private Transform TrollSpoT;
     private SpriteRenderer _spriteRenderer;
     public SpellType spellType;
     public GameObject projectilePrefab;
@@ -36,9 +38,12 @@ public class PlayerAimTrollspo : MonoBehaviour
     public void PickUp()
     {
         spellType.projectilePrefab = projectilePrefab;
+        TrollSpoT.transform.localScale = spellType.TrollSpoT.localScale;
         spellType.TrollSpoT = TrollSpoT;
         spellType.playerCollider = GetComponent<Collider2D>();
         rapidFire = spellType.rapidFire;
+        staffAnimator.runtimeAnimatorController = spellType.anim;
+        stavSprite.sprite = spellType.staffSprite;
     }
 
     void Update()
