@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 3606977081922651784}
   - component: {fileID: 3606977081922651791}
   - component: {fileID: 3606977081922651790}
-  - component: {fileID: 2625508425438622489}
   - component: {fileID: 7116794584908621008}
   - component: {fileID: 8616641346931853698}
   - component: {fileID: -4633370115897469541}
+  - component: {fileID: 7443451924912276822}
+  - component: {fileID: 1195212853011104819}
   m_Layer: 0
   m_Name: LightningBolt
   m_TagString: Untagged
@@ -4821,19 +4822,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &2625508425438622489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3606977081922651789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a38f9df6c8d57b049aca3f5373b5a462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 600
 --- !u!50 &7116794584908621008
 Rigidbody2D:
   serializedVersion: 4
@@ -4885,6 +4873,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
   damage: 5
+--- !u!114 &7443451924912276822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3606977081922651789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd44ceae3d7a6ea40bb7b29a2f257048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 600
+--- !u!114 &1195212853011104819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3606977081922651789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133ab566c07f83e46bb9f4228f6eded1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 1.5
 --- !u!1 &3606977082932188220
 GameObject:
   m_ObjectHideFlags: 0
