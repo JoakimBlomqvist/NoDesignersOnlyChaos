@@ -4883,7 +4883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
-  damage: 10
+  damage: 7
 --- !u!1 &3606977082932188220
 GameObject:
   m_ObjectHideFlags: 0
