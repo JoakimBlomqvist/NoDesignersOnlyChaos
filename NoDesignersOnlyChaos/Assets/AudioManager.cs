@@ -45,13 +45,13 @@ public class AudioManager : MonoBehaviour
 
     public void OnGameOverMusic()
     {
-        _audioSource.clip = mainMenuMusic;
+        _audioSource.clip = gameOverMusic;
         _audioSource.Play();
     }
 
     public void OnMainMenuMusic()
     {
-        _audioSource.clip = gameOverMusic;
+        _audioSource.clip = mainMenuMusic;
         _audioSource.Play();
     }
 
