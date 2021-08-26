@@ -23,6 +23,7 @@ public class TriggerRoomEnter : MonoBehaviour
             if (!enemiesSpawned)
             {
                 RoomCurrency.Instance.ResetCurrency();
+                RoomCurrency.Instance.roomCounter++;
                 lootSpawner.SpawnLoot();
                 foreach (var wall in wallOrDoors)
                 {
