@@ -11,7 +11,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private List<AudioClip> earlyLevels;
     public AudioSource _audioSource;
     [SerializeField] private float increasePitchBy = 0.05f;
-
+    [Tooltip("The time it takes for pitch to reach its desired increase. In seconds")]
+    [SerializeField] private float timeUntilPitchReached;
     private float songLength;
     public static AudioManager Instance;
 
@@ -67,9 +68,9 @@ public class AudioManager : MonoBehaviour
         float i = 0;
         while (i < increasePitchBy)
         {
-            i += 0.0005f;
-            yield return new WaitForSeconds(0.04f);
-            _audioSource.pitch += 0.0005f;
+            i += increasePitchBy / (timeUntilPitchReached * 10);
+            yield return new WaitForSeconds(0.1f);
+            _audioSource.pitch += increasePitchBy /(timeUntilPitchReached * 10);
         }
     }
 }
