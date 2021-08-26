@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private GameObject DeathScreen;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private Health hpScript;
     private Rigidbody2D rb;
 
     float horizontal;
@@ -15,9 +16,11 @@ public class CharacterMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        hpScript = GetComponent<Health>();
     }
     private void OnDisable()
     {
+        AudioManager.Instance.OnGameOverMusic();
         DeathScreen.SetActive(true);
     }
     private void Update()
