@@ -4764,7 +4764,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4859,9 +4859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6cc7af6ced89cc4cb0d98b3e92fc1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
-  TrollSpoT: {fileID: 0}
-  playerCollider: {fileID: 0}
   meteorSpeed: 20
   explosionPrefab: {fileID: 1424459575129511452, guid: 9664b4a6fa5aa9e4ebd0facd8c7a0b46, type: 3}
 --- !u!212 &704016374945971548
@@ -4884,7 +4881,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
