@@ -1977,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8935322022509067788, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
       propertyPath: timeUntilPitchReached
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8935322022509067791, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
       propertyPath: m_Name
