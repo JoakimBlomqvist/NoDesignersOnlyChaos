@@ -9,10 +9,11 @@ public class Health : MonoBehaviour, IDamageable
 {
     [SerializeField] public Image HealthBar;
     public float CurrentHealth;
-    private float maxHealth;
+    private int maxHealth;
     [SerializeField] private int health;
     [SerializeField] private ParticleSystem blood;
     public UnityEvent OnDamageTaken;
+    [SerializeField]private bool clonedEnemy;
     public Action OnDeath;
 
 
@@ -24,11 +25,7 @@ public class Health : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        if (OnDamageTaken != null)
-        {
-            OnDamageTaken.Invoke();
-        }
-        
+
         health -= damage;
         if (health <= 0)
         {
@@ -39,12 +36,21 @@ public class Health : MonoBehaviour, IDamageable
             CurrentHealth = health;
             HealthBar.fillAmount = CurrentHealth / maxHealth;
         }
+        
+        if (OnDamageTaken != null)
+        {
+            OnDamageTaken.Invoke();
+        }
     }
 
     public void Die()
     {
-        EventManager.instance.Die();
+        if (!clonedEnemy)
+        {
+            EventManager.instance.Die();
+        }
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
+        health = maxHealth;
         gameObject.SetActive(false);
     }
 }

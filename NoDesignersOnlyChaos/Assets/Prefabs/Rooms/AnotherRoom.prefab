@@ -1601,6 +1601,16 @@ MonoBehaviour:
   - {fileID: 6572128241393284756}
   - {fileID: 3847315620932146540}
   - {fileID: 3487687490257340874}
+  lights:
+  - {fileID: 3389394153270577290}
+  - {fileID: 1862266343557117004}
+  - {fileID: 2303686291509442274}
+  - {fileID: 7450712024268508787}
+  - {fileID: 5387685618981880436}
+  - {fileID: 4956026563221744004}
+  - {fileID: 636932650067966809}
+  - {fileID: 496368378131670640}
+  - {fileID: 5433067299758290282}
 --- !u!61 &534562040736713869
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34494,6 +34504,7 @@ MonoBehaviour:
   - {fileID: 6572128241393284756}
   - {fileID: 3847315620932146540}
   - {fileID: 3487687490257340874}
+  lights: []
 --- !u!1 &6953237047123926698
 GameObject:
   m_ObjectHideFlags: 0
@@ -46611,8 +46622,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+--- !u!114 &4956026563221744004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 251070399299144890}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3010488172052884458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
@@ -46739,6 +46765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
 --- !u!4 &2766917712954488580 stripped
@@ -46746,6 +46776,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
   m_PrefabInstance: {fileID: 926207946898935892}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5433067299758290282 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 926207946898935892}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &970608537355511626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46805,6 +46846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
 --- !u!4 &2865652113606967322 stripped
@@ -46812,6 +46857,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
   m_PrefabInstance: {fileID: 970608537355511626}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5387685618981880436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 970608537355511626}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1320021460785702417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46995,6 +47051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
 --- !u!4 &749303912204389405 stripped
@@ -47002,6 +47062,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
   m_PrefabInstance: {fileID: 2367367042676140877}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7450712024268508787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 2367367042676140877}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2693114249344080048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47371,8 +47442,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+--- !u!114 &496368378131670640 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 4710722041474073422}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7774132718077944862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
@@ -47561,8 +47647,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+--- !u!114 &636932650067966809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 5722520463734349415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7338305747428014391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
@@ -47689,8 +47790,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+--- !u!114 &2303686291509442274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 6360484199030805468}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8284484310704731276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
@@ -47755,6 +47871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 0x72_16x16DungeonTileset.v4_159
       objectReference: {fileID: 0}
+    - target: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
 --- !u!4 &8419525352369583650 stripped
@@ -47762,6 +47882,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3079508011231569744, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
   m_PrefabInstance: {fileID: 6801760947603968370}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1862266343557117004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5169196498946893118, guid: d2a9550dceb4e54468fdd13e45293cf3, type: 3}
+  m_PrefabInstance: {fileID: 6801760947603968370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7518057706426039710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47875,12 +48006,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7994533291164003445, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
       propertyPath: m_Name
       value: LightUpAllRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+--- !u!114 &3389394153270577290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+  m_PrefabInstance: {fileID: 8264005555769314519}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7776332647177371052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1820773745942049147, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}

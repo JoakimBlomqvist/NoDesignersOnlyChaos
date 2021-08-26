@@ -1600,6 +1600,8 @@ MonoBehaviour:
   - {fileID: 6572128241393284756}
   - {fileID: 3847315620932146540}
   - {fileID: 3487687490257340874}
+  lights:
+  - {fileID: 8523941348936206055}
 --- !u!61 &534562040736713869
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30184,6 +30186,7 @@ MonoBehaviour:
   - {fileID: 6572128241393284756}
   - {fileID: 3847315620932146540}
   - {fileID: 3487687490257340874}
+  lights: []
 --- !u!1 &6953237047123926698
 GameObject:
   m_ObjectHideFlags: 0
@@ -40300,6 +40303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7994533291164003445, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
       propertyPath: m_Name
       value: Light
@@ -40311,3 +40318,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1820773745942049147, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
   m_PrefabInstance: {fileID: 3165245745605231290}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8523941348936206055 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+  m_PrefabInstance: {fileID: 3165245745605231290}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 7349207950029314904}
   - component: {fileID: 2156839250469264976}
   m_Layer: 6
-  m_Name: Sperm
+  m_Name: ClonedSperm
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   OnDamageTaken:
     m_PersistentCalls:
       m_Calls: []
-  clonedEnemy: 0
+  clonedEnemy: 1
 --- !u!1 &8384294835606983617
 GameObject:
   m_ObjectHideFlags: 0

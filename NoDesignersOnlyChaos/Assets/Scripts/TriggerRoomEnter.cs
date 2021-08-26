@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
 
 public class TriggerRoomEnter : MonoBehaviour
@@ -12,14 +13,20 @@ public class TriggerRoomEnter : MonoBehaviour
     private RoomCoordinates _coordinates;
     private int x, y;
     private bool enemiesSpawned;
-    private void Start()
-    {
-        
-    }
+
+    [Header("Lights")] 
+    [SerializeField] private List<Light2D> lights;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            KillCount.Instance.goaledReached = false;
+            foreach (var light in lights)
+            {
+                light.enabled = true;
+            }
+            
             if (!enemiesSpawned)
             {
                 RoomCurrency.Instance.ResetCurrency();
@@ -38,7 +45,32 @@ public class TriggerRoomEnter : MonoBehaviour
             _miniMapGenerator = GetComponentInParent<MiniMapGenerator>();
             _coordinates = GetComponent<RoomCoordinates>();
             _miniMapGenerator.UpdateMiniMap(_coordinates.coordinates);
+            StartCoroutine(OpenDoors());
             //gameObject.SetActive(false);
+        }
+    }
+
+    private IEnumerator OpenDoors()
+    {
+        yield return new WaitUntil(() => KillCount.Instance.goaledReached);
+        
+        foreach (var wall in wallOrDoors)
+        {
+            if (wall.isClosed)
+            {
+                wall.OpenDoor();
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            foreach (var light in lights)
+            {
+                light.enabled = false;
+            }
         }
     }
 }

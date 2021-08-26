@@ -16988,6 +16988,7 @@ MonoBehaviour:
   - {fileID: 2732788721040331440}
   - {fileID: 5457335942509130056}
   - {fileID: 5674238968449625582}
+  lights: []
 --- !u!1 &3560282811984578355
 GameObject:
   m_ObjectHideFlags: 0
@@ -43042,6 +43043,16 @@ MonoBehaviour:
   - {fileID: 2732788721040331440}
   - {fileID: 5457335942509130056}
   - {fileID: 5674238968449625582}
+  lights:
+  - {fileID: 7905606730588939643}
+  - {fileID: 2386756657712114596}
+  - {fileID: 1286849879914947633}
+  - {fileID: 1050650182605696343}
+  - {fileID: 5755586278708183947}
+  - {fileID: 2303454068177659558}
+  - {fileID: 6366399218935367965}
+  - {fileID: 3452316160712980935}
+  - {fileID: 262537528799745822}
 --- !u!1 &9043319281066497717
 GameObject:
   m_ObjectHideFlags: 0
@@ -44434,8 +44445,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+--- !u!114 &6366399218935367965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 360931383157777743}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3844331046274938702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
@@ -44562,8 +44588,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+--- !u!114 &5755586278708183947 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 1334266484009791449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2512942440622407128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
@@ -44624,6 +44665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &51346658369100584 stripped
@@ -44631,6 +44676,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
   m_PrefabInstance: {fileID: 3525733680405252393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7905606730588939643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 3525733680405252393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4297744592026644490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44872,6 +44928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &8284287579493685493 stripped
@@ -44879,6 +44939,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
   m_PrefabInstance: {fileID: 4804272287382964980}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2303454068177659558 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 4804272287382964980}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5512538230841067619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44934,6 +45005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &8997065923002833506 stripped
@@ -44941,6 +45016,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
   m_PrefabInstance: {fileID: 5512538230841067619}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1286849879914947633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 5512538230841067619}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6039080482794504453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44996,8 +45082,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+--- !u!114 &1050650182605696343 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 6039080482794504453}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7175527413800489732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
@@ -45054,12 +45155,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7994533291164003445, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
       propertyPath: m_Name
       value: LightUpAllRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+--- !u!114 &262537528799745822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+  m_PrefabInstance: {fileID: 6774136489964458819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5135828898452103736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1820773745942049147, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
@@ -45182,6 +45298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &4821428503304832916 stripped
@@ -45189,6 +45309,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
   m_PrefabInstance: {fileID: 8264844413192918421}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3452316160712980935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 8264844413192918421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8954495253564737526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45244,6 +45375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LanternAnimation (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
 --- !u!4 &5485180270077548023 stripped
@@ -45251,6 +45386,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3484527830808777217, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
   m_PrefabInstance: {fileID: 8954495253564737526}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2386756657712114596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727172184359267410, guid: 44601a44036e27a4e88bd966464f3061, type: 3}
+  m_PrefabInstance: {fileID: 8954495253564737526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9085674858028093648
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1517,6 +1517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011769124}
+  - component: {fileID: 2011769125}
   m_Layer: 5
   m_Name: ---------MANAGERS--------
   m_TagString: Untagged
@@ -1547,6 +1548,22 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: 540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2011769125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011769123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9399388fe434c7146b890d74e00365da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Kills: 0
+  goalToReach: 0
+  spawnCount: 0
+  goaledReached: 0
 --- !u!1 &2044429485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3500654954865329279, guid: 1cd7319b472a79249a6e7f729e6bf7da, type: 3}
@@ -2048,6 +2065,14 @@ PrefabInstance:
     - target: {fileID: 6829880683277221845, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: gridX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: gridY
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: tileType.Array.size

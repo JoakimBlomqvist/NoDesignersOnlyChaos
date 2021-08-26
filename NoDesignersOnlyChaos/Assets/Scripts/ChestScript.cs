@@ -24,7 +24,6 @@ public class ChestScript : MonoBehaviour
 
     private void DropItem()
     {
-        gameObject.SetActive(false);
         Instantiate(chestLoot[Random.Range(0, chestLoot.Length)], gameObject.transform.position, Quaternion.identity);
     }
 

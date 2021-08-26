@@ -155,6 +155,7 @@ MonoBehaviour:
   OnDamageTaken:
     m_PersistentCalls:
       m_Calls: []
+  clonedEnemy: 0
 --- !u!114 &1852739216041774874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17086107b3980ad4194ab9af9b269859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spermPrefab: {fileID: 7349207950029314907, guid: 1f171e74bd77d9d48be38de9b5d72954, type: 3}
+  spermPrefab: {fileID: 7349207950029314907, guid: 053681186b499d441b3fdb589348284f, type: 3}
   secondsBetweenSpawn: 2
 --- !u!1 &4122229338575723369
 GameObject:

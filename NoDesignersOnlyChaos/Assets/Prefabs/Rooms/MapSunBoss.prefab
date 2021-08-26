@@ -29191,6 +29191,7 @@ MonoBehaviour:
   - {fileID: 9221491483771032301}
   - {fileID: 9221491484751247667}
   - {fileID: 9221491484141604389}
+  lights: []
 --- !u!1 &9221491484849175643
 GameObject:
   m_ObjectHideFlags: 0
@@ -31437,6 +31438,8 @@ MonoBehaviour:
   - {fileID: 9221491483771032301}
   - {fileID: 9221491484751247667}
   - {fileID: 9221491484141604389}
+  lights:
+  - {fileID: 3210082551096395141}
 --- !u!1 &9221491484962455120
 GameObject:
   m_ObjectHideFlags: 0
@@ -40827,8 +40830,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightUpAllRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 7994533291164003445, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+--- !u!114 &3210082551096395141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6748126459267023965, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}
+  m_PrefabInstance: {fileID: 8154515138834153944}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7524978704548294819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1820773745942049147, guid: d33e2fa8b8773294dbba28083a25dc52, type: 3}

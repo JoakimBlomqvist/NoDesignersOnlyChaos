@@ -17,13 +17,11 @@ public class WallOrDoor : MonoBehaviour
 
     public void PlayerEnterRoom()
     {
-        StartCoroutine(PlayerEnterDelay());
+        wall.SetActive(true);
     }
 
-    private IEnumerator PlayerEnterDelay()
+    public void OpenDoor()
     {
-        wall.SetActive(true);
-        yield return new WaitForSeconds(5f);
         wall.SetActive(false);
     }
 }
