@@ -9,6 +9,7 @@ public class RoomCurrency : MonoBehaviour
     private int maxCurrency;
     [SerializeField]public int Currency = 10;
     private int subCurrency = 0;
+    public int roomCounter;
     private void Awake()
     {
         if (Instance == null)
@@ -25,6 +26,7 @@ public class RoomCurrency : MonoBehaviour
     {
         maxCurrency = Currency;
     }
+
     public void ResetCurrency()
     {
         subCurrency += 1;
@@ -34,7 +36,5 @@ public class RoomCurrency : MonoBehaviour
             subCurrency = 0;
         }
         Currency = maxCurrency;
-    }
-    
-    
+    }   
 }
