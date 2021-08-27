@@ -33,8 +33,9 @@ public class BombAi_Script : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            Physics2D.IgnoreCollision(collider.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            
+            //Physics2D.IgnoreCollision(collider.gameObject.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+            Destroy(gameObject);
+            Instantiate(Bomb_Explosion, gameObject.transform.position, Quaternion.identity);
         }
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collider.contacts[0].normal);

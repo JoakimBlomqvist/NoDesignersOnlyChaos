@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1510463566}
   - component: {fileID: 4758608994029209529}
   - component: {fileID: 798933988019612877}
+  - component: {fileID: 5909792407547929027}
   m_Layer: 6
   m_Name: Slime3
   m_TagString: Enemy
@@ -168,9 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0624f07577e218646a75eed780b6281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlimeToSpawn: {fileID: 8543557276629953435, guid: e8260b55e930d5a4f82e9e7db8237f7b, type: 3}
+  SlimeToSpawn: {fileID: 8543557276629953435, guid: 02f4d8a4353cafa489af5fccf1b58fd6, type: 3}
   moveSpeed: 3
   player: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+  slimeOG: {fileID: 0}
 --- !u!114 &4758608994029209529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +207,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  clonedEnemy: 0
+  clonedEnemy: 1
   DeathAudioClip: {fileID: 8300000, guid: 9fa5668441b770a49beb900a569f6ba6, type: 3}
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: 29466b30a68b6164e99cb13c0736a88d, type: 3}
@@ -224,6 +226,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Player
   damage: 10
+--- !u!114 &5909792407547929027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543557276629953435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba38de7b8fa4136489aca6a938c8a13c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slimesKilled: 0
+  slimeCountToReach: 0
 --- !u!1001 &3181179846771512257
 PrefabInstance:
   m_ObjectHideFlags: 0
