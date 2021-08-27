@@ -9,15 +9,22 @@ public class GoblinChase : MonoBehaviour
     public float moveSpeed = 2f;    
     private Collider2D Lockedtarget;
     private Rigidbody2D rb;
+    private bool startChase;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void OnEnable()
+    {
+        startChase = false;
+        StartCoroutine(WaitTilchase());
+    }
+
     void Update()
     {
-        if (Lockedtarget == null)
+        if (Lockedtarget == null && startChase)
         {
             Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
         }
@@ -31,5 +38,11 @@ public class GoblinChase : MonoBehaviour
 
             rb.MovePosition(rb.position + direction.normalized * Time.deltaTime * moveSpeed);
         }
+    }
+
+    private IEnumerator WaitTilchase()
+    {
+        yield return new WaitForSeconds(1f);
+        startChase = true;
     }
 }
