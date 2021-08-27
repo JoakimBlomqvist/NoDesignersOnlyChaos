@@ -379,6 +379,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 0}
+  staffSprite: {fileID: 0}
+  anim: {fileID: 0}
   TrollSpoT: {fileID: 0}
   playerCollider: {fileID: 0}
   rapidFire: 0
@@ -577,6 +579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OnDeathUi
       objectReference: {fileID: 0}
+    - target: {fileID: 3500654954865329279, guid: 1cd7319b472a79249a6e7f729e6bf7da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd7319b472a79249a6e7f729e6bf7da, type: 3}
 --- !u!1001 &5880500758724409970
@@ -768,6 +774,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8774582324025825702, guid: 1b526dc873092fa45a26375308a30ed6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836822202695810723, guid: 1b526dc873092fa45a26375308a30ed6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.52
+      objectReference: {fileID: 0}
     - target: {fileID: 9221491484960286456, guid: 1b526dc873092fa45a26375308a30ed6, type: 3}
       propertyPath: m_RootOrder
       value: 8
