@@ -19,7 +19,7 @@ public class SprialCoolSpell : MonoBehaviour
         playerT = FindObjectOfType<PlayerAimTrollspo>().transform;
         //transform.parent.position = playerT.position;
         mousePos = UtilsClass.GetMouseWorldPosV3();
-        Vector3 dir = (mousePos - playerT.position).normalized;
+        Vector3 dir = ( new Vector2(mousePos.x, mousePos.y) - new Vector2(playerT.position.x, playerT.position.y) ).normalized;
         transform.position = playerT.position + dir * 2;
         Debug.Log(dir);
         if (mousePos.x > playerT.transform.position.x)

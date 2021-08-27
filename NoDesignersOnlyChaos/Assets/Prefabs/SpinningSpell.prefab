@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 7564163496791655400}
   - component: {fileID: 5620100207286346893}
   - component: {fileID: 6409551019015083345}
+  - component: {fileID: 1644619199602698879}
   m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
@@ -4970,8 +4971,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
-  damage: 1
+  damage: 4
   destroyOnContact: 1
+--- !u!50 &1644619199602698879
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560637574502449799}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &560637575070913398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,6 +5056,7 @@ GameObject:
   - component: {fileID: 5050117286650943254}
   - component: {fileID: 5562418108855251313}
   - component: {fileID: 1119154057535357950}
+  - component: {fileID: 3928261174216208037}
   m_Layer: 8
   m_Name: Circle (1)
   m_TagString: Untagged
@@ -9943,8 +9966,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
-  damage: 1
+  damage: 4
   destroyOnContact: 1
+--- !u!50 &3928261174216208037
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560637575151149101}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1440922106556350724
 GameObject:
   m_ObjectHideFlags: 0
@@ -9989,4 +10033,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133ab566c07f83e46bb9f4228f6eded1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 5
