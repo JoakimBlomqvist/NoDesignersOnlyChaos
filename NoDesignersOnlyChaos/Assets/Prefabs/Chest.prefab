@@ -110,6 +110,7 @@ MonoBehaviour:
   - {fileID: 4233728776620015948, guid: 0237418f4f67f944c95f0c41af6cb17f, type: 3}
   - {fileID: 7910695044445915248, guid: 337c983e19ce7b14d979930747ea802e, type: 3}
   - {fileID: 5365482711917573224, guid: 8d81927063ee0e447bb0910fa34881b1, type: 3}
+  - {fileID: 4514802372288159123, guid: 6e1ca77c4d169a54580dd084ce26146d, type: 3}
 --- !u!61 &6164983396144032586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,3 +168,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  clonedEnemy: 0
+  DeathAudioClip: {fileID: 0}
+  DeathAudioVolume: 0
+  TakeDamageAudioClip: {fileID: 0}
+  TakeDamageVolume: 0
