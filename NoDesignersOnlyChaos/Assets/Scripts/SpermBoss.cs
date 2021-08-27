@@ -26,13 +26,14 @@ public class SpermBoss : MonoBehaviour
             StartCoroutine(SpawnSperm());
         }
         
-        rb.MovePosition(rb.position + -direction * (Time.deltaTime * moveSpeed));
+        rb.velocity = direction * (Time.deltaTime * moveSpeed);
     }
 
     private IEnumerator SpawnSperm()
     {
         coolDown = true;
         Instantiate(spermPrefab, transform.position - new Vector3(Random.Range(-3f, 3f), Random.Range(-3f, 3f), 0f), quaternion.identity);
+        rb.velocity = Vector2.zero;
         direction = Vector2.zero;
         direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1, 1f), 0f) - transform.position;
         yield return new WaitForSeconds(secondsBetweenSpawn);
