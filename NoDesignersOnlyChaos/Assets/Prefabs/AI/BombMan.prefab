@@ -103,7 +103,7 @@ MonoBehaviour:
   dropRate: 0.5
   delaytilDrop: 1
   Bomb: {fileID: 2780277575629605577, guid: db9d2f5673d157343942eb498b7e718e, type: 3}
-  force: 100
+  force: 50
 --- !u!61 &7162827467438219197
 BoxCollider2D:
   m_ObjectHideFlags: 0
