@@ -20,9 +20,10 @@ public class SFXManager : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip, float volume)
     {
         _audioSource.clip = clip;
+        _audioSource.volume = volume;
         _audioSource.Play();
     }
 }
