@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRateCast: 0.5
   speedRateReturn: 0.2
+  damage: 2
   spinRate: 20
 --- !u!50 &-1109143798889892463
 Rigidbody2D:
