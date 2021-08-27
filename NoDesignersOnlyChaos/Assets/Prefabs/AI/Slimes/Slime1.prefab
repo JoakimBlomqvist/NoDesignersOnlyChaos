@@ -171,6 +171,8 @@ MonoBehaviour:
   SlimeToSpawn: {fileID: 0}
   moveSpeed: 10
   player: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+  slimeOG: {fileID: 3401808561941475153, guid: 11a9c0287e596134fbb26589416429e1, type: 3}
+  originalSlime: 0
 --- !u!114 &4758608994029209529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +194,19 @@ MonoBehaviour:
       m_Calls: []
   OnDeathEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1510463566}
+        m_TargetAssemblyTypeName: SlimeEnemy, Assembly-CSharp
+        m_MethodName: OnDeathSlime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clonedEnemy: 1
   DeathAudioClip: {fileID: 8300000, guid: 355be7da8e45c854b817465b3c6059f0, type: 3}
   DeathAudioVolume: 1
