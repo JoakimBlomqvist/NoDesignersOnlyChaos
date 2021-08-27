@@ -5,6 +5,9 @@ using UnityEngine;
 public class BomberAi : MonoBehaviour
 {
     Rigidbody2D rb;
+    [SerializeField] private float dropRate = 0.7f;
+    [SerializeField] private float delaytilDrop = 1f;
+    private Coroutine bombRoutine;
 
     Vector3 lastVelocity;
     [SerializeField] private GameObject Bomb;
@@ -12,13 +15,20 @@ public class BomberAi : MonoBehaviour
     [SerializeField] private int force;
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        Vector2 dir = (new Vector2(transform.position.x, transform.position.y)).normalized;
-        rb.AddForce(dir * force);
-        StartCoroutine(BombDropping());
+
+        changeDir();
+        InvokeRepeating("StartBombRoutine", delaytilDrop, dropRate);
+        InvokeRepeating("changeDir", 2f, 2f);
+        
         //lastVelocity = rb.velocity;
     }
+    private void changeDir()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        Vector2 dir = /*(Vector2)transform.position + */new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
 
+        rb.AddForce(dir * force);
+    }
     private void Update()
     {
         lastVelocity = rb.velocity;
@@ -38,19 +48,28 @@ public class BomberAi : MonoBehaviour
 
         
         rb.velocity = direction * Mathf.Max(speed, 0f);
+    }
 
-        
-        StartCoroutine(BombDropping());
+    public void StopDropping()
+    {
+        if(bombRoutine != null)
+        {
+            StopCoroutine(bombRoutine);
+            CancelInvoke("StartBombRoutine");
+            CancelInvoke("changeDir");
+        }
+    }
 
-        //StartCoroutine(BombDropping());
+    private void StartBombRoutine()
+    {
+        bombRoutine = StartCoroutine(BombDropping());
     }
     IEnumerator BombDropping()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
-        var bomb = Instantiate(Bomb, gameObject.transform.position, Quaternion.identity);
+        var bomb = Instantiate(Bomb, transform.position, Quaternion.identity);
         Physics2D.IgnoreCollision(bomb.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-        
-        yield break;
+
     }
 }
