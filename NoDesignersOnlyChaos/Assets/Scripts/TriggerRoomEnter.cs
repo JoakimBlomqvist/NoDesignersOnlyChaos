@@ -45,6 +45,7 @@ public class TriggerRoomEnter : MonoBehaviour
             _miniMapGenerator = GetComponentInParent<MiniMapGenerator>();
             _coordinates = GetComponent<RoomCoordinates>();
             _miniMapGenerator.UpdateMiniMap(_coordinates.coordinates);
+            EventManager.instance.ChangeRoom();
             StartCoroutine(OpenDoors());
             //gameObject.SetActive(false);
         }

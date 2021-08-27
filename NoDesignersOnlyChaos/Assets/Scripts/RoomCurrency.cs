@@ -30,7 +30,7 @@ public class RoomCurrency : MonoBehaviour
     public void ResetCurrency()
     {
         subCurrency += 1;
-        if (subCurrency >= 2)
+        if (subCurrency >= 3)
         {
             maxCurrency = maxCurrency + 1;
             subCurrency = 0;

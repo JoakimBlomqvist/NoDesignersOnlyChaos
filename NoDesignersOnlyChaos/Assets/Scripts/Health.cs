@@ -16,10 +16,15 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField]private bool clonedEnemy;
     public Action OnDeath;
 
+    private void OnEnable()
+    {
+        
+    }
 
     private void Start()
     {
         maxHealth = health;
+        EventManager.instance.OnChangeRoom += RegenHealthOnRoomChange;
         //HealthBar = GetComponent<Image>();
     }
 
@@ -31,16 +36,27 @@ public class Health : MonoBehaviour, IDamageable
         {
             Die();
         }
-        if (HealthBar != null)
-        {
-            CurrentHealth = health;
-            HealthBar.fillAmount = CurrentHealth / maxHealth;
-        }
+        UpdateHealthFillAMount();
         
         if (OnDamageTaken != null)
         {
             OnDamageTaken.Invoke();
         }
+    }
+
+    private void UpdateHealthFillAMount()
+    {
+        if (HealthBar != null)
+        {
+            CurrentHealth = health;
+            HealthBar.fillAmount = CurrentHealth / maxHealth;
+        }
+    }
+
+    private void RegenHealthOnRoomChange()
+    {
+        health = Mathf.Clamp(health + 5, -1, maxHealth);
+        UpdateHealthFillAMount();
     }
 
     public void Die()
