@@ -11,6 +11,8 @@ public class SpermBoss : MonoBehaviour
     [SerializeField]private GameObject spermPrefab;
     [SerializeField]private float secondsBetweenSpawn;
     private Rigidbody2D rb;
+    [SerializeField]private float moveSpeed;
+    private Vector2 direction;
 
     private void Start()
     {
@@ -23,13 +25,16 @@ public class SpermBoss : MonoBehaviour
         {
             StartCoroutine(SpawnSperm());
         }
+        
+        rb.MovePosition(rb.position + -direction * (Time.deltaTime * moveSpeed));
     }
 
     private IEnumerator SpawnSperm()
     {
         coolDown = true;
         Instantiate(spermPrefab, transform.position - new Vector3(Random.Range(-3f, 3f), Random.Range(-3f, 3f), 0f), quaternion.identity);
-        rb.MovePosition(rb.position + new Vector2(Random.Range(-1f, 1f), Random.Range(-1, 1f)) * Time.deltaTime * 0.5f);
+        direction = Vector2.zero;
+        direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1, 1f), 0f) - transform.position;
         yield return new WaitForSeconds(secondsBetweenSpawn);
         coolDown = false;
     }

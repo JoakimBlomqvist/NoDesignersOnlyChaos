@@ -191,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spermPrefab: {fileID: 7349207950029314907, guid: 053681186b499d441b3fdb589348284f, type: 3}
   secondsBetweenSpawn: 2
+  moveSpeed: 1
 --- !u!1 &4122229338575723369
 GameObject:
   m_ObjectHideFlags: 0
