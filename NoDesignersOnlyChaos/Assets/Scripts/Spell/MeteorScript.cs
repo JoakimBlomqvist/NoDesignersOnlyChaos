@@ -15,8 +15,12 @@ public class MeteorScript : MonoBehaviour
     [SerializeField] private GameObject lightObj;
     private Light2D _light;
     private float value;
+    [SerializeField] private AudioClip _meteorClip;
+    [SerializeField] private AudioClip _meteorImpactClip;
     private void Start()
     {
+        
+        PlaySound();
         _light = lightObj.GetComponent<Light2D>();
         impactPoint = UtilsClass.GetMouseWorldPos();
         lightObj.transform.parent = null;
@@ -40,8 +44,20 @@ public class MeteorScript : MonoBehaviour
         }
     }
 
+    private void PlaySound()
+    {
+        if (_meteorClip != null)
+        {
+            SFXManager.Instance._audioSource.PlayOneShot(_meteorClip);
+        }
+    }
+    
     private void Explode()
     {
+        if (_meteorImpactClip != null)
+        {
+            SFXManager.Instance._audioSource.PlayOneShot(_meteorImpactClip);
+        }
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
     }
 }

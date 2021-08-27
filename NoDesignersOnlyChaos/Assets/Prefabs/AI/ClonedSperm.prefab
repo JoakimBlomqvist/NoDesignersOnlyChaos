@@ -353,7 +353,7 @@ MonoBehaviour:
   clonedEnemy: 1
   DeathAudioClip: {fileID: 8300000, guid: fb0553bcb0a9f6e448ba7ec86fc077d2, type: 3}
   DeathAudioVolume: 1
-  TakeDamageAudioClip: {fileID: 0}
+  TakeDamageAudioClip: {fileID: 8300000, guid: 9f986572e07480c40b4d7888208207e0, type: 3}
   TakeDamageVolume: 1
 --- !u!1 &8384294835606983617
 GameObject:
