@@ -246,8 +246,14 @@ MonoBehaviour:
   OnDamageTaken:
     m_PersistentCalls:
       m_Calls: []
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   clonedEnemy: 0
   DeathAudioClip: {fileID: 8300000, guid: 29466b30a68b6164e99cb13c0736a88d, type: 3}
+  DeathAudioVolume: 1
+  TakeDamageAudioClip: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
+  TakeDamageVolume: 1
 --- !u!114 &2357030193796567280
 MonoBehaviour:
   m_ObjectHideFlags: 0
