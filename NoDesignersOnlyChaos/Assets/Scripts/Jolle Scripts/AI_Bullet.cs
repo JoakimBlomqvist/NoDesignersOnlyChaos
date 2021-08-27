@@ -49,10 +49,4 @@ public class AI_Bullet : MonoBehaviour
 
     }
 
-    private void DestroyPlayer()
-    {
-        player_Alive = true;
-        characterMovement.gameObject.SetActive(false);
-        
-    }
 }
