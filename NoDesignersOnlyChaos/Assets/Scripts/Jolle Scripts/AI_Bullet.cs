@@ -38,7 +38,7 @@ public class AI_Bullet : MonoBehaviour
     {
         var speed = lastVelocity.magnitude;
         var direction = Vector3.Reflect(lastVelocity.normalized, collider.contacts[0].normal);
-        
+        Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         rb.velocity = direction * Mathf.Max(speed, 0f);
         characterMovement = collider.collider.GetComponent<CharacterMovement>();
         if (collider.gameObject.CompareTag("Player"))
@@ -49,10 +49,4 @@ public class AI_Bullet : MonoBehaviour
 
     }
 
-    private void DestroyPlayer()
-    {
-        player_Alive = true;
-        characterMovement.gameObject.SetActive(false);
-        
-    }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
     public static SFXManager Instance;
     private void Awake()
     {
