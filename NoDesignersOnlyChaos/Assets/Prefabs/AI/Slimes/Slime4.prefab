@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4758608994029209529}
   - component: {fileID: 798933988019612877}
   m_Layer: 6
-  m_Name: Slime2
+  m_Name: Slime4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8543557276629953435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 0}
   m_Children:
   - {fileID: 1576805801501555421}
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 3163559612266917299, guid: 85155e4a965d4f24facfbc9eb60f3792, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.95587206, a: 1}
+  m_Color: {r: 0.002501011, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -168,11 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0624f07577e218646a75eed780b6281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlimeToSpawn: {fileID: 8543557276629953435, guid: 4976b31f6889b2f49b1082d74ef56b53, type: 3}
-  moveSpeed: 5
+  SlimeToSpawn: {fileID: 8543557276629953435, guid: 8072a37653921c34fa71a9f61def0466, type: 3}
+  moveSpeed: 2
   player: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
-  slimeOG: {fileID: 3401808561941475153, guid: 11a9c0287e596134fbb26589416429e1, type: 3}
-  originalSlime: 0
+  slimeOG: {fileID: 2585395925487256002, guid: 89eefc001c129e14c802de41a62730f9, type: 3}
 --- !u!114 &4758608994029209529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 8008200953235624028}
   CurrentHealth: 0
-  health: 50
+  health: 175
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
     m_PersistentCalls:
@@ -208,9 +207,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   clonedEnemy: 1
-  DeathAudioClip: {fileID: 8300000, guid: 57c4d8b412656d645a64ce0cae1de9e0, type: 3}
+  DeathAudioClip: {fileID: 8300000, guid: 9fa5668441b770a49beb900a569f6ba6, type: 3}
   DeathAudioVolume: 1
-  TakeDamageAudioClip: {fileID: 8300000, guid: fb0553bcb0a9f6e448ba7ec86fc077d2, type: 3}
+  TakeDamageAudioClip: {fileID: 8300000, guid: 29466b30a68b6164e99cb13c0736a88d, type: 3}
   TakeDamageVolume: 1
 --- !u!114 &798933988019612877
 MonoBehaviour:
@@ -225,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToDamage: Player
-  damage: 10
+  damage: 50
 --- !u!1001 &3181179846771512257
 PrefabInstance:
   m_ObjectHideFlags: 0

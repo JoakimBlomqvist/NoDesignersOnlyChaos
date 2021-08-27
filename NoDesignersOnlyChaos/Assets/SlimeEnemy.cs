@@ -12,9 +12,10 @@ public class SlimeEnemy : MonoBehaviour
     private bool coolDown;
     private Vector2 direction;
     [SerializeField] private Transform player;
+    [SerializeField] private SlimeOriginal slimeOG;
     private bool startChase;
-    
-    
+
+
     private void Start()
     {
         player = FindObjectOfType<PlayerAimTrollspo>().transform;
@@ -24,10 +25,15 @@ public class SlimeEnemy : MonoBehaviour
     public void OnDeathSlime()
     {
         if (SlimeToSpawn != null)
-        {
-            Instantiate(SlimeToSpawn, transform.position, Quaternion.identity);
-            Instantiate(SlimeToSpawn, transform.position, Quaternion.identity);
+        { 
+            var slime1 =Instantiate(SlimeToSpawn, transform.position, Quaternion.identity);
+            slime1.GetComponent<SlimeEnemy>().slimeOG = slimeOG;
+            
+            var slime2 = Instantiate(SlimeToSpawn, transform.position, Quaternion.identity);
+            slime2.GetComponent<SlimeEnemy>().slimeOG = slimeOG;
         }
+        
+        slimeOG.SlimeCounter();
     }
 
     private void Update()
