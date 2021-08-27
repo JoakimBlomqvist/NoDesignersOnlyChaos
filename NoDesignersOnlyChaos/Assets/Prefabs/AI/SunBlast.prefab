@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9dba98796bb0274d9459af220a8a879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed_Sunblast: 50
+  speed_Sunblast: 30
   Damage: 5
 --- !u!50 &3784137154512785448
 Rigidbody2D:
