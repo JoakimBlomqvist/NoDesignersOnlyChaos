@@ -25,7 +25,7 @@ public class BomberAi : MonoBehaviour
     private void changeDir()
     {
         rb = GetComponent<Rigidbody2D>();
-        Vector2 dir = (new Vector2(Random.Range(-4, 4), Random.Range(-4, 4)));
+        Vector2 dir = (Vector2)transform.position + new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
 
         rb.AddForce(dir * force);
     }
