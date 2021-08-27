@@ -4863,6 +4863,8 @@ MonoBehaviour:
   meteorSpeed: 20
   explosionPrefab: {fileID: 1424459575129511452, guid: 9664b4a6fa5aa9e4ebd0facd8c7a0b46, type: 3}
   lightObj: {fileID: 6974896682126788082}
+  _meteorClip: {fileID: 8300000, guid: 1240361790fe9134c83a3c825fcc61ef, type: 3}
+  _meteorImpactClip: {fileID: 8300000, guid: 9b2028cb25726db48b31993b8a7541d4, type: 3}
 --- !u!212 &704016374945971548
 SpriteRenderer:
   m_ObjectHideFlags: 0
