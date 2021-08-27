@@ -15,15 +15,20 @@ public class BomberAi : MonoBehaviour
     [SerializeField] private int force;
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        Vector2 dir = (new Vector2(Random.Range(-4, 4), Random.Range(-4, 4)));
-        rb.AddForce(dir * force);
 
+        changeDir();
         InvokeRepeating("StartBombRoutine", delaytilDrop, dropRate);
+        InvokeRepeating("changeDir", 2f, 2f);
         
         //lastVelocity = rb.velocity;
     }
+    private void changeDir()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        Vector2 dir = (new Vector2(Random.Range(-4, 4), Random.Range(-4, 4)));
 
+        rb.AddForce(dir * force);
+    }
     private void Update()
     {
         lastVelocity = rb.velocity;
@@ -51,6 +56,7 @@ public class BomberAi : MonoBehaviour
         {
             StopCoroutine(bombRoutine);
             CancelInvoke("StartBombRoutine");
+            CancelInvoke("changeDir");
         }
     }
 
@@ -63,11 +69,7 @@ public class BomberAi : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         var bomb = Instantiate(Bomb, transform.position, Quaternion.identity);
-        
-
         Physics2D.IgnoreCollision(bomb.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
 
-        
-        
     }
 }

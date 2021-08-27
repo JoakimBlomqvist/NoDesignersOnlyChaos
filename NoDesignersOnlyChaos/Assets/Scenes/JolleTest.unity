@@ -38841,6 +38841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BombMan
       objectReference: {fileID: 0}
+    - target: {fileID: 7162827467438219193, guid: 98b3f5cf968ebc84890e617ce7a6c29f, type: 3}
+      propertyPath: force
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 7162827467438219195, guid: 98b3f5cf968ebc84890e617ce7a6c29f, type: 3}
       propertyPath: m_RootOrder
       value: 9

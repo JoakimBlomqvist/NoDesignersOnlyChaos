@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1151145523655133911, guid: 85155e4a965d4f24facfbc9eb60f3792, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bomb_Explosion: {fileID: 1424459575129511452, guid: 9936ca7b49195c54b919c9fb22d9ef8d, type: 3}
+  force: 100
 --- !u!50 &4423310381071405196
 Rigidbody2D:
   serializedVersion: 4
