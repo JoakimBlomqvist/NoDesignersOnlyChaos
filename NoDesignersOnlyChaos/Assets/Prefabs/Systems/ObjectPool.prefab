@@ -75,7 +75,7 @@ MonoBehaviour:
     size: 10
     prize: 1
   - number: 1
-    prefab: {fileID: 8543557276629953435, guid: 8072a37653921c34fa71a9f61def0466, type: 3}
+    prefab: {fileID: 6381447393837937690, guid: 11a9c0287e596134fbb26589416429e1, type: 3}
     size: 10
     prize: 3
   - number: 1
