@@ -348,6 +348,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   clonedEnemy: 1
+  DeathAudioClip: {fileID: 8300000, guid: fb0553bcb0a9f6e448ba7ec86fc077d2, type: 3}
 --- !u!1 &8384294835606983617
 GameObject:
   m_ObjectHideFlags: 0

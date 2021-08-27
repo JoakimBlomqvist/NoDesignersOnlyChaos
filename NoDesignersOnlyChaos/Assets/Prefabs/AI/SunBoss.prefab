@@ -269,6 +269,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  clonedEnemy: 0
+  DeathAudioClip: {fileID: 8300000, guid: 29466b30a68b6164e99cb13c0736a88d, type: 3}
 --- !u!1 &1696570417997288429
 GameObject:
   m_ObjectHideFlags: 0

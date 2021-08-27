@@ -1,0 +1,28 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SFXManager : MonoBehaviour
+{
+    private AudioSource _audioSource;
+    public static SFXManager Instance;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+        _audioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        _audioSource.clip = clip;
+        _audioSource.Play();
+    }
+}

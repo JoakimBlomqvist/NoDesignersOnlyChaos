@@ -15,6 +15,7 @@ public class Health : MonoBehaviour, IDamageable
     public UnityEvent OnDamageTaken;
     [SerializeField]private bool clonedEnemy;
     public Action OnDeath;
+    [SerializeField]private AudioClip DeathAudioClip;
 
     private void OnEnable()
     {
@@ -67,6 +68,15 @@ public class Health : MonoBehaviour, IDamageable
         }
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
         health = maxHealth;
+        PlayDeathSound();
         gameObject.SetActive(false);
+    }
+
+    private void PlayDeathSound()
+    {
+        if (DeathAudioClip != null)
+        {
+            SFXManager.Instance.PlaySound(DeathAudioClip);
+        }
     }
 }
