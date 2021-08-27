@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7162827467438219197}
   - component: {fileID: 7162827467438219196}
   - component: {fileID: 5326294189184669379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BombMan
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e473a8e937921ec45b3611f39162698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropRate: 0.5
+  delaytilDrop: 1
   Bomb: {fileID: 2780277575629605577, guid: db9d2f5673d157343942eb498b7e718e, type: 3}
-  force: 70
+  force: 100
 --- !u!61 &7162827467438219197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +172,19 @@ MonoBehaviour:
       m_Calls: []
   OnDeathEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7162827467438219193}
+        m_TargetAssemblyTypeName: BomberAi, Assembly-CSharp
+        m_MethodName: StopDropping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clonedEnemy: 0
   DeathAudioClip: {fileID: 0}
   DeathAudioVolume: 1
