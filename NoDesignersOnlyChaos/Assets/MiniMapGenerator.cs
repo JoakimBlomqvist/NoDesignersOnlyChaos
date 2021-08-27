@@ -29,7 +29,7 @@ public class MiniMapGenerator : MonoBehaviour
             for (int y = 0; y < gridY; y++)
             {
                  
-                minimapArray[x, y] = Instantiate(prefab,new Vector3(parentTransform.position.x + x * 20, parentTransform.position.y + y * 20), Quaternion.identity, parentTransform);
+                minimapArray[x, y] = Instantiate(prefab,new Vector3(parentTransform.position.x - (gridX * 10) + x * 20, parentTransform.position.y - (gridY * 10) + y * 20), Quaternion.identity, parentTransform);
                  minimapArray[x, y].GetComponent<Image>().color = new Color(0, 1, 0);
             }
         }
