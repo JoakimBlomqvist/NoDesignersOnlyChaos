@@ -256,6 +256,9 @@ MonoBehaviour:
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
     m_PersistentCalls:
+      m_Calls: []
+  OnDeathEvent:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6725828666351022889}
         m_TargetAssemblyTypeName: Sunboss, Assembly-CSharp

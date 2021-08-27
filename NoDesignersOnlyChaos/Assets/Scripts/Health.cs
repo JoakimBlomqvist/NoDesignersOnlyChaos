@@ -13,6 +13,7 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private int health;
     [SerializeField] private ParticleSystem blood;
     public UnityEvent OnDamageTaken;
+    public UnityEvent OnDeathEvent;
     [SerializeField]private bool clonedEnemy;
     public Action OnDeath;
     [SerializeField]private AudioClip DeathAudioClip;
@@ -66,6 +67,7 @@ public class Health : MonoBehaviour, IDamageable
         {
             EventManager.instance.Die();
         }
+        OnDeathEvent.Invoke();
         Instantiate(blood, gameObject.transform.position, Quaternion.identity);
         health = maxHealth;
         PlayDeathSound();
