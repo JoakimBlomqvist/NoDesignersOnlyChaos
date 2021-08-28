@@ -1621,6 +1621,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: bossRooms.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: tileType.Array.data[4]
       value: 
       objectReference: {fileID: 264195815678699229, guid: 15428976bdca2d043a47980ba54b3244, type: 3}
@@ -1628,6 +1632,10 @@ PrefabInstance:
       propertyPath: bossRooms.Array.data[2]
       value: 
       objectReference: {fileID: 264195815678699229, guid: 4019fdb061a31df4ba5a24878e2e50c2, type: 3}
+    - target: {fileID: 6829880683277221850, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
+      propertyPath: bossRooms.Array.data[3]
+      value: 
+      objectReference: {fileID: 1977200866628814033, guid: 338ca00ab315ba842b3d302de6d18d9d, type: 3}
     - target: {fileID: 6829880683277221851, guid: 0b2a50aae7403c945b6838d0a2fb0830, type: 3}
       propertyPath: m_Name
       value: MapGeneration
