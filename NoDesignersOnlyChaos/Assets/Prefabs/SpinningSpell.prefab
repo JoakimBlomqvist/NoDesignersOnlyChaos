@@ -9966,7 +9966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
-  damage: 1
+  damage: 2
   destroyOnContact: 1
 --- !u!50 &3928261174216208037
 Rigidbody2D:
