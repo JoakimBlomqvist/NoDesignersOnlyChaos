@@ -24,12 +24,34 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private AudioClip TakeDamageAudioClip;
     [Range(0,1)]
     [SerializeField] private float TakeDamageVolume = 1;
+
+    [SerializeField]private bool player;
+    [SerializeField]private int buffedMaxHp;
+    [SerializeField] private int buffedHP;
     
-    private void Start()
+    private void Awake()
     {
         maxHealth = health;
-        EventManager.instance.OnChangeRoom += RegenHealthOnRoomChange;
+        if (player)
+        {
+            EventManager.instance.OnChangeRoom += RegenHealthOnRoomChange;
+        }
+
         //HealthBar = GetComponent<Image>();
+    }
+
+    private void OnEnable()
+    {
+        if (!player)
+        {
+            buffedMaxHp += EnemyDifficultyManager.instance.buffedHP;
+            buffedHP = maxHealth;
+            buffedHP += buffedMaxHp;
+            health = buffedHP;
+            maxHealth = health;
+            buffedHP -= buffedMaxHp;
+            buffedMaxHp = 0;
+        }
     }
 
     public void TakeDamage(int damage)

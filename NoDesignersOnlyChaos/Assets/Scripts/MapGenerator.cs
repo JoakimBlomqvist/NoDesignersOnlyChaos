@@ -22,7 +22,7 @@ public class MapGenerator : MonoBehaviour
     [Header("BossRooms")]
     public GameObject[] bossRooms;
 
-    [SerializeField] private int startBossSpawnAt = 2;
+    [SerializeField] private int startBossSpawnAtX = 2;
     [SerializeField] private int chanceOfBossRoom = 4;
     private int bossCount = 0;
 
@@ -49,6 +49,8 @@ public class MapGenerator : MonoBehaviour
     {
         GenerateMap();
         GetComponent<MiniMapGenerator>().Init(this);
+        AudioManager.Instance.OnEarlyLevelsMusic();
+        AudioManager.Instance.ResetPitch();
     }
 
     //Generates the map. 
@@ -80,7 +82,7 @@ public class MapGenerator : MonoBehaviour
             _postionOfTransform.y += gapBetweenTilesY;
 
             int rand = Random.Range(0, chanceOfBossRoom);
-            if (bossRooms.Length > bossCount && _count + i > startBossSpawnAt && rand == 0)
+            if (bossRooms.Length > bossCount && _count >= startBossSpawnAtX && rand == 0)
             {
                 GameObject bossRoom = Instantiate(bossRooms[bossCount], _postionOfTransform, Quaternion.identity, parent);
                 bossRoom.GetComponent<RoomCoordinates>().GetCoordinates(_count, i);

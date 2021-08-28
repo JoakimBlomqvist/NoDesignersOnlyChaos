@@ -105,7 +105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2357030193796567286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.6, y: 14.1458645, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3322557554846772644}
@@ -254,6 +254,8 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
   TakeDamageVolume: 1
+  player: 0
+  buffedMaxHp: 0
 --- !u!114 &2357030193796567280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Player
   damage: 50
+  destroyOnContact: 0
 --- !u!1 &7809439765383852750
 GameObject:
   m_ObjectHideFlags: 0

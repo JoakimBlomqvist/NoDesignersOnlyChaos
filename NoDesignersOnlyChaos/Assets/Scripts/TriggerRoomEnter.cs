@@ -47,6 +47,7 @@ public class TriggerRoomEnter : MonoBehaviour
             _miniMapGenerator.UpdateMiniMap(_coordinates.coordinates);
             EventManager.instance.ChangeRoom();
             StartCoroutine(OpenDoors());
+            StartCoroutine(OpenDoorsFalseSafe());
             //gameObject.SetActive(false);
         }
     }
@@ -54,7 +55,22 @@ public class TriggerRoomEnter : MonoBehaviour
     private IEnumerator OpenDoors()
     {
         yield return new WaitUntil(() => KillCount.Instance.goaledReached);
+
+        StopCoroutine(OpenDoorsFalseSafe());
+        foreach (var wall in wallOrDoors)
+        {
+            if (wall.isClosed)
+            {
+                wall.OpenDoor();
+            }
+        }
+    }
+    
+    private IEnumerator OpenDoorsFalseSafe()
+    {
+        yield return new WaitForSeconds(25f);
         
+        StopCoroutine(OpenDoors());
         foreach (var wall in wallOrDoors)
         {
             if (wall.isClosed)

@@ -28,9 +28,9 @@ public class Pause_Menu : MonoBehaviour
     {
 
     }
-    public void ControlsOnClick()
+    public void RestartOnClick()
     {
-
+        SceneManager.LoadScene("JockeTest");
     }
     public void MainMenuOnClick()
     {

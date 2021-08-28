@@ -14,6 +14,7 @@ public class RoomCoordinates : MonoBehaviour
         if (x == 0 && y == 0)
         {
             _wallOrDoors[0].BlockPath(false);
+            _wallOrDoors[1].BlockPath(false);
             _wallOrDoors[2].BlockPath(false);
         }
         else if(x == 0 && y == MapGenerator.Instance.gridY - 1)

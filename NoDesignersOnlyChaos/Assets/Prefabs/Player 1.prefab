@@ -286,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 0}
   CurrentHealth: 0
-  health: 10000000
+  health: 200
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
     m_PersistentCalls:
@@ -303,3 +303,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  clonedEnemy: 0
+  DeathAudioClip: {fileID: 0}
+  DeathAudioVolume: 1
+  TakeDamageAudioClip: {fileID: 0}
+  TakeDamageVolume: 1
+  player: 1
+  buffedMaxHp: 0

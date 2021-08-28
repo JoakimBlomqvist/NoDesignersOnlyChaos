@@ -19,6 +19,7 @@ public class SlimeOriginal : MonoBehaviour
         if (slimesKilled == slimeCountToReach)
         {
             EventManager.instance.Die();
+            gameObject.SetActive(false);
         }
     }
 }

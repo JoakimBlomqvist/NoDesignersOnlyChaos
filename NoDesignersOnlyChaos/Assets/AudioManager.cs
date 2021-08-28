@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[DefaultExecutionOrder(-1)]
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private AudioClip gameOverMusic;
@@ -18,6 +19,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         if (Instance == null)
         {
             Instance = this;
@@ -28,11 +30,6 @@ public class AudioManager : MonoBehaviour
         }
 
         _audioSource = GetComponent<AudioSource>();
-    }
-
-    private void Start()
-    {
-        OnEarlyLevelsMusic();
     }
 
     private void Update()
@@ -61,6 +58,11 @@ public class AudioManager : MonoBehaviour
 
         _audioSource.clip = earlyLevels[rand];
         _audioSource.Play();
+    }
+
+    public void ResetPitch()
+    {
+        _audioSource.pitch = 1;
     }
 
     public IEnumerator InreasePitch()
