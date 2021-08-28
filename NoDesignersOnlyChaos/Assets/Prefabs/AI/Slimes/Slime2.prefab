@@ -172,7 +172,6 @@ MonoBehaviour:
   moveSpeed: 5
   player: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
   slimeOG: {fileID: 3401808561941475153, guid: 11a9c0287e596134fbb26589416429e1, type: 3}
-  originalSlime: 0
 --- !u!114 &4758608994029209529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 8008200953235624028}
   CurrentHealth: 0
-  health: 50
+  health: 40
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
     m_PersistentCalls:
@@ -212,6 +211,9 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: fb0553bcb0a9f6e448ba7ec86fc077d2, type: 3}
   TakeDamageVolume: 1
+  player: 0
+  buffedMaxHp: 0
+  buffedHP: 0
 --- !u!114 &798933988019612877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Player
   damage: 10
+  destroyOnContact: 0
 --- !u!1001 &3181179846771512257
 PrefabInstance:
   m_ObjectHideFlags: 0

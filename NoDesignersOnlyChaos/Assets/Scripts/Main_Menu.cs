@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Main_Menu : MonoBehaviour
 {
+    public GameObject Credits;
     public void PlayClickt()
     {
         SceneManager.LoadScene("JockeTest");
@@ -17,5 +18,10 @@ public class Main_Menu : MonoBehaviour
     public void QuitClickt()
     {
         Application.Quit();
+    }
+
+    public void OpenCredits()
+    {
+        Credits.SetActive(true);
     }
 }
