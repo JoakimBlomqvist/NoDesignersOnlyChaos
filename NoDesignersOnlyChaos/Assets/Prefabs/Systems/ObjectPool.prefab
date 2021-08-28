@@ -49,7 +49,7 @@ MonoBehaviour:
   - number: 0
     prefab: {fileID: 6164983396144032585, guid: 760cbd112b25455409f78f20e9a58be4, type: 3}
     size: 10
-    prize: 3
+    prize: 2
   - number: 1
     prefab: {fileID: 4617687098787843576, guid: 6a0104efe88ec7a41820f604cf4e6f9f, type: 3}
     size: 10

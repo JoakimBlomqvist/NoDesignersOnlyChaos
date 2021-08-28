@@ -7,6 +7,7 @@ public class Pause_Menu : MonoBehaviour
 {
     [SerializeField] private GameObject DeathScreen;
     [SerializeField] private GameObject pause_Menu;
+    [SerializeField] private GameObject settings;
     // Start is called before the first frame update
     void Update()
     {
@@ -26,7 +27,7 @@ public class Pause_Menu : MonoBehaviour
     }
     public void SettingsOnClick()
     {
-
+        settings.SetActive(true);
     }
     public void RestartOnClick()
     {
@@ -37,6 +38,7 @@ public class Pause_Menu : MonoBehaviour
         Time.timeScale = 1f;
         pause_Menu.SetActive(false);
         DeathScreen.SetActive(false);
+        settings.SetActive(false);
         SceneManager.LoadScene("Scene_MainMenu");
     }
 }

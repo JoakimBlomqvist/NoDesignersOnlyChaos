@@ -4768,9 +4768,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotateSpeed: 200
-  homingRadius: 5
+  homingRadius: 3
   force: 600
   target: {fileID: 0}
+  sfx: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
   layer:
     serializedVersion: 2
     m_Bits: 64
@@ -4892,6 +4893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
   damage: 4
+  destroyOnContact: 0
 --- !u!1 &3606977082932188220
 GameObject:
   m_ObjectHideFlags: 0
