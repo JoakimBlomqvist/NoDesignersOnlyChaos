@@ -13,9 +13,11 @@ public class MagicHoming : MonoBehaviour
     [SerializeField] private float homingRadius = 3f;
     [SerializeField]private int force;
     [SerializeField] private Collider2D target;
+    [SerializeField] private AudioClip sfx;
     public LayerMask layer = 6;
     private void Start()
     {
+        PlaySound();
         rb = GetComponent<Rigidbody2D>();
         Vector2 dir = (UtilsClass.GetMouseWorldPos() - new Vector2(transform.position.x, transform.position.y)).normalized;
         rb.AddForce(dir * force);
@@ -47,5 +49,13 @@ public class MagicHoming : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         Destroy(gameObject);
+    }
+    
+    private void PlaySound()
+    {
+        if (sfx != null)
+        {
+            SFXManager.Instance._audioSource.PlayOneShot(sfx);
+        }
     }
 }

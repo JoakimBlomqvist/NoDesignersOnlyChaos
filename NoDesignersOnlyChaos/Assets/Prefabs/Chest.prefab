@@ -112,6 +112,7 @@ MonoBehaviour:
   - {fileID: 5365482711917573224, guid: 8d81927063ee0e447bb0910fa34881b1, type: 3}
   - {fileID: 4514802372288159123, guid: 6e1ca77c4d169a54580dd084ce26146d, type: 3}
   - {fileID: 2403046210403386398, guid: 7c779414947b61d43be889a066752b57, type: 3}
+  - {fileID: 670866441223326855, guid: e0001b5967b137448ba012129a36701d, type: 3}
 --- !u!61 &6164983396144032586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -179,3 +180,4 @@ MonoBehaviour:
   TakeDamageVolume: 0
   player: 0
   buffedMaxHp: 0
+  buffedHP: 0
