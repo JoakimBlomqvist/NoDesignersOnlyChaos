@@ -102,7 +102,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         if (DeathAudioClip != null)
         {
-            SFXManager.Instance.PlaySound(DeathAudioClip, DeathAudioVolume);
+            SFXManager.Instance.PlaySound(DeathAudioClip);
         }
     }
 
@@ -110,7 +110,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         if (TakeDamageAudioClip != null)
         {
-            SFXManager.Instance.PlaySound(TakeDamageAudioClip, TakeDamageVolume);
+            SFXManager.Instance.PlaySound(TakeDamageAudioClip);
         }
     }
 }
