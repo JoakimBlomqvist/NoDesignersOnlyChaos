@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63612d20f167aba4ca32c875de9d2489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridX: 5
-  gridY: 5
+  gridX: 10
+  gridY: 10
   gapBetweenTilesY: 15.5
   gapBetweenTilesX: 25.5
   defaultTile: {fileID: 2205978180188477387, guid: 3064af4323ff1bc4dbaf49b661bd22ac, type: 3}
@@ -54,13 +54,15 @@ MonoBehaviour:
   - {fileID: 5789819259458789572, guid: aac8bf41543c6a649aadb67d1fe7600e, type: 3}
   - {fileID: 6878440215484762922, guid: 2cc9b2d066a9fdd40a41d626670f8624, type: 3}
   - {fileID: 9039480631287792377, guid: 62d6d5389b2f5f5479cdef8435a5be50, type: 3}
+  - {fileID: 264195815678699229, guid: 15428976bdca2d043a47980ba54b3244, type: 3}
   parent: {fileID: 6829880683277221845}
   bossRooms:
   - {fileID: 264195815678699229, guid: 2724f93406b770041b83763912181902, type: 3}
   - {fileID: 9221491484960286458, guid: 1b526dc873092fa45a26375308a30ed6, type: 3}
-  - {fileID: 264195815678699229, guid: 2724f93406b770041b83763912181902, type: 3}
-  startBossSpawnAt: 2
-  chanceOfBossRoom: 4
+  - {fileID: 264195815678699229, guid: 4019fdb061a31df4ba5a24878e2e50c2, type: 3}
+  - {fileID: 1977200866628814033, guid: 338ca00ab315ba842b3d302de6d18d9d, type: 3}
+  startBossSpawnAtX: 2
+  chanceOfBossRoom: 10
 --- !u!114 &1312889987
 MonoBehaviour:
   m_ObjectHideFlags: 0

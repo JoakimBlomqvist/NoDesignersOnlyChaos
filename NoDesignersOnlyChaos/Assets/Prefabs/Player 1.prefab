@@ -313,3 +313,4 @@ MonoBehaviour:
   TakeDamageVolume: 1
   player: 1
   buffedMaxHp: 0
+  buffedHP: 0
