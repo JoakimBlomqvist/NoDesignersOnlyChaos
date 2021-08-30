@@ -357,6 +357,7 @@ MonoBehaviour:
   TakeDamageVolume: 1
   player: 0
   buffedMaxHp: 0
+  buffedHP: 0
 --- !u!1 &8384294835606983617
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +369,7 @@ GameObject:
   - component: {fileID: 5849007684747577594}
   - component: {fileID: 3301302834751689967}
   - component: {fileID: 4011577858666673868}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
