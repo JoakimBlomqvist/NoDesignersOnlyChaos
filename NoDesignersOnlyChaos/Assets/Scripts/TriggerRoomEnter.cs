@@ -68,7 +68,7 @@ public class TriggerRoomEnter : MonoBehaviour
     
     private IEnumerator OpenDoorsFalseSafe()
     {
-        yield return new WaitForSeconds(25f);
+        yield return new WaitForSeconds(60f);
         
         StopCoroutine(OpenDoors());
         foreach (var wall in wallOrDoors)

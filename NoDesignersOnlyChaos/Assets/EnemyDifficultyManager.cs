@@ -7,6 +7,7 @@ public class EnemyDifficultyManager : MonoBehaviour
 {
     public int buffedHP;
     [SerializeField] private int hpPerRoom = 1;
+    [SerializeField] private int everyXroom;
     public static EnemyDifficultyManager instance;
 
     private void Awake()
@@ -38,6 +39,10 @@ public class EnemyDifficultyManager : MonoBehaviour
 
     private void BuffHp()
     {
-        buffedHP += hpPerRoom;
+        if (RoomCurrency.Instance.roomCounter % everyXroom == 0)
+        {
+            Debug.Log("BUFF HP");
+            buffedHP += hpPerRoom;
+        }
     }
 }

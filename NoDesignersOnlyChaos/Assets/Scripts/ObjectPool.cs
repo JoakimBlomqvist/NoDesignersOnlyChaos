@@ -91,7 +91,7 @@ public class ObjectPool : MonoBehaviour
         //Debug.Log(pools[rand].prize);
         
         GameObject objectToSpawn = poolDictionary[rand].Dequeue();
-
+        
         objectToSpawn.SetActive(true);
         objectToSpawn.transform.position = position;
         objectToSpawn.transform.rotation = rotation;

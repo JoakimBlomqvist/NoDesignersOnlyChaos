@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1510463566}
   - component: {fileID: 4758608994029209529}
   - component: {fileID: 798933988019612877}
-  - component: {fileID: 5909792407547929027}
   m_Layer: 6
   m_Name: Slime3
   m_TagString: Enemy
@@ -122,7 +121,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -172,7 +171,7 @@ MonoBehaviour:
   SlimeToSpawn: {fileID: 8543557276629953435, guid: 02f4d8a4353cafa489af5fccf1b58fd6, type: 3}
   moveSpeed: 3
   player: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
-  slimeOG: {fileID: 0}
+  slimeOG: {fileID: 5334960998627794192, guid: 11a9c0287e596134fbb26589416429e1, type: 3}
 --- !u!114 &4758608994029209529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,20 +229,6 @@ MonoBehaviour:
   tagToDamage: Player
   damage: 10
   destroyOnContact: 0
---- !u!114 &5909792407547929027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8543557276629953435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba38de7b8fa4136489aca6a938c8a13c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slimesKilled: 0
-  slimeCountToReach: 0
 --- !u!1001 &3181179846771512257
 PrefabInstance:
   m_ObjectHideFlags: 0

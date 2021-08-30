@@ -150,6 +150,17 @@ MonoBehaviour:
   OnDamageTaken:
     m_PersistentCalls:
       m_Calls: []
+  OnDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  clonedEnemy: 1
+  DeathAudioClip: {fileID: 0}
+  DeathAudioVolume: 1
+  TakeDamageAudioClip: {fileID: 0}
+  TakeDamageVolume: 1
+  player: 0
+  buffedMaxHp: 0
+  buffedHP: 0
 --- !u!1 &3815331517656705957
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slimesKilled: 0
   slimeCountToReach: 31
+  slimeEnemy: {fileID: 8543557276629953435, guid: cc49cec914a4e5646a6e24f3bc693596, type: 3}
 --- !u!1001 &2780936765214048690
 PrefabInstance:
   m_ObjectHideFlags: 0
