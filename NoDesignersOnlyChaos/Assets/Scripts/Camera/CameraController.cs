@@ -60,7 +60,7 @@ public class CameraController : MonoBehaviour
         int counter = 10;
         while (counter > 0)
         {
-            _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-4, 4)));
+            _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-2, 2)));
             _camera.orthographicSize += Random.Range(-0f, 0.1f);
             counter--;
             yield return new WaitForSeconds(0.01f);
