@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 26727010020779124}
   CurrentHealth: 0
-  health: 50
+  health: 15
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
     m_PersistentCalls:
@@ -192,6 +192,7 @@ MonoBehaviour:
   TakeDamageVolume: 1
   player: 0
   buffedMaxHp: 0
+  buffedHP: 0
 --- !u!1001 &4853189846779111401
 PrefabInstance:
   m_ObjectHideFlags: 0
