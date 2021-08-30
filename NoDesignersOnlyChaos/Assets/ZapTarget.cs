@@ -56,7 +56,7 @@ public class ZapTarget : MonoBehaviour
                 }
             }
 
-            if (targetTransform != null)
+            if (targetTransform != null && targetTransform.gameObject.activeSelf == true)
             {
                 InstantiateParticle();
             }

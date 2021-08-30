@@ -4921,7 +4921,7 @@ MonoBehaviour:
     m_Bits: 64
   prefab: {fileID: 2889411518750469375, guid: 005bec37c6fe11c4aa6e9bd73809c2af, type: 3}
   zapDamage: 1
-  cooldown: 0.1
+  cooldown: 0.5
 --- !u!114 &952716550442784608
 MonoBehaviour:
   m_ObjectHideFlags: 0
