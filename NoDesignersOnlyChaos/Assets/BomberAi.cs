@@ -62,7 +62,10 @@ public class BomberAi : MonoBehaviour
 
     private void StartBombRoutine()
     {
-        bombRoutine = StartCoroutine(BombDropping());
+        if (gameObject.activeSelf)
+        {
+            bombRoutine = StartCoroutine(BombDropping());
+        }
     }
     IEnumerator BombDropping()
     {

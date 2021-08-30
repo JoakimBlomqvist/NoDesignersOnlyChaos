@@ -46,7 +46,7 @@ public class LootSpawner : MonoBehaviour
             }
         }
         
-        //spawnedEnemies.Clear();
+        spawnedEnemies.Clear();
         
         KillCount.Instance.RoomKillCount();
     }
