@@ -23,7 +23,8 @@ public class LightningBounce : MonoBehaviour
         lastVelocity = rb.velocity;
 
     }
-
+    
+    
     private void OnCollisionEnter2D(Collision2D collider)
     {
         var speed = lastVelocity.magnitude;
