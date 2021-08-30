@@ -39,13 +39,13 @@ public class TriggerRoomEnter : MonoBehaviour
                         wall.PlayerEnterRoom();
                     }
                 }
-
+                EventManager.instance.ChangeRoom();
                 enemiesSpawned = true;
             }
             _miniMapGenerator = GetComponentInParent<MiniMapGenerator>();
             _coordinates = GetComponent<RoomCoordinates>();
             _miniMapGenerator.UpdateMiniMap(_coordinates.coordinates);
-            EventManager.instance.ChangeRoom();
+            
             StartCoroutine(OpenDoors());
             StartCoroutine(OpenDoorsFalseSafe());
             //gameObject.SetActive(false);

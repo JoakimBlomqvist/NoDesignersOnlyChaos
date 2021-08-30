@@ -5,6 +5,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ZapTarget : MonoBehaviour
 {
@@ -17,10 +18,11 @@ public class ZapTarget : MonoBehaviour
     private Transform targetTransform;
     private IEnumerator routine;
     [SerializeField]private float cooldown;
-
+    private float startCooldown;
+    
     private void OnEnable()
     {
-        //routine = ZapRoutine();
+        startCooldown = Random.Range(0, 0.2f);
         StartCoroutine(ZapRoutine());
     }
 
@@ -37,6 +39,7 @@ public class ZapTarget : MonoBehaviour
 
     IEnumerator ZapRoutine()
     {
+        yield return new WaitForSeconds(startCooldown);
         if (cooldown < 0.01)
         {
             Debug.LogWarning("cooldown must be more than 0 on " + this.gameObject.name);
