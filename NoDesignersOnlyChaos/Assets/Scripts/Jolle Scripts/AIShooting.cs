@@ -32,7 +32,7 @@ public class AIShooting : MonoBehaviour
             if (Time.time > nextFire)
             {
             GameObject bullet = Instantiate(AI_bullet, transform.position, Quaternion.identity);
-            Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
             nextFire = Time.time + fireRate;
             }
         

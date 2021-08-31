@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed_Sunblast: 30
-  Damage: 5
+  Damage: 10
 --- !u!50 &3784137154512785448
 Rigidbody2D:
   serializedVersion: 4

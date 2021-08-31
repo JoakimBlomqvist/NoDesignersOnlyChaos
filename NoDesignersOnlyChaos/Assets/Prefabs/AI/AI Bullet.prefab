@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 1785855471527318243}
   - component: {fileID: 1604428498642190412}
   - component: {fileID: 8031425669819276200}
-  m_Layer: 0
+  - component: {fileID: -4481196609506019301}
+  m_Layer: 9
   m_Name: AI Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4913,6 +4914,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-4481196609506019301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6868086867490016366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146644bf0898ef34c85086383ba08988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layer1: 9
+  layer2: 9
 --- !u!1 &8940888760371338226
 GameObject:
   m_ObjectHideFlags: 0
