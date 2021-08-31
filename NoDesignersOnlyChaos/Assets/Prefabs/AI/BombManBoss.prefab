@@ -349,7 +349,19 @@ MonoBehaviour:
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDeathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -370,6 +382,9 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 0}
   TakeDamageVolume: 1
+  player: 0
+  buffedMaxHp: 0
+  buffedHP: 0
 --- !u!1 &5133644863210777246
 GameObject:
   m_ObjectHideFlags: 0

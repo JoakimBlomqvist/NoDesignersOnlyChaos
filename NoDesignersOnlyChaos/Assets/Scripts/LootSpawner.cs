@@ -32,16 +32,16 @@ public class LootSpawner : MonoBehaviour
                 KillCount.Instance.spawnCount++;
                 RoomCurrency.Instance.Currency -= pool.Item2;
                 spawnedEnemies.Add(pool.Item1);
-                Debug.Log("Spawned: " + pool.Item1.name + " With a cost of " + pool.Item2);
+                //Debug.Log("Spawned: " + pool.Item1.name + " With a cost of " + pool.Item2);
             }
             else if(spawnedEnemies.Contains(pool.Item1))
             {
-                Debug.Log("Tried to spawn " + pool.Item1.name);
+                //Debug.Log("Tried to spawn " + pool.Item1.name);
                 //Do nothing because the enemy has already been spawned from the object pool.
             }
             else
             {
-                    Debug.Log("Set spawned false " + pool.Item1.name);
+                    //Debug.Log("Set spawned false " + pool.Item1.name);
                     pool.Item1.SetActive(false);
             }
         }

@@ -63,8 +63,6 @@ public class ZapTarget : MonoBehaviour
             {
                 InstantiateParticle();
             }
-            Debug.Log(targetTransform);
-            Debug.Log("Zap!");
             yield return new WaitForSeconds(cooldown);
         }
         yield return null;

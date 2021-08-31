@@ -2,21 +2,36 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
+
 
 public class CameraController : MonoBehaviour
 {
-    private Camera _camera;
+    public static CameraController Instance;
+    public static Camera _camera;
     [SerializeField] private Transform player;
     [SerializeField] private float cameraSpeed = 11f;
     [SerializeField] private float scrollSpeed = 1f;
     [SerializeField] private float minZoom = 0.2f, maxZoom = 4f;
     private float _newZoom = 0;
+    private bool isShaking;
 
+    private int shakeCounter;
+    
+    
     private void Awake()
     {
         _camera = GetComponent<Camera>();
         _newZoom = _camera.orthographicSize;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     private void Update()
@@ -45,28 +60,32 @@ public class CameraController : MonoBehaviour
         _camera.orthographicSize = _newZoom;
     }
 
-    public void ShakeCamera()
+    public void ShakeCamera(float value)
     {
-        if (isShaking == false)
+        if (shakeCounter < 2)
         {
-            StartCoroutine(Shake());
+            StartCoroutine(Shake(value));
         }
     }
-
-    private bool isShaking;
-    IEnumerator Shake()
+    
+    IEnumerator Shake(float value)
     {
+        shakeCounter++;
+        value = value * 0.15f;
         isShaking = true;
         int counter = 10;
         while (counter > 0)
         {
-            _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-2, 2)));
-            _camera.orthographicSize += Random.Range(-0f, 0.1f);
+            _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-value, value)));
+            float ortoShake = Mathf.Clamp(value * 0.07f, 0f,0.30f);
+            Debug.Log(ortoShake);
+            _camera.orthographicSize += Random.Range(-0f,ortoShake);
             counter--;
             yield return new WaitForSeconds(0.01f);
         }
         _camera.orthographicSize = _newZoom;
         _camera.transform.rotation = Quaternion.Euler(Vector3.zero);
+        shakeCounter--;
         isShaking = false;
     }
 }

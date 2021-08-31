@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38049227c6f94bd4f81eeaa1cfe750be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinrate: 6
+  spinrate: 5
   speed: 0
 --- !u!1 &560637574502449799
 GameObject:
@@ -1094,14 +1094,23 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.20191887
         - serializedVersion: 3
-          time: 0.500054
+          time: 0.12586987
           value: 1
-          inSlope: 0.19079575
-          outSlope: 0.19079575
+          inSlope: 0.032160927
+          outSlope: 0.032160927
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.18605721
+          outWeight: 0.038543966
+        - serializedVersion: 3
+          time: 0.36251432
+          value: 0.46557832
+          inSlope: -0.86091304
+          outSlope: -0.86091304
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.038543966
+          outWeight: 0.060394887
         - serializedVersion: 3
           time: 1
           value: 0
@@ -5039,7 +5048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff9319f40a90494eb6fb84f2380ba29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinrate: 0.15
+  spinrate: 0.11
+  increaseSpinRate: 1
+  spinRateIncreaseAmount: 0.008
   speed: 2
 --- !u!1 &560637575151149101
 GameObject:
@@ -6089,14 +6100,23 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.20191887
         - serializedVersion: 3
-          time: 0.500054
+          time: 0.12586987
           value: 1
-          inSlope: 0.19079575
-          outSlope: 0.19079575
+          inSlope: 0.032160927
+          outSlope: 0.032160927
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.18605721
+          outWeight: 0.038543966
+        - serializedVersion: 3
+          time: 0.36251432
+          value: 0.46557832
+          inSlope: -0.86091304
+          outSlope: -0.86091304
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.038543966
+          outWeight: 0.060394887
         - serializedVersion: 3
           time: 1
           value: 0
@@ -10035,6 +10055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 5
+  randomizeTime: 1
+  randTimeMin: 0
+  randTimeMax: 0.2
 --- !u!61 &3857884234453701712
 BoxCollider2D:
   m_ObjectHideFlags: 0

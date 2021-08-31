@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+
 public class Health : MonoBehaviour, IDamageable
 {
     [SerializeField] public Image HealthBar;
@@ -28,7 +29,7 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField]private bool player;
     [SerializeField]private int buffedMaxHp;
     [SerializeField] private int buffedHP;
-    
+    [SerializeField] private float cameraShakeAmount;
     private void Awake()
     {
         maxHealth = health;
@@ -68,6 +69,7 @@ public class Health : MonoBehaviour, IDamageable
         {
             OnDamageTaken.Invoke();
         }
+        CameraController.Instance.ShakeCamera(damage);
     }
 
     private void UpdateHealthFillAMount()
