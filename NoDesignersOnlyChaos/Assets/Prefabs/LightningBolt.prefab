@@ -4874,7 +4874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
-  damage: 5
+  damage: 1
   destroyOnContact: 0
 --- !u!114 &7443451924912276822
 MonoBehaviour:
@@ -4902,6 +4902,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1.5
+  randomizeTime: 0
+  randTimeMin: 0
+  randTimeMax: 0
 --- !u!114 &3945636933455322134
 MonoBehaviour:
   m_ObjectHideFlags: 0
