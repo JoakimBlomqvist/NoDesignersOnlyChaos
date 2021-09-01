@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 984193289997853658}
   - component: {fileID: 984193289997853659}
   - component: {fileID: 914799005}
+  - component: {fileID: 6796820512558670447}
   m_Layer: 7
   m_Name: Player 1
   m_TagString: Player
@@ -314,3 +315,21 @@ MonoBehaviour:
   player: 1
   buffedMaxHp: 0
   buffedHP: 0
+  cameraShakeAmount: 0
+--- !u!114 &6796820512558670447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193289997853649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eef29f6c6ecb2d439659ca85605fd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteholder: {fileID: 11400000, guid: 279784a432bb8f14ea5b915c927d8719, type: 2}
+  Characters: []
+  characterbuttons: []
+  spriteRender: {fileID: 0}
+  characterindex: 0

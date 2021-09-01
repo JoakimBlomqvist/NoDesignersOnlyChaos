@@ -6,11 +6,18 @@ using UnityEngine;
 public class Main_Menu : MonoBehaviour
 {
     public GameObject Credits;
-    public void PlayClickt()
+    public GameObject Play_Setting_Credits_Quit;
+    public GameObject CharacterSelect;
+    public void ConfirmClickt()
     {
         SceneManager.LoadScene("JockeTest");
     }
 
+    public void PlayClickt()
+    {
+        Play_Setting_Credits_Quit.SetActive(false);
+        CharacterSelect.SetActive(true);
+    }
     public void SettingsClickt()
     {
 
@@ -23,5 +30,10 @@ public class Main_Menu : MonoBehaviour
     public void OpenCredits()
     {
         Credits.SetActive(true);
+    }
+    public void BackToMainMenu()
+    {
+        Play_Setting_Credits_Quit.SetActive(true);
+        CharacterSelect.SetActive(false);
     }
 }
