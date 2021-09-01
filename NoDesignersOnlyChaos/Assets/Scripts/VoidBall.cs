@@ -13,6 +13,9 @@ public class VoidBall : MonoBehaviour
     [SerializeField] private Collider2D target;
     public LayerMask layer = 6;
     private bool ok = false;
+    private float spin;
+    private Vector2 direction;
+    [SerializeField] private float WaitTilSpinSeconds;
     
     [Header("Damage On Contact")]
     [SerializeField] private string tagToDamage;
@@ -32,10 +35,11 @@ public class VoidBall : MonoBehaviour
             target = Physics2D.OverlapCircle(transform.position, homingRadius, layer);
         }
 
-        if (target != null) 
+        if (target != null)
         {
-        
-            Vector2 direction = (Vector2) target.transform.position - rb.position;
+            StartCoroutine(WaitTilSpin());
+            if (!ok) return;
+            direction = (Vector2) target.transform.position - rb.position;
             
             direction.Normalize();
 
@@ -43,7 +47,7 @@ public class VoidBall : MonoBehaviour
 
             rb.angularVelocity = -rotateAmount * rotateSpeed;
 
-            rb.velocity = transform.up * speed; 
+            rb.velocity = transform.up * speed;
         }
     }
 
@@ -54,5 +58,11 @@ public class VoidBall : MonoBehaviour
             other.gameObject.GetComponent<IDamageable>().TakeDamage(damage);
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator WaitTilSpin()
+    {
+        yield return new WaitForSeconds(WaitTilSpinSeconds);
+        ok = true;
     }
 }

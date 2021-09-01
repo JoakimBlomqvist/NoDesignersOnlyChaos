@@ -17,6 +17,7 @@ public class MagicHoming : MonoBehaviour
     private void Start()
     {
         PlaySound();
+        Physics2D.IgnoreLayerCollision(8, 8);
         rb = GetComponent<Rigidbody2D>();
         Vector2 dir = (UtilsClass.GetMouseWorldPos() - new Vector2(transform.position.x, transform.position.y)).normalized;
         rb.AddForce(dir * force);

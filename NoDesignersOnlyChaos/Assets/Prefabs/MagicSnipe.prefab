@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7116794584908621008}
   - component: {fileID: 8616641346931853698}
   - component: {fileID: -8961102771951235235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MagicSnipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4766,10 +4766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e729aa39f058369469a7f8fe91a8c290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 20
   rotateSpeed: 200
   homingRadius: 3
-  force: 600
+  force: 350
   target: {fileID: 0}
   sfx: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
   layer:
