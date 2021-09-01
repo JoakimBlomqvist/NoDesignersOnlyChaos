@@ -121,7 +121,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 0.05
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -753,7 +753,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.26
+      value: 0.1
       mode: 0
       spread: 0
       speed:
@@ -925,7 +925,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 100
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3385,7 +3385,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    range: {x: 0.5, y: 2}
+    range: {x: 0.5, y: 1}
     separateAxes: 0
   RotationBySpeedModule:
     enabled: 0
@@ -4863,6 +4863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
   damage: 2
+  destroyOnContact: 0
 --- !u!114 &7190784143686005932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4875,14 +4876,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a31a554882e04429d2b662dc78342a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  rotateSpeed: 200
+  speed: 15
+  rotateSpeed: 700
   homingRadius: 5
-  force: 0
+  force: 1000
   target: {fileID: 0}
   layer:
     serializedVersion: 2
     m_Bits: 128
+  WaitTilSpinSeconds: 0.3
   tagToDamage: Enemy
   damage: 4
 --- !u!1 &3606977082932188220
@@ -5041,10 +5043,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Time: 0.3
+  m_Time: 0.2
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.2
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -5057,6 +5059,15 @@ TrailRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
