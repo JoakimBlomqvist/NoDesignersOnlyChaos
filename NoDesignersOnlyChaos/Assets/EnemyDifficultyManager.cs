@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyDifficultyManager : MonoBehaviour
 {
-    public int buffedHP;
+    public float buffedHP;
     [SerializeField] private int hpPerRoom = 1;
     [SerializeField] private int everyXroom;
     public static EnemyDifficultyManager instance;

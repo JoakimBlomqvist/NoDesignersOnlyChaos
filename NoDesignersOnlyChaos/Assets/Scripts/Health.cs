@@ -9,9 +9,8 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour, IDamageable
 {
     [SerializeField] public Image HealthBar;
-    public float CurrentHealth;
-    private int maxHealth;
-    [SerializeField] private int health;
+    private float maxHealth;
+    [SerializeField] private float health;
     [SerializeField] private ParticleSystem blood;
     public UnityEvent OnDamageTaken;
     public UnityEvent OnDeathEvent;
@@ -27,8 +26,8 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private float TakeDamageVolume = 1;
 
     [SerializeField]private bool player;
-    [SerializeField]private int buffedMaxHp;
-    [SerializeField] private int buffedHP;
+    [SerializeField]private float buffedMaxHp;
+    [SerializeField] private float buffedHP;
     [SerializeField] private float cameraShakeAmount;
     private void Awake()
     {
@@ -76,8 +75,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         if (HealthBar != null)
         {
-            CurrentHealth = health;
-            HealthBar.fillAmount = CurrentHealth / maxHealth;
+            HealthBar.fillAmount = health / maxHealth;
         }
     }
 

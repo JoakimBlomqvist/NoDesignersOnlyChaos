@@ -15,7 +15,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float scrollSpeed = 1f;
     [SerializeField] private float minZoom = 0.2f, maxZoom = 4f;
     private float _newZoom = 0;
-    private bool isShaking;
 
     private int shakeCounter;
     
@@ -72,12 +71,11 @@ public class CameraController : MonoBehaviour
     {
         shakeCounter++;
         value = value * 0.15f;
-        isShaking = true;
         int counter = 10;
         while (counter > 0)
         {
             _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-value, value)));
-            float ortoShake = Mathf.Clamp(value * 0.07f, 0f,0.30f);
+            float ortoShake = Mathf.Clamp(value * 0.04f, 0f,0.30f);
             Debug.Log(ortoShake);
             _camera.orthographicSize += Random.Range(-0f,ortoShake);
             counter--;
@@ -86,6 +84,5 @@ public class CameraController : MonoBehaviour
         _camera.orthographicSize = _newZoom;
         _camera.transform.rotation = Quaternion.Euler(Vector3.zero);
         shakeCounter--;
-        isShaking = false;
     }
 }
