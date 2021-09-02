@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BatEnemy : MonoBehaviour
+public class BatEnemy : Enemy
 {
     public LayerMask targetLayer;
     public float moveSpeed = 2f;    

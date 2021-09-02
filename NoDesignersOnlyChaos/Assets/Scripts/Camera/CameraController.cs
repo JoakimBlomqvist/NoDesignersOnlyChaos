@@ -76,7 +76,6 @@ public class CameraController : MonoBehaviour
         {
             _camera.transform.rotation = Quaternion.Euler(new Vector3(0, 0, Random.Range(-value, value)));
             float ortoShake = Mathf.Clamp(value * 0.04f, 0f,0.30f);
-            Debug.Log(ortoShake);
             _camera.orthographicSize += Random.Range(-0f,ortoShake);
             counter--;
             yield return new WaitForSeconds(0.01f);

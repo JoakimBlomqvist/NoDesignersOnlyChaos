@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpermCharacter : MonoBehaviour
+public class SpermCharacter : Enemy
 {
     public LayerMask targetLayer;
     public float moveSpeed = 2f;    
