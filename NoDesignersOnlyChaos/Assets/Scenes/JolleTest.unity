@@ -5369,6 +5369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb03465a8547c746820a64c8b119444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  toxicGas: {fileID: 0}
 --- !u!1 &778860133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5579,6 +5580,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   TrollSpoT: {fileID: 0}
   playerCollider: {fileID: 0}
+  rateOfFire: 0
   rapidFire: 0
 --- !u!4 &928326070
 Transform:
@@ -5777,7 +5779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832506483}
   m_Layer: 0
-  m_Name: ToxicGas
+  m_Name: ToxicGas = done
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
