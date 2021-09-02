@@ -404,6 +404,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 628812870781660941, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 628812870781660941, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 108.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 628812870781660941, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -85.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5746027488075460659, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -492,13 +504,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health_Ui
       objectReference: {fileID: 0}
-    - target: {fileID: 5746027489219633209, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 199.69995
-      objectReference: {fileID: 0}
-    - target: {fileID: 5746027489219633209, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -49.80005
+    - target: {fileID: 7155255699427344965, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
@@ -1165,9 +1173,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7712379633458736792, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
+      propertyPath: Shield
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712379633458736792, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 197551613}
+    - target: {fileID: 7712379633458736792, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
+      propertyPath: ShieldBar
+      value: 
+      objectReference: {fileID: 1264004659}
     - target: {fileID: 7712379633458736793, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
       propertyPath: spellType
       value: 
@@ -1293,6 +1309,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0001b5967b137448ba012129a36701d, type: 3}
+--- !u!114 &1264004659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7155255699427344965, guid: 43f8505f009500b479c0553667a5f4a1, type: 3}
+  m_PrefabInstance: {fileID: 197551612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1321452386
 PrefabInstance:
   m_ObjectHideFlags: 0

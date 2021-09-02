@@ -10,6 +10,9 @@ public class Health : MonoBehaviour, IDamageable
 {
     [SerializeField] public Image HealthBar;
     private float maxHealth;
+    private float maxShield;
+    [SerializeField] public Image ShieldBar;
+    [SerializeField] private float Shield;
     [SerializeField] private float health;
     [SerializeField] private ParticleSystem blood;
     public UnityEvent OnDamageTaken;
@@ -31,6 +34,9 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private float cameraShakeAmount;
     private void Awake()
     {
+
+        maxShield = Shield;
+
         maxHealth = health;
         if (player)
         {
@@ -57,7 +63,12 @@ public class Health : MonoBehaviour, IDamageable
     public void TakeDamage(float damage)
     {
         PlayTakeDamageSound();
-        health -= damage;
+        Shield -= damage;
+        if(Shield <= 0)
+        {
+            health -= damage;
+        }
+        UpdateShieldFillAMount();
         if (health <= 0)
         {
             Die();
@@ -78,9 +89,21 @@ public class Health : MonoBehaviour, IDamageable
             HealthBar.fillAmount = health / maxHealth;
         }
     }
-
+    private void UpdateShieldFillAMount()
+    {
+        if (ShieldBar != null)
+        {
+            ShieldBar.fillAmount = Shield / maxShield;
+        }
+    }
     private void RegenHealthOnRoomChange()
     {
+        if (RoomCurrency.Instance.roomCounter % 3 == 0)
+        {
+            Shield = maxShield;
+            UpdateShieldFillAMount();
+        }
+
         health = Mathf.Clamp(health + 5, -1, maxHealth);
         UpdateHealthFillAMount();
     }
