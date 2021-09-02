@@ -1566,6 +1566,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _postVolume: {fileID: 1772363777}
   _colorAdjustments: {fileID: 0}
+  colorShift: {r: 0, g: 0, b: 0, a: 0}
+  colorValue: 0
+  movementSpeedBoost: 3
+  playerScript: {fileID: 0}
 --- !u!1 &1412688902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,6 +2119,10 @@ PrefabInstance:
     - target: {fileID: 3481129449763619679, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498843208496813931, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7049479779950951861, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: settings
