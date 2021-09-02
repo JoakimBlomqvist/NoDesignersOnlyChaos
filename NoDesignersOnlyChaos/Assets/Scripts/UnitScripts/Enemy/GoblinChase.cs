@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinChase : MonoBehaviour
+public class GoblinChase : Enemy
 {
     public LayerMask targetLayer;
     public float moveSpeed = 2f;    
@@ -18,6 +18,7 @@ public class GoblinChase : MonoBehaviour
 
     private void OnEnable()
     {
+        base.OnEnable();
         startChase = false;
         StartCoroutine(WaitTilchase());
     }

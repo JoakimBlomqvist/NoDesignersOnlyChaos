@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sunboss : MonoBehaviour
+public class Sunboss : Enemy
 {
     [SerializeField] private GameObject SunBlast;
     [SerializeField] private float fireRate;

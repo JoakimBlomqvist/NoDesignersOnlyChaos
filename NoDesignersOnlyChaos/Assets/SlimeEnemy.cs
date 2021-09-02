@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class SlimeEnemy : MonoBehaviour
+public class SlimeEnemy : Enemy
 {
     [SerializeField] GameObject SlimeToSpawn;
     private Rigidbody2D rb;

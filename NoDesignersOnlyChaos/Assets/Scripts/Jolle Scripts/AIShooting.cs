@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIShooting : MonoBehaviour
+public class AIShooting : Enemy
 {
     [SerializeField] private GameObject AI_bullet;
     [SerializeField] private float fireRate;
