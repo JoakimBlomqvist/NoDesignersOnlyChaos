@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -9,6 +11,8 @@ public class FloatVariable : ScriptableObject
     [Multiline]
     public string DeveloperDescription = "";
 #endif
+    [SerializeField] private bool defaultValueOnAwake;
+    [SerializeField] private float defaultValue;
     public float Value;
 
     public void SetValue(float value)

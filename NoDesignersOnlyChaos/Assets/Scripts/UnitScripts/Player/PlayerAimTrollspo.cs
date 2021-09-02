@@ -15,25 +15,16 @@ public class PlayerAimTrollspo : MonoBehaviour
     public SpellType spellType;
     public GameObject projectilePrefab;
     public bool rapidFire = false;
-
+    public FloatVariable rateOfFire;
+    private float fireRateTimer = 0;
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         spellType.projectilePrefab = projectilePrefab;
         spellType.TrollSpoT = TrollSpoT;
         spellType.playerCollider = GetComponent<Collider2D>();
+        rateOfFire.SetValue(spellType.rateOfFire);
     }
-    /*
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Respawn"))
-        {
-            spellType = other.gameObject.GetComponent<SpellType>();
-            PickUp();
-            Destroy(other.gameObject);
-        }
-    }
-    */
     [ContextMenu("Pick up")]
     public void PickUp()
     {
@@ -48,22 +39,7 @@ public class PlayerAimTrollspo : MonoBehaviour
 
     void Update()
     {
-        switch (rapidFire)
-        {
-            case false:
-                if (Input.GetMouseButtonDown(0))
-                {
-                    spellType.Shoot();
-                }
-                break;
-            
-            case true:
-                if (Input.GetMouseButton(0))
-                {
-                    spellType.Shoot();
-                }
-                break;
-        }
+        WaitForNextShot();
 
         Vector3 aimDir = (UtilsClass.GetMouseWorldPosV3() - transform.position).normalized;
         TrollSpoT.position = transform.position + aimDir;
@@ -71,6 +47,24 @@ public class PlayerAimTrollspo : MonoBehaviour
         FlipCharacterSprite();
     }
 
+    private void WaitForNextShot()
+    {
+        fireRateTimer += Time.deltaTime;
+        if (fireRateTimer > rateOfFire.Value)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                spellType.Shoot();
+                fireRateTimer = 0;
+            }
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            fireRateTimer = rateOfFire.Value;
+        }
+    }
+    
+    
     private void FlipCharacterSprite()
     {
         if (TrollSpoT.position.x > transform.position.x && _spriteRenderer.flipX == true)
