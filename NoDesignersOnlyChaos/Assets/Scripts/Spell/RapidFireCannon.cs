@@ -6,6 +6,7 @@ using UnityEngine;
 public class RapidFireCannon : SpellType
 {
     private bool allowFire = true;
+
     private void Start()
     {
         rapidFire = true;
@@ -13,11 +14,15 @@ public class RapidFireCannon : SpellType
 
     public override void Shoot()
     {
+        var projectile = Instantiate(projectilePrefab, new Vector3(TrollSpoT.position.x, TrollSpoT.position.y,0), Quaternion.identity);
+        Physics2D.IgnoreCollision(projectile.GetComponent<Collider2D>(), playerCollider);
+        /*
         if (allowFire)
         {
             FireRate();
             Invoke(nameof(AllowFire), 0.08f);
         }
+        */
     }
 
     private void FireRate()
