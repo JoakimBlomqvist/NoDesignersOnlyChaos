@@ -273,6 +273,7 @@ MonoBehaviour:
   spellType: {fileID: 0}
   projectilePrefab: {fileID: 3606977081922651789, guid: dacfb97a2b2c8c441ab27d0cd7509a4b, type: 3}
   rapidFire: 0
+  rateOfFire: {fileID: 11400000, guid: 7c0bfdb91dc74864e93a4e7418dfea32, type: 2}
 --- !u!114 &914799005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthBar: {fileID: 0}
-  CurrentHealth: 0
   health: 200
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -331,5 +331,4 @@ MonoBehaviour:
   spriteholder: {fileID: 11400000, guid: 279784a432bb8f14ea5b915c927d8719, type: 2}
   Characters: []
   characterbuttons: []
-  spriteRender: {fileID: 0}
   characterindex: 0

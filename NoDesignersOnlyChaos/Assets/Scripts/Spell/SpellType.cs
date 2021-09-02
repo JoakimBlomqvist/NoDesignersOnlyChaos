@@ -11,7 +11,7 @@ public class SpellType : MonoBehaviour
     public Transform TrollSpoT;
     [HideInInspector]
     public Collider2D playerCollider;
-
+    public float rateOfFire;
     public bool rapidFire = false;
     
     public virtual void Shoot()
@@ -23,6 +23,7 @@ public class SpellType : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<PlayerAimTrollspo>().rateOfFire.Value = rateOfFire;
             other.gameObject.GetComponent<PlayerAimTrollspo>().spellType = this;
             other.gameObject.GetComponent<PlayerAimTrollspo>().PickUp();
             gameObject.SetActive(false);

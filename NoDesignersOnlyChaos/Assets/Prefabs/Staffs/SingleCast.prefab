@@ -102,6 +102,7 @@ MonoBehaviour:
   anim: {fileID: 9100000, guid: d38ea09e71e429647a86bec8546aecce, type: 2}
   TrollSpoT: {fileID: 7910695044445915251}
   playerCollider: {fileID: 0}
+  rateOfFire: 0.3
   rapidFire: 0
 --- !u!61 &7910695044445915252
 BoxCollider2D:

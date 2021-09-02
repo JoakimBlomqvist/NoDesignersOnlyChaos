@@ -70,7 +70,6 @@ public class BomberAi : MonoBehaviour
     IEnumerator BombDropping()
     {
         yield return new WaitForSeconds(2f);
-
         var bomb = Instantiate(Bomb, transform.position, Quaternion.identity);
         Physics2D.IgnoreCollision(bomb.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
 
