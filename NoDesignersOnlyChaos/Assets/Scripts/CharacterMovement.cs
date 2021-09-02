@@ -7,7 +7,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private GameObject DeathScreen;
-    [SerializeField] private float moveSpeed;
+    public float moveSpeed;
     [SerializeField] private Health hpScript;
     
     private Rigidbody2D rb;

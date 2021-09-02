@@ -513,11 +513,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &226608964 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3481129449763619679, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-  m_PrefabInstance: {fileID: 3481129448343267963}
+--- !u!114 &222809564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 984193289997853662, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
+  m_PrefabInstance: {fileID: 249868298}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a230a24fb69635445896c42b9b8cc6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &249868298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1349,103 +1355,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0001b5967b137448ba012129a36701d, type: 3}
---- !u!1001 &1321452386
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 226608964}
-    m_Modifications:
-    - target: {fileID: 8935322022509067791, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_Name
-      value: Audio Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 540
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8935322022509067890, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 74d730f1366b6b64a8bd53d5116d20c1, type: 3}
 --- !u!1 &1362042303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,6 +1504,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _postVolume: {fileID: 1772363777}
   _colorAdjustments: {fileID: 0}
+  colorShift: {r: 0, g: 0, b: 0, a: 0}
+  colorValue: 0
+  movementSpeedBoost: 3
+  playerScript: {fileID: 0}
 --- !u!1 &1412688902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +1970,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3481129449345820653, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
+      propertyPath: _characterMovement
+      value: 
+      objectReference: {fileID: 222809564}
     - target: {fileID: 3481129449763619672, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: m_Name
       value: ---------MANAGERS--------

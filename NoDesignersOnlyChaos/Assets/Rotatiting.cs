@@ -23,7 +23,7 @@ public class Rotatiting : MonoBehaviour
         randVector = random;
         transform.position = transform.position + randVector;
         mousePos = UtilsClass.GetMouseWorldPosV3();
-        if (mousePos.x > PlayerManager.playerPosition.x)
+        if (mousePos.x > PlayerManager.Instance.playerPosition.x)
         {
             reverse = true;
         }
