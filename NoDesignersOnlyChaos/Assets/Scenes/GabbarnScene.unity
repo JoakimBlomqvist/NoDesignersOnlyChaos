@@ -2023,6 +2023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23abe6170afa8e46b2cd43d322ec769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyList: []
 --- !u!1001 &3481129448343267963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2117,6 +2118,10 @@ PrefabInstance:
     - target: {fileID: 3481129449763619679, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498843208496813931, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7049479779950951861, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: settings
@@ -2410,6 +2415,14 @@ PrefabInstance:
       propertyPath: DeathScreen
       value: 
       objectReference: {fileID: 2044429485}
+    - target: {fileID: 7712379633458736797, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712379633458736797, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7712379633458736806, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
       propertyPath: m_Name
       value: Player 1

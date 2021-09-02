@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour
 {
     protected void AddSelfToEnemyList()
     {
-        EnemyListHandler.EnemyList.Add(this.gameObject);
+        EnemyListHandler.Instance.EnemyList.Add(this.gameObject);
+        Debug.Log("Added " + this.gameObject + "  to enemyList");
     }
 
     protected void OnEnable()
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void OnDisable()
     {
-        if(EnemyListHandler.EnemyList.Contains(this.gameObject))
-            EnemyListHandler.EnemyList.Remove(this.gameObject);
+        if(EnemyListHandler.Instance.EnemyList.Contains(this.gameObject))
+            EnemyListHandler.Instance.EnemyList.Remove(this.gameObject);
     }
 }

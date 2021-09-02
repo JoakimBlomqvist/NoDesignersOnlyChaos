@@ -16,11 +16,16 @@ public class FreezeAbility : MonoBehaviour
 
     public void FreezeAllEnemies()  
     {
-        for (int i = 0; i < EnemyListHandler.EnemyList.Count; i++)
+        for (int i = 0; i < EnemyListHandler.Instance.EnemyList.Count; i++)
         {
-            GameObject enemyGameObject = EnemyListHandler.EnemyList[i].gameObject;
+            Debug.Log(i);
+            GameObject enemyGameObject = EnemyListHandler.Instance.EnemyList[i].gameObject;
             Debug.Log("Freezing " + enemyGameObject.name);
             Enemy enemy = enemyGameObject.GetComponent<Enemy>();
+            if (enemyGameObject.GetComponent<SpriteRenderer>() != null)
+            {
+                enemyGameObject.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1);
+            }
             if (enemy is BomberAi)
             {
                 enemyGameObject.GetComponent<BomberAi>().isFreezed = true;
