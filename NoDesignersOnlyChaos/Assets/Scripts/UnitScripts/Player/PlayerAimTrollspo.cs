@@ -39,24 +39,6 @@ public class PlayerAimTrollspo : MonoBehaviour
 
     void Update()
     {
-        /*
-        switch (rapidFire)
-        {
-            case false:
-                if (Input.GetMouseButtonDown(0))
-                {
-                    spellType.Shoot();
-                }
-                break;
-            
-            case true:
-                if (Input.GetMouseButton(0))
-                {
-                    spellType.Shoot();
-                }
-                break;
-        }
-        */
         WaitForNextShot();
 
         Vector3 aimDir = (UtilsClass.GetMouseWorldPosV3() - transform.position).normalized;
