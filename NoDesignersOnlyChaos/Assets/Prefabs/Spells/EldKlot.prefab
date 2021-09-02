@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7116794584908621008}
   - component: {fileID: 8616641346931853698}
   - component: {fileID: 7937057064753942446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EldKlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4884,6 +4884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Enemy
   damage: 5
+  destroyOnContact: 0
 --- !u!1 &3606977082932188220
 GameObject:
   m_ObjectHideFlags: 0
