@@ -5332,7 +5332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505206724}
   m_Layer: 0
-  m_Name: BloodHoundUlt
+  m_Name: BloodHoundUlt = Done
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5697,7 +5697,7 @@ GameObject:
   - component: {fileID: 1828115509}
   - component: {fileID: 1828115508}
   m_Layer: 0
-  m_Name: Abillty = skold som kommer tillbaka efter x sekunder
+  m_Name: Abillty = shield = Done
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
