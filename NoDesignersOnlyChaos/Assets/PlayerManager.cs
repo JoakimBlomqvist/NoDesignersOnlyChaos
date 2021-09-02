@@ -6,16 +6,26 @@ using UnityEngine.Rendering.Universal;
 
 public class PlayerManager : MonoBehaviour
 {
-    private CharacterMovement _characterMovement;
+    public CharacterMovement _characterMovement;
 
 
-    public static GameObject playerObj;
-    public static Transform playerTransform;
-    public static Vector3 playerPosition;
+    public GameObject playerObj;
+    public Transform playerTransform;
+    public Vector3 playerPosition;
 
+    public static PlayerManager Instance;
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+        
         _characterMovement = FindObjectOfType<CharacterMovement>();
         playerObj = _characterMovement.gameObject;
         playerTransform = playerObj.transform;
