@@ -183,7 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 5424464695712227836, guid: ac35eca05db9c4448bde792a8d71805b, type: 3}
   HealthBar: {fileID: 0}
+  ShieldBar: {fileID: 0}
+  Shield: 0
   health: 200
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -197,10 +200,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 0}
   TakeDamageVolume: 1
+  ressUltimate: 1
   player: 1
   buffedMaxHp: 0
   buffedHP: 0
   cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!114 &7712379633458736807
 MonoBehaviour:
   m_ObjectHideFlags: 0

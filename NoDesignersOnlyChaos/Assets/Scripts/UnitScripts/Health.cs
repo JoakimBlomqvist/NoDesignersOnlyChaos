@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour, IDamageable
 {
+    [SerializeField] private GameObject RessObject;
     [SerializeField] public Image HealthBar;
     private float maxHealth;
     private float maxShield;
@@ -27,14 +28,17 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private AudioClip TakeDamageAudioClip;
     [Range(0,1)]
     [SerializeField] private float TakeDamageVolume = 1;
-
-    [SerializeField]private bool player;
-    [SerializeField]private float buffedMaxHp;
+    public bool ressUltimate;
+    [SerializeField] private bool player;
+    [SerializeField] private float buffedMaxHp;
     [SerializeField] private float buffedHP;
     [SerializeField] private float cameraShakeAmount;
+    [SerializeField] private Rigidbody2D rb;
     private void Awake()
     {
-
+        //Bool for RessUltimate if its true you get 1 more extra health
+        
+        //till för shield janne
         maxShield = Shield;
 
         maxHealth = health;
@@ -71,7 +75,20 @@ public class Health : MonoBehaviour, IDamageable
         UpdateShieldFillAMount();
         if (health <= 0)
         {
-            Die();
+            if (ressUltimate == true)
+            {
+                rb = GetComponent<Rigidbody2D>();
+                rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                Instantiate(RessObject, transform.position, Quaternion.identity);
+                Invoke("unfreezeChar", 3f);
+                health = maxHealth;
+                ressUltimate = false;
+            }
+            else
+            {
+                Die();
+            }
+            
         }
         UpdateHealthFillAMount();
         
@@ -135,5 +152,9 @@ public class Health : MonoBehaviour, IDamageable
         {
             SFXManager.Instance.PlaySound(TakeDamageAudioClip);
         }
+    }
+    private void unfreezeChar()
+    {
+        rb.constraints = RigidbodyConstraints2D.None;
     }
 }
