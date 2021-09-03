@@ -528,6 +528,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1827574446309837920, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827574446309837920, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827574446309837920, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827574446309837920, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827574446309837920, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2016908249742602136, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
       propertyPath: m_RootOrder
       value: 1
