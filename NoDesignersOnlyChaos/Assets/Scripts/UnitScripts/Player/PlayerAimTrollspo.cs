@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Diagnostics;
 
@@ -16,7 +17,24 @@ public class PlayerAimTrollspo : MonoBehaviour
     public GameObject projectilePrefab;
     public bool rapidFire = false;
     public FloatVariable rateOfFire;
+    public UltimateAbility ultimate;
     private float fireRateTimer = 0;
+
+    #region Subscriptions
+
+    private void OnEnable()
+    {
+        EventManager.instance.OnSetUltimate += GetUltimate;
+        Debug.Log("Subbed");
+    }
+    
+    private void OnDisable()
+    {
+        EventManager.instance.OnSetUltimate += GetUltimate;
+    }
+
+    #endregion
+
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -25,6 +43,7 @@ public class PlayerAimTrollspo : MonoBehaviour
         spellType.playerCollider = GetComponent<Collider2D>();
         rateOfFire.SetValue(spellType.rateOfFire);
     }
+
     [ContextMenu("Pick up")]
     public void PickUp()
     {
@@ -45,6 +64,11 @@ public class PlayerAimTrollspo : MonoBehaviour
         TrollSpoT.position = transform.position + aimDir;
         TrollSpoT.LookAt(UtilsClass.GetMouseWorldPosV3());
         FlipCharacterSprite();
+        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Ultimate();
+        }
     }
 
     private void WaitForNextShot()
@@ -63,7 +87,14 @@ public class PlayerAimTrollspo : MonoBehaviour
             fireRateTimer = rateOfFire.Value;
         }
     }
-    
+
+    private void Ultimate()
+    {
+        if (ultimate != null)
+        {
+            ultimate.UseUltimate();
+        }
+    }
     
     private void FlipCharacterSprite()
     {
@@ -81,5 +112,11 @@ public class PlayerAimTrollspo : MonoBehaviour
     {
         var projectile = Instantiate(projectilePrefab, new Vector3(TrollSpoT.position.x, TrollSpoT.position.y,0), quaternion.identity);
         Physics2D.IgnoreCollision(projectile.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+    }
+
+    private void GetUltimate(UltimateAbility ult)
+    {
+        ultimate = ult;
+        ultimate.enabled = true;
     }
 }

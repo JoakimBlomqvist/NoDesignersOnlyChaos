@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [DefaultExecutionOrder(-1)]
 public class EventManager : MonoBehaviour
@@ -22,6 +23,7 @@ public class EventManager : MonoBehaviour
     public event Action OnDie;
     public event Action OnChangeRoom;
     public event Action<Vector2> OnTriggerRoom;
+    public event Action<UltimateAbility> OnSetUltimate;
 
     public void Die()
     {
@@ -37,7 +39,12 @@ public class EventManager : MonoBehaviour
     {
         OnTriggerRoom?.Invoke(vector);
     }
-    
+
+    public void SetUltimate(UltimateAbility ultimate)
+    {
+        OnSetUltimate?.Invoke(ultimate);
+    }
+
 
 
 }

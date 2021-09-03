@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class BloodHound : MonoBehaviour
+public class BloodHound : UltimateAbility 
 {
     [SerializeField] private Volume _postVolume;
     [SerializeField] private ColorAdjustments _colorAdjustments;
@@ -21,8 +21,8 @@ public class BloodHound : MonoBehaviour
         _postVolume.profile.TryGet(out _colorAdjustments);
         playerScript = PlayerManager.Instance._characterMovement;
     }
-
-    private void ColorShift()
+    
+    public void ColorShift()
     {
         Debug.Log("COLORCOLORCOLOR");
         colorShift = Color.Lerp(Color.white, Color.red, colorValue);
@@ -37,8 +37,9 @@ public class BloodHound : MonoBehaviour
         }
 
     }
+
     [ContextMenu("BLOODHOUND")]
-    private void BloodHoundVision()
+    public override void UseAbility()
     {
         _colorAdjustments.active = true;
         playerScript.moveSpeed += movementSpeedBoost;
@@ -46,7 +47,7 @@ public class BloodHound : MonoBehaviour
         StartCoroutine(TurnOff());
     }
 
-    private IEnumerator TurnOff()
+    public IEnumerator TurnOff()
     {
         yield return new WaitForSeconds(10f);
         playerScript.moveSpeed -= movementSpeedBoost;
