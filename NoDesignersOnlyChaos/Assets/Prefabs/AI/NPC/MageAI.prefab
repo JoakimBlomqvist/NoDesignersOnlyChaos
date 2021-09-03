@@ -522,6 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 0}
   ShieldBar: {fileID: 0}
   Shield: 0
@@ -538,10 +539,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 0}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
   cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!50 &8965146978033568774
 Rigidbody2D:
   serializedVersion: 4
@@ -562,7 +565,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &5022193954068483341
 GameObject:
   m_ObjectHideFlags: 0

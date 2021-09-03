@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 868707883}
   - component: {fileID: -2158348843855588978}
   - component: {fileID: 9199058438197428417}
+  - component: {fileID: 8133562832456222054}
   m_Layer: 6
   m_Name: Shooting AI
   m_TagString: Enemy
@@ -322,6 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 4584748722325164378}
   ShieldBar: {fileID: 0}
   Shield: 0
@@ -338,10 +340,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
   cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!50 &9199058438197428417
 Rigidbody2D:
   serializedVersion: 4
@@ -362,7 +366,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
+--- !u!114 &8133562832456222054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917264477666692168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f82d9e46ee17949ae6380d87e865f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7485315312088046089
 GameObject:
   m_ObjectHideFlags: 0

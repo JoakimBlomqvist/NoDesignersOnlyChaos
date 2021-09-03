@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 5666863316758985675}
   - component: {fileID: 3331511739660966605}
   - component: {fileID: -2764721250805186566}
+  - component: {fileID: 8182560694775709728}
   m_Layer: 6
   m_Name: SunBoss
   m_TagString: Enemy
@@ -251,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 3787373263987505525}
   ShieldBar: {fileID: 0}
   Shield: 0
@@ -279,10 +281,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
   cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!50 &-2764721250805186566
 Rigidbody2D:
   serializedVersion: 4
@@ -304,6 +308,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8182560694775709728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696570416784371757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f82d9e46ee17949ae6380d87e865f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696570417997288429
 GameObject:
   m_ObjectHideFlags: 0
