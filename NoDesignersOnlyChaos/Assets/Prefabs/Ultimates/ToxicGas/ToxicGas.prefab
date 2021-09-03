@@ -4823,3 +4823,4 @@ MonoBehaviour:
   tagToDamage: Enemy
   damage: 1
   destroyOnContact: 0
+  followSpeed: 10

@@ -17,8 +17,7 @@ public class CameraController : MonoBehaviour
     private float _newZoom = 0;
 
     private int shakeCounter;
-    
-    
+
     private void Awake()
     {
         _camera = GetComponent<Camera>();

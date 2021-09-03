@@ -1441,7 +1441,6 @@ GameObject:
   - component: {fileID: 1362042304}
   - component: {fileID: 1362042307}
   - component: {fileID: 1362042308}
-  - component: {fileID: 1362042309}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1563,25 +1562,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &1362042309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362042303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f86c9a8cf22ab4cbd90e1392459c6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownRooms: 0
-  _postVolume: {fileID: 1772363777}
-  _colorAdjustments: {fileID: 0}
-  colorShift: {r: 0, g: 0, b: 0, a: 0}
-  colorValue: 0
-  movementSpeedBoost: 3
-  playerScript: {fileID: 0}
 --- !u!1 &1412688902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,17 +1676,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownRooms: 0
---- !u!114 &1610945457 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4392363928648353920, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
+--- !u!1 &1610945455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8646291530304886961, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
   m_PrefabInstance: {fileID: 3481129448343267963}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &1610945460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610945455}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6a8a2b6d5caad49ab46398bfa2a684, type: 3}
+  m_Script: {fileID: 11500000, guid: ddb03465a8547c746820a64c8b119444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownRooms: 1
+  toxicGas: {fileID: 686167237994013712, guid: 7e1857a735fca1d4998f3e067117dd8d, type: 3}
 --- !u!114 &1772363777 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3481129448421438683, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
@@ -2164,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: 3791581518187331199, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: ultimateToUse
       value: 
-      objectReference: {fileID: 1610945457}
+      objectReference: {fileID: 1610945460}
     - target: {fileID: 4392363928648353920, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: blackHole
       value: 

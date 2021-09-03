@@ -38,7 +38,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         //Bool for RessUltimate if its true you get 1 more extra health
         
-        //till för shield janne
+        //till fÃ¶r shield janne
         maxShield = Shield;
 
         maxHealth = health;
