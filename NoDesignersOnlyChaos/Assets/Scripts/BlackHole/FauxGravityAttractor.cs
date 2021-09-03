@@ -25,6 +25,7 @@ public class FauxGravityAttractor : MonoBehaviour
         Vector3 bodyUp = body.up;
 
         enemyrb = body.GetComponent<Rigidbody2D>();
+        enemyrb.constraints = RigidbodyConstraints2D.FreezeRotation;
         enemyrb.velocity = Vector2.zero;
         enemyrb.AddForce(gravityUp * gravity);
 

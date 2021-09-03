@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 1058195155614268621}
   - component: {fileID: 7939881929073499595}
   - component: {fileID: -4897886438514510765}
+  - component: {fileID: -8982489349585385145}
   m_Layer: 6
   m_Name: MiniSunboss
   m_TagString: Enemy
@@ -352,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 8504109405175114008}
   ShieldBar: {fileID: 0}
   Shield: 0
@@ -368,10 +370,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: cb3a4a21164beb1428df11c0c8c1e542, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
   cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!50 &-4897886438514510765
 Rigidbody2D:
   serializedVersion: 4
@@ -393,6 +397,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-8982489349585385145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6305220917596223275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f82d9e46ee17949ae6380d87e865f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6305220918258155185
 GameObject:
   m_ObjectHideFlags: 0
