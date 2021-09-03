@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    
     protected void AddSelfToEnemyList()
     {
-        EnemyListHandler.Instance.EnemyList.Add(this.gameObject);
-        Debug.Log("Added " + this.gameObject + "  to enemyList");
+        //EnemyListHandler.Instance.EnemyList.Add(this.gameObject);
     }
 
     protected void OnEnable()
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void OnDisable()
     {
-        if(EnemyListHandler.Instance.EnemyList.Contains(this.gameObject))
-            EnemyListHandler.Instance.EnemyList.Remove(this.gameObject);
+        //if(EnemyListHandler.Instance.EnemyList.Contains(this.gameObject))
+            //EnemyListHandler.Instance.EnemyList.Remove(this.gameObject);
     }
 }
