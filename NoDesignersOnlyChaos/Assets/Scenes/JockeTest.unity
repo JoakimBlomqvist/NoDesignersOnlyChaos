@@ -1658,24 +1658,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0237418f4f67f944c95f0c41af6cb17f, type: 3}
---- !u!1 &1531326303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7712379633458736806, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
-  m_PrefabInstance: {fileID: 806668031}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1531326304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531326303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7ae172ad6241b44ba0c1eeb12af51e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownRooms: 0
 --- !u!1 &1610945455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8646291530304886961, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
