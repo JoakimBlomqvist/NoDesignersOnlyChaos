@@ -155,6 +155,8 @@ public class Health : MonoBehaviour, IDamageable
     }
     private void unfreezeChar()
     {
+        
         rb.constraints = RigidbodyConstraints2D.None;
+        
     }
 }
