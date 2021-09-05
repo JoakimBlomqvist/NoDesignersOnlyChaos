@@ -12,8 +12,6 @@ public class BomberAi : Enemy
     Vector3 lastVelocity;
     [SerializeField] private GameObject Bomb;
 
-    public bool isFreezed;
-    
     [SerializeField] private int force;
     private void Start()
     {

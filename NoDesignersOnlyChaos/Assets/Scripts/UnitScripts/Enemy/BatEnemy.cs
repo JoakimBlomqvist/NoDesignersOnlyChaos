@@ -18,11 +18,14 @@ public class BatEnemy : Enemy
 
     private void Update()
     {
-        if (Lockedtarget == null)
-        {
-            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
-        }
+        if(isFreezed)
+            return;
+        FindTarget();
+        AttackTarget();
+    }
 
+    private void AttackTarget()
+    {
         if (Lockedtarget != null)
         {
             var direction = Vector2.zero;
@@ -31,7 +34,15 @@ public class BatEnemy : Enemy
             rb.AddRelativeForce(direction.normalized * moveSpeed, ForceMode2D.Force);
         }
     }
-    
+
+    private void FindTarget()
+    {
+        if (Lockedtarget == null)
+        {
+            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag(tagToDamage))

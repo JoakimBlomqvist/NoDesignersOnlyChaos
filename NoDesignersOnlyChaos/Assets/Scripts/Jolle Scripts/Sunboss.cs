@@ -18,8 +18,9 @@ public class Sunboss : Enemy
 
     void Update()
     {
-
-            FireRate();
+        if(isFreezed)
+            return;
+        FireRate();
 
     }
 

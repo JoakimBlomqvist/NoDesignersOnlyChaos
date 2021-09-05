@@ -19,6 +19,9 @@ public class AIShooting : Enemy
     // Update is called once per frame
     void Update()
     {
+        if(isFreezed)
+            return;
+        
         if (AI_Bullet.player_Alive == false)
         {
             FireRate();
@@ -28,14 +31,11 @@ public class AIShooting : Enemy
 
     void FireRate()
     {
-        
-            if (Time.time > nextFire)
-            {
-            GameObject bullet = Instantiate(AI_bullet, transform.position, Quaternion.identity);
-            Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
-            nextFire = Time.time + fireRate;
-            }
-        
-        
+        if (Time.time > nextFire)
+        {
+        GameObject bullet = Instantiate(AI_bullet, transform.position, Quaternion.identity);
+        Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), gameObject.GetComponent<Collider2D>());
+        nextFire = Time.time + fireRate;
+        }
     }
 }

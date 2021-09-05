@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
+    public bool isFreezed;
     protected void AddSelfToEnemyList()
     {
         //EnemyListHandler.Instance.EnemyList.Add(this.gameObject);

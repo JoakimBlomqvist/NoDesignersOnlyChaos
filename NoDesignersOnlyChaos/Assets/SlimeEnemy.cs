@@ -38,7 +38,8 @@ public class SlimeEnemy : Enemy
 
     private void Update()
     {
-        
+        if(isFreezed)
+            return;
         if (!coolDown)
         {
                 StartCoroutine(NewDirection());

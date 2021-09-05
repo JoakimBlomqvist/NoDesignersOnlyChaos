@@ -25,19 +25,30 @@ public class GoblinChase : Enemy
 
     void Update()
     {
-        if (Lockedtarget == null && startChase)
-        {
-            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
-        }
-        
+        if(isFreezed)
+            return;
+        FindTarget();
+        AttackTarget();
+    }
+
+    private void AttackTarget()
+    {
         if (Lockedtarget != null)
         {
             var direction = Vector2.zero;
-            
+
             direction = Lockedtarget.transform.position - transform.position;
             //rb.AddRelativeForce(direction.normalized * moveSpeed, ForceMode2D.Force);*/
 
             rb.MovePosition(rb.position + direction.normalized * Time.deltaTime * moveSpeed);
+        }
+    }
+
+    private void FindTarget()
+    {
+        if (Lockedtarget == null && startChase)
+        {
+            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
         }
     }
 

@@ -19,11 +19,14 @@ public class SpermCharacter : Enemy
 
     private void Update()
     {
-        if (Lockedtarget == null)
-        {
-            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
-        }
+        if(isFreezed)
+            return;
+        FindTarget();
+        AttackTarget();
+    }
 
+    private void AttackTarget()
+    {
         if (Lockedtarget != null)
         {
             if (!once)
@@ -31,7 +34,7 @@ public class SpermCharacter : Enemy
                 Physics2D.IgnoreCollision(Lockedtarget, gameObject.GetComponent<Collider2D>());
                 once = true;
             }
-            
+
             var direction = Vector2.zero;
 
             direction = Lockedtarget.transform.position - transform.position;
@@ -43,6 +46,14 @@ public class SpermCharacter : Enemy
             {
                 rb.velocity = direction * moveSpeed;
             }
+        }
+    }
+
+    private void FindTarget()
+    {
+        if (Lockedtarget == null)
+        {
+            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
         }
     }
 }

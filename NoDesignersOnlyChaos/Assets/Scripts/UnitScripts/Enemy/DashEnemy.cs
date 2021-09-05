@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DashEnemy : MonoBehaviour
+public class DashEnemy : Enemy
 {
     private Rigidbody2D rb;
     private List<Collider2D> targets;
@@ -19,11 +19,14 @@ public class DashEnemy : MonoBehaviour
 
     void Update()
     {
-        if (Lockedtarget == null)
-        {
-            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
-        }
+        if(isFreezed)
+            return;
+        FindTarget();
+        AttackTarget();
+    }
 
+    private void AttackTarget()
+    {
         if (Lockedtarget != null)
         {
             if (allowDash)
@@ -31,6 +34,14 @@ public class DashEnemy : MonoBehaviour
                 StartCoroutine(DashCooldown());
                 StartCoroutine(DashTowards());
             }
+        }
+    }
+
+    private void FindTarget()
+    {
+        if (Lockedtarget == null)
+        {
+            Lockedtarget = Physics2D.OverlapCircle(transform.position, 8f, targetLayer);
         }
     }
 
