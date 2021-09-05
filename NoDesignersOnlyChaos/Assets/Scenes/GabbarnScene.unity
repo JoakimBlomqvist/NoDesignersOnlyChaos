@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a182cc2ccb6ae4f8b03e4b6a6de30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownRooms: 0
+  cooldownRooms: 1
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
