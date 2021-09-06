@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201169917}
   m_Layer: 0
-  m_Name: Freeze Room = Piss ult
+  m_Name: Freeze Room = Done
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5101,6 +5101,7 @@ MonoBehaviour:
   tagToDamage: Enemy
   damage: 5
   destroyOnContact: 0
+  followSpeed: 0
 --- !u!1 &231801953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5369,6 +5370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb03465a8547c746820a64c8b119444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownRooms: 0
   toxicGas: {fileID: 0}
 --- !u!1 &778860133
 GameObject:
@@ -5636,7 +5638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127856114}
   m_Layer: 0
-  m_Name: BlackHole
+  m_Name: BlackHole = done
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
