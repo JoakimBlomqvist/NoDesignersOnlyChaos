@@ -14,14 +14,17 @@ public class ZapParticle : MonoBehaviour
     private void Update()
     {
         //transform.position = Vector3.SmoothDamp(transform.position, target.position, ref velocity, 0.1f);
-        if (target.gameObject.activeSelf)
+        if (target.gameObject.activeSelf && target != null)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, 20f * Time.deltaTime);
             if (Vector3.Distance(transform.position, target.position) < 0.1f && !reachedTarget)
             {
                 reachedTarget = true;
                 GetComponent<ParticleSystem>().Stop();
-                target.GetComponent<Health>().TakeDamage(damage);
+                if(target.TryGetComponent(out Health hpScript))
+                {
+                    hpScript.TakeDamage(damage);
+                }
                 Destroy(gameObject);
             
             }
