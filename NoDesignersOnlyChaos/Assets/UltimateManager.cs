@@ -43,6 +43,9 @@ public class UltimateManager : MonoBehaviour
             case 4:
                 Debug.Log("Bool thing");
                 break;
+            case 5:
+                ultimateToUse = _ultimateAbilities[4];
+                break;
         }
     }
 }

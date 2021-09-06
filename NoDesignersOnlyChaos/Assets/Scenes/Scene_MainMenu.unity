@@ -13121,7 +13121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -62.71557
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13129,23 +13129,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -4.406085
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 5.1997786
       objectReference: {fileID: 0}
     - target: {fileID: 2977289268458680730, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13159,13 +13159,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4087281827168589973, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
+      propertyPath: radius
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087281827168589973, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
+      propertyPath: freezeTime
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4534911253779170100, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: cooldownRooms
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7459539414778814001, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: _ultimateAbilities.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7459539414778814001, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: _ultimateAbilities.Array.data[0]
@@ -13183,6 +13191,10 @@ PrefabInstance:
       propertyPath: _ultimateAbilities.Array.data[3]
       value: 
       objectReference: {fileID: 1839443803}
+    - target: {fileID: 7459539414778814001, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
+      propertyPath: _ultimateAbilities.Array.data[4]
+      value: 
+      objectReference: {fileID: 1839443808}
     - target: {fileID: 8065721974024071374, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: blackHole
       value: 
@@ -13203,7 +13215,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8065721974024071374, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
   m_PrefabInstance: {fileID: 1839443800}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d6a8a2b6d5caad49ab46398bfa2a684, type: 3}
@@ -13214,7 +13226,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2437684516893828113, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
   m_PrefabInstance: {fileID: 1839443800}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddb03465a8547c746820a64c8b119444, type: 3}
@@ -13225,7 +13237,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4087281827168589973, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
   m_PrefabInstance: {fileID: 1839443800}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88a182cc2ccb6ae4f8b03e4b6a6de30d, type: 3}
@@ -13236,7 +13248,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4534911253779170100, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
   m_PrefabInstance: {fileID: 1839443800}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82f86c9a8cf22ab4cbd90e1392459c6c, type: 3}
@@ -13247,12 +13259,35 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7459539414778814001, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
   m_PrefabInstance: {fileID: 1839443800}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04294826a66032f448ee96f3a30c0980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1839443807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2658865991452063999, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
+  m_PrefabInstance: {fileID: 1839443800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1839443808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53869216714fbcc4c88d5b9c9e8de85e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 1
+  meteorsToSpawn: 60
+  SpawnRate: 0.05
+  meteorSpreadRangeX: {x: 10, y: -10}
+  meteorSpreadRangeY: {x: 10, y: -10}
+  meteorPrefab: {fileID: 704016374945971546, guid: 7699ecc9b4b84754a8dc2cd15cc8c356, type: 3}
 --- !u!1 &1843011200
 GameObject:
   m_ObjectHideFlags: 0
