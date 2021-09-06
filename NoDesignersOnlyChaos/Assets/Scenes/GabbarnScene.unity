@@ -4122,6 +4122,24 @@ MonoBehaviour:
   radius: 20
   freezeTime: 10
   particles: {fileID: 7178624110869974462, guid: 1f8339bf34e8f8f4dab65d03dd8efafe, type: 3}
+--- !u!114 &676689556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676689550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53869216714fbcc4c88d5b9c9e8de85e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 1
+  meteorsToSpawn: 60
+  SpawnRate: 0.02
+  meteorSpreadRangeX: {x: -10, y: 10}
+  meteorSpreadRangeY: {x: -10, y: 10}
+  meteorPrefab: {fileID: 704016374945971546, guid: 7699ecc9b4b84754a8dc2cd15cc8c356, type: 3}
 --- !u!1 &719773451
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,7 +5099,7 @@ PrefabInstance:
     - target: {fileID: 3791581518187331199, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: ultimateToUse
       value: 
-      objectReference: {fileID: 676689555}
+      objectReference: {fileID: 676689556}
     - target: {fileID: 5498843208496813931, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: m_RootOrder
       value: 6
