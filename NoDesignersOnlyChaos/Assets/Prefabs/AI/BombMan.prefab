@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e473a8e937921ec45b3611f39162698c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFreezed: 0
   dropRate: 0.5
   delaytilDrop: 1
   Bomb: {fileID: 2780277575629605577, guid: db9d2f5673d157343942eb498b7e718e, type: 3}
@@ -143,7 +144,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -163,8 +164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 26727010020779124}
-  CurrentHealth: 0
+  ShieldBar: {fileID: 0}
+  Shield: 0
   health: 15
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -190,9 +193,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 0}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
+  cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!1001 &4853189846779111401
 PrefabInstance:
   m_ObjectHideFlags: 0

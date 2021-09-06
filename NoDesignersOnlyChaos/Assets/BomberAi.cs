@@ -24,8 +24,11 @@ public class BomberAi : Enemy
     private void ChangeDir()
     {
         Vector2 dir = /*(Vector2)transform.position + */new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
-
-        rb.AddForce(dir * force);
+        if (Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.y) < 9f)
+        {
+            rb.AddForce(dir * force);
+        }
+        
     }
 
     IEnumerator ChangeMoveDirection()
