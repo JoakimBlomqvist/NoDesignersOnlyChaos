@@ -13633,8 +13633,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4534911253779170100, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
+      propertyPath: duration
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534911253779170100, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: cooldownRooms
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534911253779170100, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
+      propertyPath: movementSpeedBoost
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7459539414778814001, guid: 85c96454280b61f458133ad64d28b3c1, type: 3}
       propertyPath: ultImage

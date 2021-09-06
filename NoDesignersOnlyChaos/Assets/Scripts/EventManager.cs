@@ -25,7 +25,6 @@ public class EventManager : MonoBehaviour
     public event Action OnChangeRoom;
     public event Action<Vector2> OnTriggerRoom;
     public event Action<UltimateAbility> OnSetUltimate;
-
     public event Action<string> OnSetPassiveUlt; 
     public event Action OnStartOfGame;
 
@@ -58,7 +57,4 @@ public class EventManager : MonoBehaviour
     {
         OnSetPassiveUlt?.Invoke(ultName);
     }
-
-
-
 }
