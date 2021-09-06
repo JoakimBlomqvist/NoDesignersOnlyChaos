@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Sunboss : Enemy
 {
@@ -8,13 +10,16 @@ public class Sunboss : Enemy
     [SerializeField] private float fireRate;
     [SerializeField] float nextFire;
     [SerializeField] private GameObject MiniSunboss;
-
+    private Light2D _light2D;
     void Awake()
     {
-        
-        nextFire = Time.time;
+        _light2D = GetComponent<Light2D>();
     }
-    
+
+    private void OnEnable()
+    {
+        nextFire = Time.time + 1f;
+    }
 
     void Update()
     {
@@ -26,10 +31,10 @@ public class Sunboss : Enemy
 
     void FireRate()
     {
-
+        Debug.Log(nextFire - Time.time);
+        _light2D.intensity = nextFire - Time.time;
         if (Time.time > nextFire)
         {
-            
             var sublast = Instantiate(SunBlast, transform.position, Quaternion.identity);
             Physics2D.IgnoreCollision(sublast.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             nextFire = Time.time + fireRate;

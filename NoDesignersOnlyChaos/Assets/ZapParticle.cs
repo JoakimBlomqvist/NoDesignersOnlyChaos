@@ -14,7 +14,7 @@ public class ZapParticle : MonoBehaviour
     private void Update()
     {
         //transform.position = Vector3.SmoothDamp(transform.position, target.position, ref velocity, 0.1f);
-        if (target != null)
+        if (target.gameObject.activeSelf)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, 20f * Time.deltaTime);
             if (Vector3.Distance(transform.position, target.position) < 0.1f && !reachedTarget)
@@ -26,7 +26,7 @@ public class ZapParticle : MonoBehaviour
             
             }
         }
-        else if(transform.gameObject.activeSelf == false)
+        else if(target.gameObject.activeSelf == false)
         {
             Destroy(gameObject);
         }

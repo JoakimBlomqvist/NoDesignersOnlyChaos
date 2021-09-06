@@ -18,7 +18,6 @@ public class GoblinChase : Enemy
 
     private void OnEnable()
     {
-        base.OnEnable();
         startChase = false;
         StartCoroutine(WaitTilchase());
     }
