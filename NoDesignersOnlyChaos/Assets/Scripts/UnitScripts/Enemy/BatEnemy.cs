@@ -29,9 +29,9 @@ public class BatEnemy : Enemy
         if (Lockedtarget != null)
         {
             var direction = Vector2.zero;
-
             direction = Lockedtarget.transform.position - transform.position;
-            rb.AddRelativeForce(direction.normalized * moveSpeed, ForceMode2D.Force);
+            float speedMod = Vector3.Distance(Lockedtarget.transform.position, transform.position) * 0.4f;
+            rb.AddRelativeForce(direction.normalized * moveSpeed * speedMod, ForceMode2D.Force);
         }
     }
 
