@@ -1288,6 +1288,10 @@ PrefabInstance:
       propertyPath: ShieldBar
       value: 
       objectReference: {fileID: 1264004659}
+    - target: {fileID: 7712379633458736792, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
+      propertyPath: ressUltimate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7712379633458736793, guid: 48ce2a03f01a20d47959ddc7e4494d37, type: 3}
       propertyPath: ultimate
       value: 

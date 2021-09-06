@@ -18,6 +18,7 @@ public class PlayerAimTrollspo : MonoBehaviour
     public bool rapidFire = false;
     public FloatVariable rateOfFire;
     public UltimateAbility ultimate;
+    public Health playerHealth;
     private float fireRateTimer = 0;
 
     #region Subscriptions
@@ -25,15 +26,22 @@ public class PlayerAimTrollspo : MonoBehaviour
     private void OnEnable()
     {
         EventManager.instance.OnSetUltimate += GetUltimate;
+        EventManager.instance.OnSetPassiveUlt += GetPassiveUlt;
         Debug.Log("Subbed");
     }
     
     private void OnDisable()
     {
-        EventManager.instance.OnSetUltimate += GetUltimate;
+        EventManager.instance.OnSetUltimate -= GetUltimate;
+        EventManager.instance.OnSetPassiveUlt -= GetPassiveUlt;
     }
 
     #endregion
+
+    private void Awake()
+    {
+        playerHealth = GetComponent<Health>();
+    }
 
     private void Start()
     {
@@ -118,5 +126,15 @@ public class PlayerAimTrollspo : MonoBehaviour
     {
         ultimate = ult;
         ultimate.enabled = true;
+    }
+
+    private void GetPassiveUlt(string ultName)
+    {
+        switch (ultName)
+        {
+            case "Revive":
+                playerHealth.ressUltimate = true;
+                break;
+        }
     }
 }
