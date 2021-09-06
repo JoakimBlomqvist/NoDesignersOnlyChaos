@@ -28,7 +28,7 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private AudioClip TakeDamageAudioClip;
     [Range(0,1)]
     [SerializeField] private float TakeDamageVolume = 1;
-    public bool ressUltimate;
+    public bool ressUltimate = false;
     [SerializeField] private bool player;
     [SerializeField] private float buffedMaxHp;
     [SerializeField] private float buffedHP;
