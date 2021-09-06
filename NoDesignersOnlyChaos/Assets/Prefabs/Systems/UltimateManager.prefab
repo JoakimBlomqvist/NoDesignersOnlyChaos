@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2658865991452063999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2977289268458680730}
+  - component: {fileID: 7459539414778814001}
+  - component: {fileID: 4534911253779170100}
+  - component: {fileID: 4087281827168589973}
+  - component: {fileID: 2437684516893828113}
+  - component: {fileID: 8065721974024071374}
+  m_Layer: 5
+  m_Name: UltimateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2977289268458680730
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658865991452063999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7459539414778814001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658865991452063999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04294826a66032f448ee96f3a30c0980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ultimateAbilities: []
+  ultimateToUse: {fileID: 4534911253779170100}
+--- !u!114 &4534911253779170100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658865991452063999}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f86c9a8cf22ab4cbd90e1392459c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 0
+  _postVolume: {fileID: 0}
+  _colorAdjustments: {fileID: 0}
+  colorShift: {r: 0, g: 0, b: 0, a: 0}
+  colorValue: 0
+  movementSpeedBoost: 0
+  playerScript: {fileID: 0}
+--- !u!114 &4087281827168589973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658865991452063999}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a182cc2ccb6ae4f8b03e4b6a6de30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  radius: 10
+  freezeTime: 5
+  particles: {fileID: 7178624110869974462, guid: 1f8339bf34e8f8f4dab65d03dd8efafe, type: 3}
+--- !u!114 &2437684516893828113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658865991452063999}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb03465a8547c746820a64c8b119444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 1
+  toxicGas: {fileID: 686167237994013712, guid: 7e1857a735fca1d4998f3e067117dd8d, type: 3}
+--- !u!114 &8065721974024071374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658865991452063999}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6a8a2b6d5caad49ab46398bfa2a684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 0
+  blackHole: {fileID: 0}

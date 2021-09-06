@@ -1658,36 +1658,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0237418f4f67f944c95f0c41af6cb17f, type: 3}
---- !u!1 &1610945455 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8646291530304886961, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-  m_PrefabInstance: {fileID: 3481129448343267963}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1610945460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610945455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddb03465a8547c746820a64c8b119444, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cooldownRooms: 1
-  toxicGas: {fileID: 686167237994013712, guid: 7e1857a735fca1d4998f3e067117dd8d, type: 3}
---- !u!114 &1772363777 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3481129448421438683, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-  m_PrefabInstance: {fileID: 3481129448343267963}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1796075083 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7049479779950951861, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
@@ -2131,18 +2101,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3791581518187331199, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-      propertyPath: ultimateToUse
-      value: 
-      objectReference: {fileID: 1610945460}
-    - target: {fileID: 4392363928648353920, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-      propertyPath: blackHole
-      value: 
-      objectReference: {fileID: 2016908249742602141, guid: 1edba60076c0ff44d88229622d0dbec3, type: 3}
-    - target: {fileID: 4392363928648353920, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-      propertyPath: cooldownRooms
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7049479779950951861, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
       propertyPath: settings
       value: 
@@ -2151,19 +2109,8 @@ PrefabInstance:
       propertyPath: pause_Menu
       value: 
       objectReference: {fileID: 920859086}
-    - target: {fileID: 7923169971343631226, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-      propertyPath: _postVolume
-      value: 
-      objectReference: {fileID: 1772363777}
-    - target: {fileID: 7923169971343631226, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-      propertyPath: cooldownRooms
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7923169971343631226, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
-      propertyPath: movementSpeedBoost
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1610945460, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 66657e98339405d4f9f91bc9fa05714e, type: 3}
 --- !u!1001 &3680158835734400486
 PrefabInstance:
