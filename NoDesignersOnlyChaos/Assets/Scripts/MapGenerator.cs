@@ -51,6 +51,7 @@ public class MapGenerator : MonoBehaviour
         GetComponent<MiniMapGenerator>().Init(this);
         AudioManager.Instance.OnEarlyLevelsMusic();
         AudioManager.Instance.ResetPitch();
+        EventManager.instance.StartOfGame();
     }
 
     //Generates the map. 

@@ -10,6 +10,7 @@ public class EventManager : MonoBehaviour
     public static EventManager instance;
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         if (instance == null)
         {
             instance = this;
@@ -24,6 +25,7 @@ public class EventManager : MonoBehaviour
     public event Action OnChangeRoom;
     public event Action<Vector2> OnTriggerRoom;
     public event Action<UltimateAbility> OnSetUltimate;
+    public event Action OnStartOfGame;
 
     public void Die()
     {
@@ -43,6 +45,11 @@ public class EventManager : MonoBehaviour
     public void SetUltimate(UltimateAbility ultimate)
     {
         OnSetUltimate?.Invoke(ultimate);
+    }
+
+    public void StartOfGame()
+    {
+        OnStartOfGame?.Invoke();
     }
 
 
