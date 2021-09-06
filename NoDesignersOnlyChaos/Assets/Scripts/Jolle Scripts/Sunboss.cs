@@ -31,7 +31,6 @@ public class Sunboss : Enemy
 
     void FireRate()
     {
-        Debug.Log(nextFire - Time.time);
         _light2D.intensity = nextFire - Time.time;
         if (Time.time > nextFire)
         {
