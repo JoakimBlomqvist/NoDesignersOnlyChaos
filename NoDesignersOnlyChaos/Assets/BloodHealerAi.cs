@@ -27,21 +27,14 @@ public class BloodHealerAi : MonoBehaviour
     
     IEnumerator HealingRouting()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         while (true)
         {
             HealingTargets();
-            float distance = 100f;
-            for(int i = 0; i < colliders.Count; i++)
-            {
-                float Enemydistance = Vector3.Distance(transform.position, colliders[i].transform.position);
-                if(Enemydistance < distance)
-                {
-                    distance = Enemydistance;
-                    targetTransform = colliders[i].transform;
-                }
-            }
+            
+                    targetTransform = colliders[Random.Range(0, colliders.Count)].transform;
+              
             if(targetTransform != null && targetTransform.gameObject.activeSelf == true)
             {
                 Debug.Log("sUPSUP");
@@ -54,13 +47,9 @@ public class BloodHealerAi : MonoBehaviour
 
 
             }
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
         }
         yield return null;
     }
 
-    /*private void HealingParticle()
-    {
-        Instantiate()
-    }*/
 }
