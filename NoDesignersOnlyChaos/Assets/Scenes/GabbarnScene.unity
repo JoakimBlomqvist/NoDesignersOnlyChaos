@@ -3292,6 +3292,7 @@ GameObject:
   - component: {fileID: 74210110}
   - component: {fileID: 74210109}
   - component: {fileID: 74210111}
+  - component: {fileID: 74210112}
   m_Layer: 5
   m_Name: AbilityManager
   m_TagString: Untagged
@@ -3350,7 +3351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9755c6d4328d793488fa9e54c0d4662b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _passiveAbility: {fileID: 74210111}
+  _passiveAbility: {fileID: 74210112}
 --- !u!114 &74210111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3370,6 +3371,26 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   freezeTime: 1
+--- !u!114 &74210112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74210107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bd1abfba1448448a049a52690cb129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 4
+  range: 15
+  isRepeated: 1
+  pushingEnemies: []
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  forceStrength: 600
 --- !u!1001 &146458824
 PrefabInstance:
   m_ObjectHideFlags: 0
