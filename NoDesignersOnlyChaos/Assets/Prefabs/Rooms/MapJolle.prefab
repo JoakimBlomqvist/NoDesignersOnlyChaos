@@ -576,6 +576,7 @@ MonoBehaviour:
   - {fileID: 70681293216896097}
   bossRoom: 0
   bossToSpawn: {fileID: 0}
+  spawnedEnemies: []
 --- !u!1 &1692913009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,7 +3825,7 @@ GameObject:
   - component: {fileID: 3421436396462847891}
   - component: {fileID: 3449798805265517396}
   - component: {fileID: 7149700393596836189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8473,7 +8474,7 @@ GameObject:
   - component: {fileID: 3230646057021438590}
   - component: {fileID: 2515431655120407313}
   - component: {fileID: 1792553879058100994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16379,7 +16380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3246892075219555967}
   - component: {fileID: 3593255696477876118}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LanternAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20458,7 +20459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3853518001430685518}
   - component: {fileID: 3853518001430685517}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21047,7 +21048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3853518001704680987}
   - component: {fileID: 3853518001704680986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22432,7 +22433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3853518002923207434}
   - component: {fileID: 3853518002923207433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22572,7 +22573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3853518003051232392}
   - component: {fileID: 3853518003051232391}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23838,7 +23839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3939341143082207164}
   - component: {fileID: 8780914200541786724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxColliderSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27414,7 +27415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117254571573208054}
   - component: {fileID: 8461352225593736590}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LanternAnimation (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36303,7 +36304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6692274687545357564}
   - component: {fileID: 6692274687545357565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36846,7 +36847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6692274688204339005}
   - component: {fileID: 6692274688204339006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxColliderSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37069,7 +37070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6692274688378439115}
   - component: {fileID: 6692274688378439108}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}

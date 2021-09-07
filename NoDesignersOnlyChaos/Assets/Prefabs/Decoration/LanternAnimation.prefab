@@ -114,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3484527830808777217}
   - component: {fileID: 8169656984423780189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LanternAnimation
   m_TagString: Untagged
   m_Icon: {fileID: 0}

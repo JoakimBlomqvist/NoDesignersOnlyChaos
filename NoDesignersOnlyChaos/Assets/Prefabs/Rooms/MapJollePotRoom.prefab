@@ -10813,6 +10813,7 @@ MonoBehaviour:
   - {fileID: 4297744593412061235}
   bossRoom: 0
   bossToSpawn: {fileID: 0}
+  spawnedEnemies: []
 --- !u!1 &2452086110048739488
 GameObject:
   m_ObjectHideFlags: 0
@@ -14947,7 +14948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3291889653327942251}
   - component: {fileID: 3291889653327942248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxColliderSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15086,7 +15087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3291889653626409163}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxWithSkull (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20828,7 +20829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4297744592078217363}
   - component: {fileID: 4297744592078217372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomWall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21137,7 +21138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4297744592279604662}
   - component: {fileID: 4297744592279604663}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21446,7 +21447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4297744592725625592}
   - component: {fileID: 4297744592725625593}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21838,7 +21839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4297744593225998224}
   - component: {fileID: 4297744593225998225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21898,7 +21899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4297744593339171152}
   - component: {fileID: 4297744593339171153}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RandomWall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30089,7 +30090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4324374351568271665}
   - component: {fileID: 125985186451737149}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxWithpots (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30150,7 +30151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4324374350834742066}
   - component: {fileID: 125985186783625278}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxWithpots (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44094,7 +44095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9140111571196067566}
   - component: {fileID: 9140111571196067565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxColliderSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44698,6 +44699,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8050318670074597053}
     m_Modifications:
+    - target: {fileID: 1588508279864918081, guid: df50043f2c779994dba38be259b97730, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1588508280774673120, guid: df50043f2c779994dba38be259b97730, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -44822,6 +44827,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8050318670074597053}
     m_Modifications:
+    - target: {fileID: 1588508279864918081, guid: df50043f2c779994dba38be259b97730, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1588508280774673120, guid: df50043f2c779994dba38be259b97730, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -45455,10 +45464,6 @@ PrefabInstance:
     - target: {fileID: 5022193953918632036, guid: 0ffb4911ea76f634d8af02e34075cea3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5022193954067407368, guid: 0ffb4911ea76f634d8af02e34075cea3, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ffb4911ea76f634d8af02e34075cea3, type: 3}

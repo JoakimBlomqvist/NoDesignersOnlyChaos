@@ -105,6 +105,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   healing: 5
+  healingParticle_Blood: {fileID: 3611864069124380498, guid: 4f8afd1e9dcff434abad9b07a8dec377, type: 3}
 --- !u!58 &1639622977807112844
 CircleCollider2D:
   m_ObjectHideFlags: 0
