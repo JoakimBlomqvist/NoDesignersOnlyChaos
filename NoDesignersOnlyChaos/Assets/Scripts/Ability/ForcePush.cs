@@ -28,12 +28,14 @@ public class ForcePush : PassiveAbility
         foreach (var enemy in pushingEnemies)
         {
             enemyScript = enemy.GetComponent<Enemy>();
-            enemyrb = enemy.GetComponent<Rigidbody2D>();
+            enemy.TryGetComponent(out enemyrb);
+            if (enemyrb == null) return;
             Vector2 direction = enemyrb.position - new Vector2(playerTransform.position.x, playerTransform.position.y);
             if (enemyScript is GoblinChase || enemyScript is SlimeEnemy)
             {
                 StartCoroutine(FreezeDuration(enemyScript));
             }
+            
             enemyrb.velocity = Vector2.zero;
             enemyrb.AddForce(direction.normalized * forceStrength);
         }
