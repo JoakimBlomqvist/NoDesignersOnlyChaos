@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3815331517627701634}
   - component: {fileID: 8377925885718300782}
   - component: {fileID: 3381557274624732494}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: PatrollingMageAi
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7031747988447250810, guid: 85155e4a965d4f24facfbc9eb60f3792, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   StartWaitTime: 2
+  GhostAI: {fileID: 6938995485906170677, guid: 251c6339a3689dd44ae065be6982521b, type: 3}
   PatrolSpots:
   - {fileID: 3815331517741474790}
   - {fileID: 3815331517656705954}
@@ -271,7 +272,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3815331518572501172}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 33.79, y: -3.840469, z: -11.070073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

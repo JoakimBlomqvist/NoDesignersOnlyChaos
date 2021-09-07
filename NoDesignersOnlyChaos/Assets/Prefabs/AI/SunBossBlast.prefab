@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5644291873571133697}
   - component: {fileID: 3784137154512785448}
   - component: {fileID: 8972771879531579173}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: SunBossBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}

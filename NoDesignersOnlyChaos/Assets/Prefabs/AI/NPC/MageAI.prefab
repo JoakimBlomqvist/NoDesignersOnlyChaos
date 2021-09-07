@@ -505,6 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   StartWaitTime: 2
+  GhostAI: {fileID: 6938995485906170677, guid: 251c6339a3689dd44ae065be6982521b, type: 3}
   PatrolSpots:
   - {fileID: 5022193953668278733}
   - {fileID: 5022193952791442891}

@@ -44475,14 +44475,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2559024551021669310}
     m_Modifications:
-    - target: {fileID: 3815331517627701632, guid: 4a2e676ebb77cf84a9a47216ddba1cbb, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3815331517627701636, guid: 4a2e676ebb77cf84a9a47216ddba1cbb, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3815331518572501172, guid: 4a2e676ebb77cf84a9a47216ddba1cbb, type: 3}
       propertyPath: m_Name
       value: MageAI (1)

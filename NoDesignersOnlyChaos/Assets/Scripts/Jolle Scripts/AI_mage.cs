@@ -7,7 +7,7 @@ public class AI_mage : MonoBehaviour
     [SerializeField] private float speed;
     private float waitTime;
     public float StartWaitTime;
-
+    [SerializeField] private GameObject GhostAI;
     public Transform[] PatrolSpots;
     private int randomSpot;
 
@@ -16,7 +16,11 @@ public class AI_mage : MonoBehaviour
         waitTime = StartWaitTime;
         randomSpot = Random.Range(0, PatrolSpots.Length);
     }
-
+    private void OnDisable()
+    {
+        if(GhostAI != null)
+        Instantiate(GhostAI, transform.position, Quaternion.identity);
+    }
     private void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, PatrolSpots[randomSpot].position, speed * Time.deltaTime);
