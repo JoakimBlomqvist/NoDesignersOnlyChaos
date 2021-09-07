@@ -8,6 +8,7 @@ public class ForcePush : PassiveAbility
     [SerializeField] private List<Collider2D> pushingEnemies;
     [SerializeField] private LayerMask targetLayer;
     [SerializeField] private float forceStrength;
+    [SerializeField] private ParticleSystem PS;
     private Rigidbody2D enemyrb;
     private Enemy enemyScript;
     private Transform playerTransform;
@@ -20,6 +21,8 @@ public class ForcePush : PassiveAbility
     {
         Debug.Log("FORCE PUSH");
         playerTransform = PlayerManager.Instance.playerTransform;
+        Instantiate(PS, playerTransform);
+        
         pushingEnemies = Physics2D.OverlapCircleAll(playerTransform.position, range, targetLayer).ToList();
 
         foreach (var enemy in pushingEnemies)

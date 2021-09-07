@@ -3391,6 +3391,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   forceStrength: 600
+  PS: {fileID: 1433496758507058803, guid: 62801a40455fe52468c212e60545c516, type: 3}
 --- !u!1001 &146458824
 PrefabInstance:
   m_ObjectHideFlags: 0
