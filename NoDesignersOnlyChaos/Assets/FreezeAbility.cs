@@ -20,9 +20,8 @@ public class FreezeAbility : PassiveAbility
         if (_collider2Ds.Count > 0)
         {
             target = _collider2Ds[Random.Range(0, _collider2Ds.Count)].transform;
-            if (target.GetComponent<Enemy>() == null)
-                return;
-            Enemy enemy = target.GetComponent<Enemy>();
+            
+                Enemy enemy = target.GetComponent<Enemy>();
             enemy.isFreezed = true;
             yield return new WaitForSeconds(freezeTime);
             enemy.isFreezed = false;
