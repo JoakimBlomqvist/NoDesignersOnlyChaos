@@ -11,6 +11,7 @@ public class BloodHealerAi : MonoBehaviour
     private List<Collider2D> colliders;
     private Transform targetTransform;
     public int healing;
+    [SerializeField] private GameObject healingParticle_Blood;
     // Start is called before the first frame update
     private void OnEnable()
     {
@@ -41,13 +42,14 @@ public class BloodHealerAi : MonoBehaviour
                if(targetTransform.TryGetComponent(out Health health))
                 {
                     health.Healing(healing);
+                    Instantiate(healingParticle_Blood, targetTransform.position, Quaternion.identity);
                     Debug.Log("healing");
                         
                 }
 
 
             }
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
         }
         yield return null;
     }
