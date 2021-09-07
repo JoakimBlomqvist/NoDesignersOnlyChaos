@@ -126,6 +126,9 @@ MonoBehaviour:
   DeathScreen: {fileID: 0}
   moveSpeed: 5
   hpScript: {fileID: 0}
+  dashStrength: 25
+  dashDuration: 0.15
+  dashCooldown: 5
 --- !u!61 &7712379633458736794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -171,6 +174,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3606977081922651789, guid: dacfb97a2b2c8c441ab27d0cd7509a4b, type: 3}
   rapidFire: 0
   rateOfFire: {fileID: 11400000, guid: 7c0bfdb91dc74864e93a4e7418dfea32, type: 2}
+  ultimate: {fileID: 0}
+  playerHealth: {fileID: 0}
 --- !u!114 &7712379633458736792
 MonoBehaviour:
   m_ObjectHideFlags: 0
