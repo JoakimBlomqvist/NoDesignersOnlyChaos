@@ -342,7 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551660581888684760}
   - component: {fileID: 4186994377919087060}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BoxWithpots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
