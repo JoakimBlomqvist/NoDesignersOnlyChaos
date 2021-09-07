@@ -40,7 +40,7 @@ public class ForcePush : PassiveAbility
     private IEnumerator FreezeDuration(Enemy enemy)
     {
         enemy.isFreezed = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.8f);
         enemy.isFreezed = false;
     }
 }
