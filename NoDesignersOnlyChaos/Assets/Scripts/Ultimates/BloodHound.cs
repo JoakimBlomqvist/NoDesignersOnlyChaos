@@ -1,7 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -15,13 +12,20 @@ public class BloodHound : UltimateAbility
     [SerializeField]private float colorValue;
     [SerializeField] private float movementSpeedBoost;
     [SerializeField] private CharacterMovement playerScript;
+    [SerializeField] private float duration = 10f;
 
-    private void Start()
+    private void Awake()
     {
+        EventManager.instance.OnStartOfGame += StartOfGame;
+
+    }
+
+    private void StartOfGame()
+    {
+        _postVolume = PostProcessingManager.Instance.postProcessingVolume;
         _postVolume.profile.TryGet(out _colorAdjustments);
         playerScript = PlayerManager.Instance._characterMovement;
     }
-    
     public void ColorShift()
     {
         Debug.Log("COLORCOLORCOLOR");
@@ -49,7 +53,7 @@ public class BloodHound : UltimateAbility
 
     public IEnumerator TurnOff()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(duration);
         playerScript.moveSpeed -= movementSpeedBoost;
         colorValue = 0;
         _colorAdjustments.active = false;

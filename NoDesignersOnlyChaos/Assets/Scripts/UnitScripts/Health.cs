@@ -98,7 +98,11 @@ public class Health : MonoBehaviour, IDamageable
         }
         CameraController.Instance.ShakeCamera(damage);
     }
-
+    public void Healing(float Healing)
+    {
+        health = Mathf.Clamp(health + Healing, 0, maxHealth);
+        UpdateHealthFillAMount();
+    }
     private void UpdateHealthFillAMount()
     {
         if (HealthBar != null)

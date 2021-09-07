@@ -7,6 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class PlayerManager : MonoBehaviour
 {
     public CharacterMovement _characterMovement;
+    public PlayerAimTrollspo _playerStaffScript;
 
 
     public GameObject playerObj;
@@ -27,6 +28,7 @@ public class PlayerManager : MonoBehaviour
         }
         
         _characterMovement = FindObjectOfType<CharacterMovement>();
+        _playerStaffScript = FindObjectOfType<PlayerAimTrollspo>();
         playerObj = _characterMovement.gameObject;
         playerTransform = playerObj.transform;
     }
