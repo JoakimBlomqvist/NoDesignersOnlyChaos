@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2889411518750469363}
   - component: {fileID: 2889411518750469360}
   - component: {fileID: 2889411518750469361}
-  - component: {fileID: 2889411518750469374}
+  - component: {fileID: 4881555111553177420}
   m_Layer: 0
-  m_Name: ZapFromLightning
+  m_Name: ZapFromLightningAbility
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4808,7 +4808,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &2889411518750469374
+--- !u!114 &4881555111553177420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4817,7 +4817,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2889411518750469375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b6f29628ce373e4c931d06c92a136cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9217f89d2c644384b81d057d3db8483e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
