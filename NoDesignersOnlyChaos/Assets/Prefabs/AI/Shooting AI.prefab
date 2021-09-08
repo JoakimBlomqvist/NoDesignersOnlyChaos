@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: -2158348843855588978}
   - component: {fileID: 9199058438197428417}
   - component: {fileID: 8133562832456222054}
+  - component: {fileID: 8237908329129872006}
   m_Layer: 6
   m_Name: Shooting AI
   m_TagString: Enemy
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c937cab5bc1df74da937180a9b1ceeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFreezed: 0
   AI_bullet: {fileID: 6868086867490016366, guid: cf8324b45295d044a97caa221e07ddf0, type: 3}
   fireRate: 1
   nextFire: 0
@@ -377,6 +379,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69f82d9e46ee17949ae6380d87e865f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8237908329129872006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917264477666692168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7485315312088046089

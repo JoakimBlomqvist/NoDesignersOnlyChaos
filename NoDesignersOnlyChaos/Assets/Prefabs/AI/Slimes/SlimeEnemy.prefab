@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 808718082670134963}
   - component: {fileID: 5273958589930527044}
   - component: {fileID: 13307343196385840}
+  - component: {fileID: 1279277901758338539}
   m_Layer: 6
   m_Name: Slime3
   m_TagString: Enemy
@@ -466,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0624f07577e218646a75eed780b6281c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFreezed: 0
   SlimeToSpawn: {fileID: 8543557276629953435, guid: 02f4d8a4353cafa489af5fccf1b58fd6, type: 3}
   moveSpeed: 3
   player: {fileID: 984193289997853661, guid: 83c4acd34ffc09b46b3735a1ad1500a4, type: 3}
@@ -482,8 +484,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 7213636964664676001}
-  CurrentHealth: 0
+  ShieldBar: {fileID: 0}
+  Shield: 0
   health: 75
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -509,9 +513,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: 29466b30a68b6164e99cb13c0736a88d, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
+  cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!114 &13307343196385840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,3 +534,15 @@ MonoBehaviour:
   tagToDamage: Player
   damage: 10
   destroyOnContact: 0
+--- !u!114 &1279277901758338539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9055037752294356326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

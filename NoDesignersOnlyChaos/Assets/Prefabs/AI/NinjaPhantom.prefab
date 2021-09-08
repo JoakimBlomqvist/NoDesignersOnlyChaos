@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 4617687098787843524}
   - component: {fileID: -1693025116192708675}
   - component: {fileID: 4650672170357205948}
+  - component: {fileID: 2023049577472773953}
   m_Layer: 6
   m_Name: NinjaPhantom
   m_TagString: Enemy
@@ -408,6 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f9f944f30b8cb4d91ac3b7e6af8100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFreezed: 0
   dashStrength: 150
   targetLayer:
     serializedVersion: 2
@@ -471,8 +473,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 6264300501118041053}
-  CurrentHealth: 0
+  ShieldBar: {fileID: 0}
+  Shield: 0
   health: 20
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -486,6 +490,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: 9f986572e07480c40b4d7888208207e0, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
+  player: 0
+  buffedMaxHp: 0
+  buffedHP: 0
+  cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!114 &4650672170357205948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,6 +510,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToDamage: Player
   damage: 10
+  destroyOnContact: 0
+--- !u!114 &2023049577472773953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617687098787843576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7677888655710128831
 GameObject:
   m_ObjectHideFlags: 0

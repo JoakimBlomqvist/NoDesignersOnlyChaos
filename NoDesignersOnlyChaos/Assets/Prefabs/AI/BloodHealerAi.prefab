@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1639622977807112844}
   - component: {fileID: 1639622977807112845}
   - component: {fileID: 1853418608}
+  - component: {fileID: 3911420325896298147}
   m_Layer: 6
   m_Name: BloodHealerAi
   m_TagString: Enemy
@@ -178,6 +179,18 @@ MonoBehaviour:
   buffedHP: 0
   cameraShakeAmount: 0
   rb: {fileID: 0}
+--- !u!114 &3911420325896298147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639622977807112841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1639622978461227608
 PrefabInstance:
   m_ObjectHideFlags: 0

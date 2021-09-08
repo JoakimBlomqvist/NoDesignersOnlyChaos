@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8764793378021784963}
   - component: {fileID: 7159237615566722997}
   - component: {fileID: 122104391661615245}
+  - component: {fileID: 4945534971653156384}
   m_Layer: 6
   m_Name: Bat
   m_TagString: Enemy
@@ -148,8 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 4371090495532824647}
-  CurrentHealth: 0
+  ShieldBar: {fileID: 0}
+  Shield: 0
   health: 10
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -163,8 +166,12 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: 9f986572e07480c40b4d7888208207e0, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
+  buffedHP: 0
+  cameraShakeAmount: 0
+  rb: {fileID: 0}
 --- !u!114 &7159237615566722997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,12 +199,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8fe2a2955f01440b18241adabe96bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFreezed: 0
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
   moveSpeed: 2
   tagToDamage: Player
   damage: 2
+--- !u!114 &4945534971653156384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122104391661615240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9200345809695980506
 PrefabInstance:
   m_ObjectHideFlags: 0

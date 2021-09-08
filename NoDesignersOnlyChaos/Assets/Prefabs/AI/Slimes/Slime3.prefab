@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1510463566}
   - component: {fileID: 4758608994029209529}
   - component: {fileID: 798933988019612877}
+  - component: {fileID: 9003811289392579009}
   m_Layer: 6
   m_Name: Slime3
   m_TagString: Enemy
@@ -235,6 +236,18 @@ MonoBehaviour:
   tagToDamage: Player
   damage: 10
   destroyOnContact: 0
+--- !u!114 &9003811289392579009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543557276629953435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3181179846771512257
 PrefabInstance:
   m_ObjectHideFlags: 0

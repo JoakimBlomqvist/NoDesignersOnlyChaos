@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 7349207950029314905}
   - component: {fileID: 7349207950029314904}
   - component: {fileID: 2156839250469264976}
+  - component: {fileID: 8884814803769349695}
   m_Layer: 6
   m_Name: ClonedSperm
   m_TagString: Enemy
@@ -277,6 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d84b973c91b9447a20e87d9b501cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFreezed: 0
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -340,8 +342,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 380a08792a2485f4383e082ba851abc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RessObject: {fileID: 0}
   HealthBar: {fileID: 7335705474517974434}
-  CurrentHealth: 0
+  ShieldBar: {fileID: 0}
+  Shield: 0
   health: 10
   blood: {fileID: 733627342374524515, guid: a81647a55968fed489c7d9875bfc78a6, type: 3}
   OnDamageTaken:
@@ -355,9 +359,24 @@ MonoBehaviour:
   DeathAudioVolume: 1
   TakeDamageAudioClip: {fileID: 8300000, guid: 9f986572e07480c40b4d7888208207e0, type: 3}
   TakeDamageVolume: 1
+  ressUltimate: 0
   player: 0
   buffedMaxHp: 0
   buffedHP: 0
+  cameraShakeAmount: 0
+  rb: {fileID: 0}
+--- !u!114 &8884814803769349695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7349207950029314907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892b12cbea99fc4689ae7d4ab69da1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8384294835606983617
 GameObject:
   m_ObjectHideFlags: 0
