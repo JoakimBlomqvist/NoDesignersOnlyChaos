@@ -13,7 +13,7 @@ public class CharacterMovement : MonoBehaviour
     private bool dashOnCd;
     [SerializeField] private float dashStrength;
     [SerializeField] private float dashDuration;
-    [SerializeField] private float dashCooldown;
+    public float dashCooldown;
     
     private Rigidbody2D rb;
 

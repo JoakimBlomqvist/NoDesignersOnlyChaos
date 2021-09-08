@@ -13809,6 +13809,28 @@ MonoBehaviour:
   meteorSpreadRangeX: {x: 10, y: -10}
   meteorSpreadRangeY: {x: 10, y: -10}
   meteorPrefab: {fileID: 704016374945971546, guid: 7699ecc9b4b84754a8dc2cd15cc8c356, type: 3}
+--- !u!114 &1839443809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839443807}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c308cfb6b6061b46807630e0eaddc26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownRooms: 1
+  _postVolume: {fileID: 0}
+  _colorAdjustments: {fileID: 0}
+  colorShift: {r: 0, g: 0, b: 0, a: 0}
+  colorValue: 0
+  dashCD: 0.5
+  playerScript: {fileID: 0}
+  _staffScript: {fileID: 0}
+  duration: 10
+  passiveCD: 5
 --- !u!1 &1843011200
 GameObject:
   m_ObjectHideFlags: 0
