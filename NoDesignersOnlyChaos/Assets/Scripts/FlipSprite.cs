@@ -8,6 +8,7 @@ public class FlipSprite : MonoBehaviour
     [Tooltip("Flip this transform in relation to 'player transform' on the x axis")]
     private Transform playerTransfrom;
 
+    [SerializeField] private bool revertFlip;
     private SpriteRenderer _spriteRenderer;
 
     private void Start()
@@ -18,13 +19,32 @@ public class FlipSprite : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (transform.position.x > playerTransfrom.position.x && _spriteRenderer.flipX == true)
+        FLip();
+    }
+
+    private void FLip()
+    {
+        if (revertFlip)
         {
-            _spriteRenderer.flipX = false;
+            if (transform.position.x > playerTransfrom.position.x && _spriteRenderer.flipX == false)
+            {
+                _spriteRenderer.flipX = true;
+            }
+            else if (transform.position.x < playerTransfrom.position.x && _spriteRenderer.flipX == true)
+            {
+                _spriteRenderer.flipX = false;
+            }
         }
-        else if (transform.position.x < playerTransfrom.position.x && _spriteRenderer.flipX == false)
+        else
         {
-            _spriteRenderer.flipX = true;
+            if (transform.position.x > playerTransfrom.position.x && _spriteRenderer.flipX == true)
+            {
+                _spriteRenderer.flipX = false;
+            }
+            else if (transform.position.x < playerTransfrom.position.x && _spriteRenderer.flipX == false)
+            {
+                _spriteRenderer.flipX = true;
+            }
         }
     }
 }

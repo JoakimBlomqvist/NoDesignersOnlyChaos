@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2740417238250714837}
   - component: {fileID: 4032951823251012072}
   m_Layer: 6
-  m_Name: GhostAI
+  m_Name: GhostAI 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 4618174586824985467, guid: 85155e4a965d4f24facfbc9eb60f3792, type: 3}
+  m_Sprite: {fileID: 7031747988447250810, guid: 85155e4a965d4f24facfbc9eb60f3792, type: 3}
   m_Color: {r: 0.0141509175, g: 1, b: 0.88232344, a: 0.3764706}
   m_FlipX: 0
   m_FlipY: 0
