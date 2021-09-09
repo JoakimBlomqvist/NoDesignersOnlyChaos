@@ -19,7 +19,6 @@ public class ForcePush : PassiveAbility
 
     private void ForcePushAbility()
     {
-        Debug.Log("FORCE PUSH");
         playerTransform = PlayerManager.Instance.playerTransform;
         Instantiate(PS, playerTransform);
         

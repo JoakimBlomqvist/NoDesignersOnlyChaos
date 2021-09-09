@@ -31,15 +31,14 @@ public class SuicideBomber : Enemy
     private void FindTarget()
     {
         Vector2 dirToPlayer = (PlayerManager.Instance.playerPosition - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer, detectionRange);
-        Debug.DrawRay(transform.position, dirToPlayer, Color.red, 1f);
-        if (hit.collider.CompareTag("Player"))
+        if (Physics2D.Raycast(transform.position, dirToPlayer, detectionRange, playerLayer , -1, 22))
         {
             playerInSight = true;
             Debug.DrawRay(transform.position, dirToPlayer, Color.cyan, 1f);
         }
         else
         {
+            Debug.Log("Player not in sight");
             playerInSight = false;
         }
     }

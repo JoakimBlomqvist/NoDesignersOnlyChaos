@@ -27,7 +27,6 @@ public class PlayerAimTrollspo : MonoBehaviour
     {
         EventManager.instance.OnSetUltimate += GetUltimate;
         EventManager.instance.OnSetPassiveUlt += GetPassiveUlt;
-        Debug.Log("Subbed");
     }
     
     private void OnDisable()

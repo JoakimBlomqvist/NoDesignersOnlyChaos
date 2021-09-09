@@ -19,7 +19,6 @@ public class PassiveAbilityUser : MonoBehaviour
     [ContextMenu("StartPassive")]
     private void StartPassiveAbility()
     {
-        Debug.Log("Starting Passive Ability");
         if (_passiveAbility.isRepeated)
         {
             if (!isRepeating)

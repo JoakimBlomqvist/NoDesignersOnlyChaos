@@ -105,7 +105,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  detectionFreq: 1
+  detectionFreq: 0.1
 --- !u!50 &1533142299
 Rigidbody2D:
   serializedVersion: 4
@@ -121,12 +121,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5476906562315828485
 BoxCollider2D:
   m_ObjectHideFlags: 0
