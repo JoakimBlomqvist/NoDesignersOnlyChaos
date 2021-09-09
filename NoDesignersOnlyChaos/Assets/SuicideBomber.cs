@@ -9,6 +9,7 @@ public class SuicideBomber : Enemy
     //private RaycastHit2D hit;
     [SerializeField] private float detectionRange;
     [SerializeField] private float moveSpeed;
+    [SerializeField] private LayerMask layerMask;
     [SerializeField] private LayerMask playerLayer;
     private Rigidbody2D rb;
     [SerializeField] private float detectionFreq;
@@ -18,6 +19,7 @@ public class SuicideBomber : Enemy
     {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(LookForPlayerRoutine());
+        Physics2D.queriesHitTriggers = false;
     }
 
     private void Update()
@@ -31,8 +33,12 @@ public class SuicideBomber : Enemy
     private void FindTarget()
     {
         Vector2 dirToPlayer = (PlayerManager.Instance.playerPosition - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer, detectionRange, playerLayer, -1, 22);
-        if (hit.collider.gameObject.layer == LayerMask.GetMask("Player"))
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer, detectionRange, layerMask, -1, 22);
+        Debug.Log(hit);
+        if(hit.collider ==null)
+            return;
+        Debug.Log(hit.collider.gameObject);
+        if (hit.collider.gameObject.CompareTag("Player"))
         {
             playerInSight = true;
             Debug.DrawRay(transform.position, dirToPlayer, Color.cyan, 1f);
