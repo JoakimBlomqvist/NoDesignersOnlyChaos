@@ -31,7 +31,8 @@ public class SuicideBomber : Enemy
     private void FindTarget()
     {
         Vector2 dirToPlayer = (PlayerManager.Instance.playerPosition - transform.position).normalized;
-        if (Physics2D.Raycast(transform.position, dirToPlayer, detectionRange, playerLayer , -1, 22))
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirToPlayer, detectionRange, playerLayer, -1, 22);
+        if (hit.collider.gameObject.layer == LayerMask.GetMask("Player"))
         {
             playerInSight = true;
             Debug.DrawRay(transform.position, dirToPlayer, Color.cyan, 1f);
