@@ -3383,7 +3383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38bd1abfba1448448a049a52690cb129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 4
+  cooldown: 10
   range: 15
   isRepeated: 1
   pushingEnemies: []
