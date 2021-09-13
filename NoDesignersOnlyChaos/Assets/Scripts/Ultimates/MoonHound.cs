@@ -51,7 +51,7 @@ public class MoonHound : UltimateAbility
     public override void UseAbility()
     {
         _colorAdjustments.active = true;
-        _colorAdjustments.postExposure.value = 4f;
+        _colorAdjustments.postExposure.value = 3f;
         playerScript.dashCooldown *= dashCD;
         /*defaultAts = _staffScript.rateOfFire.Value;
         _staffScript.rateOfFire.Value *= passiveCD;*///-----Passive Cooldown----///

@@ -73,6 +73,11 @@ public class UltimateManager : MonoBehaviour
                 ultImage.sprite = _sprites[5];
                 passiveUlt = false;
                 break;
+            case 6: 
+                ultimateToUse = _ultimateAbilities[5];
+                ultImage.sprite = _sprites[6];
+                passiveUlt = false;
+                break;
         }
     }
     
