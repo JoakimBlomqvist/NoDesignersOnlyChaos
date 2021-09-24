@@ -15,7 +15,7 @@ public class BloodHound : UltimateAbility
     [SerializeField] private PlayerAimTrollspo _staffScript;
     [SerializeField] private float duration = 10f;
     [SerializeField] private float atsIncrease = 0.75f;
-    private float defaultAts;
+    private float defaultMS;
 
     private void Awake()
     {
@@ -29,6 +29,7 @@ public class BloodHound : UltimateAbility
         _postVolume.profile.TryGet(out _colorAdjustments);
         playerScript = PlayerManager.Instance._characterMovement;
         _staffScript = PlayerManager.Instance._playerStaffScript;
+        defaultMS = playerScript.moveSpeed;
     }
     public void ColorShift()
     {
@@ -51,7 +52,7 @@ public class BloodHound : UltimateAbility
     {
         _colorAdjustments.active = true;
         playerScript.moveSpeed += movementSpeedBoost;
-        defaultAts = _staffScript.rateOfFire.Value;
+        _colorAdjustments.postExposure.value = 1f;
         _staffScript.rateOfFire.Value *= atsIncrease;
         InvokeRepeating(nameof(ColorShift), 0f, 0.02f);
         StartCoroutine(TurnOff());
@@ -60,8 +61,9 @@ public class BloodHound : UltimateAbility
     public IEnumerator TurnOff()
     {
         yield return new WaitForSeconds(duration);
-        playerScript.moveSpeed -= movementSpeedBoost;
-        _staffScript.rateOfFire.Value = defaultAts;
+        playerScript.moveSpeed = defaultMS;
+        _colorAdjustments.postExposure.value = 0f;
+        _staffScript.rateOfFire.Value = _staffScript.spellType.rateOfFire;
         colorValue = 0;
         _colorAdjustments.active = false;
     }

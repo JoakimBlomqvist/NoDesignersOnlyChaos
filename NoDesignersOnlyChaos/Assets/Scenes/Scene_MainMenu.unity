@@ -14265,12 +14265,14 @@ MonoBehaviour:
   _postVolume: {fileID: 0}
   _colorAdjustments: {fileID: 0}
   colorShift: {r: 0, g: 0, b: 0, a: 0}
+  passiveScript: {fileID: 0}
   colorValue: 0
   dashCD: 0.5
   playerScript: {fileID: 0}
   _staffScript: {fileID: 0}
   duration: 10
   passiveCD: 5
+  passiveCDBuff: 0.25
 --- !u!1 &1843011200
 GameObject:
   m_ObjectHideFlags: 0

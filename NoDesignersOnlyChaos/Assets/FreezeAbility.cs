@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.Analytics;
 
 public class FreezeAbility : PassiveAbility
 {
@@ -23,18 +24,22 @@ public class FreezeAbility : PassiveAbility
             if (target.GetComponent<Enemy>() == null)
                 yield return null;
             Enemy enemy = target.GetComponent<Enemy>();
-            
-            enemy.isFreezed = true;
-            if (enemy.GetComponent<SpriteRenderer>() != null)
+            if (enemy != null)
             {
-                enemy.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1);
+                enemy.isFreezed = true;
+                if (enemy.GetComponent<SpriteRenderer>() != null)
+                {
+                    enemy.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1);
+                }
+
+                yield return new WaitForSeconds(freezeTime);
+                if (enemy.GetComponent<SpriteRenderer>() != null)
+                {
+                    enemy.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
+                }
+
+                enemy.isFreezed = false;
             }
-            yield return new WaitForSeconds(freezeTime);
-            if (enemy.GetComponent<SpriteRenderer>() != null)
-            {
-                enemy.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
-            }
-            enemy.isFreezed = false;
         }
     }
 }

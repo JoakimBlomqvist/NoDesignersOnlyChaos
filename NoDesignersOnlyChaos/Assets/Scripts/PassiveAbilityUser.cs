@@ -6,6 +6,7 @@ public class PassiveAbilityUser : MonoBehaviour
 {
     public PassiveAbility _passiveAbility;
     private bool isRepeating;
+    public static PassiveAbilityUser Instance;
     private void OnEnable()
     {
         EventManager.instance.OnStartOfGame += StartPassiveAbility;
@@ -14,6 +15,18 @@ public class PassiveAbilityUser : MonoBehaviour
     private void OnDisable()
     {
         EventManager.instance.OnStartOfGame -= StartPassiveAbility;
+    }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     [ContextMenu("StartPassive")]
